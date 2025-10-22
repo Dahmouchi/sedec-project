@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "whoWeAre": "Who we are",
+    "ourSolutions": "Our solutions",
+    "ourProjects": "Our projects",
+    "environment": "Environment",
+    "news": "News",
+    "proSpace": "Pro Space",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "EXCELLENCE IN",
+    "subtitle": "MODULAR WOODEN",
+    "highlight": "CONSTRUCTION",
+    "cta": "Start travelling",
+    "features": [
+      {
+        "number": "01",
+        "title": "Title here",
+        "description": "Lorem ipsum dolor sit amet et amet ist ame."
+      },
+      {
+        "number": "02",
+        "title": "Title here",
+        "description": "Lorem ipsum dolor sit amet et amet ist ame."
+      },
+      {
+        "number": "03",
+        "title": "Title here",
+        "description": "Lorem ipsum dolor sit amet et amet ist ame."
+      }
+    ]
+  },
+   "about": {
+    "label": "ABOUT US",
+    "title": "SEDEC: a history, values, commitments",
+    "cta": "Learn more",
+    "description": "Leader in the wood construction market in Morocco, SEDEC has been developing wood construction solutions for over 50 years according to the best quality and durability standards. Since its creation in 1960, the company has actively participated in the development of infrastructure throughout Morocco through the construction of thousands of classrooms, housing, health dispensaries, mining villages and life bases for major projects (dams, highways, ports...), sports halls, vacation and leisure centers and other major achievements in the country."
+  },
+  "solutions": {
+    "title": "Our construction solutions",
+    "subtitle": "A complete range of modular wooden solutions, designed to adapt to all your architectural and environmental needs",
+    "cta": "See more",
+    "proflex": {
+      "title": "SEDEC PROFLEX",
+      "description": "Flexible modular solutions for all your construction projects"
+    },
+    "slc": {
+      "title": "SEDEC BLC",
+      "description": "Lightweight and high-performance construction systems"
+    },
+    "design": {
+      "title": "SEDEC DESIGN",
+      "description": "Custom and personalized architectural creations"
+    },
+    "mob": {
+      "title": "SEDEC MOB",
+      "description": "Ecological and sustainable timber frame houses"
+    },
+    "bureaux": {
+      "title": "SALES OFFICES",
+      "description": "Modular and elegant commercial spaces"
+    },
+    "learnMore": "Learn More"
+  },
+   "featuredProjects": {
+    "title": "Featured Project",
+    "subtitle": "Discover our latest achievement: a modular construction combining modern design, energy performance and respect for the environment. A perfect example of our expertise in wood architecture.",
+    "cta": "See more"
+  }
+}

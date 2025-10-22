@@ -1,0 +1,44 @@
+$flaticon_reland-font: "flaticon_reland";
+
+@font-face {
+    font-family: $flaticon_reland-font;
+    src: url("./flaticon_reland.ttf?29851ac3466c1aa912a4bafe6d35922e") format("truetype"),
+url("./flaticon_reland.woff?29851ac3466c1aa912a4bafe6d35922e") format("woff"),
+url("./flaticon_reland.woff2?29851ac3466c1aa912a4bafe6d35922e") format("woff2"),
+url("./flaticon_reland.eot?29851ac3466c1aa912a4bafe6d35922e#iefix") format("embedded-opentype"),
+url("./flaticon_reland.svg?29851ac3466c1aa912a4bafe6d35922e#flaticon_reland") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_reland !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+$flaticon_reland-map: (
+    "001-sofa": "\f101",
+    "002-plants": "\f102",
+    "003-chandelier": "\f103",
+    "004-headset": "\f104",
+    "005-leader": "\f105",
+    "006-shield": "\f106",
+    "007-left-quotes-sign": "\f107",
+    "008-money-bag": "\f108",
+    "009-crane-truck": "\f109",
+    "010-pdf": "\f10a",
+    "011-cctv": "\f10b",
+    "012-trees": "\f10c",
+    "013-fire-extinguisher": "\f10d",
+    "014-security": "\f10e",
+    "015-playground": "\f10f",
+    "016-puzzle": "\f110",
+    "017-apartment": "\f111",
+    "018-rescale": "\f112",
+)
+

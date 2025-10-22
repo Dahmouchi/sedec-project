@@ -1,0 +1,48 @@
+
+[
+  {
+    "id": 1,
+    "title": "Chalet SCANDINAVE",
+    "img": "scondinave.jpg",
+    "status": "Under Construction",
+    "type": "Chalet",
+    "location": "A cozy retreat inspired by Nordic simplicity and warmth.",
+    "description": "Nichée au cœur d’un paysage naturel apaisant, la métamorphose de ce chalet incarne une vision contemporaine du refuge scandinave. Chaque espace a été pensé comme une invitation à la quiétude, où la lumière naturelle sculpte les volumes et met en valeur la beauté des matériaux bruts. Le bois clair, le terrazzo et les fibres naturelles s’unissent pour créer une atmosphère chaleureuse, minimaliste et intemporelle. Plus qu’un simple lieu de vie, ce chalet devient une expérience sensorielle, un équilibre parfait entre confort moderne, authenticité et connexion à la nature environnante.",
+    "features": [
+      {
+        "icon": "flaticon-019-lamp",
+        "title": "Lumière & Espace",
+        "detail": "La lumière naturelle sculpte les volumes et efface les frontières entre intérieur et paysage. Les larges ouvertures et la douceur des tons créent une atmosphère fluide, spacieuse et apaisante."
+      },
+      {
+        "icon": "flaticon-013-fire-extinguisher",
+        "title": "Matière & Authenticité",
+        "detail": "Une sélection minutieuse de matériaux nobles et bruts. Le bois clair, le terrazzo et les fibres naturelles s’unissent dans un dialogue harmonieux, offrant un équilibre entre élégance, chaleur et authenticité."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Chalet Toubkal",
+    "img": "chalet2.jpg",
+    "status": "Under Construction",
+    "type": "Chalet",
+    "location": "A mountain escape blending modern comfort with natural charm."
+  },
+  {
+    "id": 3,
+    "title": "Chalet M&M (modern & minimal)",
+    "img": "10.jpg",
+    "status": "Complete",
+    "type": "Chalet",
+    "location": "A stylish haven that combines minimalism and elegance."
+  },
+  {
+    "id": 4,
+    "title": "Chalet Moroccan Touch",
+    "img": "3.jpg",
+    "status": "Complete",
+    "type": "Chalet",
+    "location": "A luxurious space infused with Moroccan-inspired design."
+  }
+]

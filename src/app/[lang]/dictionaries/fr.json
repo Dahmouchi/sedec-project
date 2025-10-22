@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "whoWeAre": "Qui sommes-nous",
+    "ourSolutions": "Nos solutions",
+    "ourProjects": "Nos réalisations",
+    "environment": "Environnement",
+    "news": "Actualités",
+    "proSpace": "Espace Pro",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "L'EXCELLENCE EN",
+    "subtitle": "CONSTRUCTION MODULAIRE",
+    "highlight": "BOIS",
+    "cta": "Start travelling",
+    "features": [
+      {
+        "number": "01",
+        "title": "Title here",
+        "description": "Lorem ipsum dolor sit amet et amet ist ame."
+      },
+      {
+        "number": "02",
+        "title": "Title here",
+        "description": "Lorem ipsum dolor sit amet et amet ist ame."
+      },
+      {
+        "number": "03",
+        "title": "Title here",
+        "description": "Lorem ipsum dolor sit amet et amet ist ame."
+      }
+    ]
+  },
+  "about": {
+    "label": "QUI SOMMES-NOUS",
+    "title": "SEDEC : une histoire, des valeurs, des engagements",
+    "cta": "Voir plus",
+    "description": "Leader sur le marché de la construction bois au Maroc, SEDEC développe depuis plus de 50 ans des solutions de construction en bois selon les meilleures normes de qualité et de durabilité. Depuis sa création en 1960, la société participe activement au développement des infrastructures à travers tout le Maroc par la construction de milliers de salles de classes, de logements, de dispensaires de santé, de villages miniers et de bases de vie pour les grands projets (barrages, autoroutes, ports...), de salles omnisports, de centres de vacances et de loisirs et autres grandes réalisations dans le pays."
+  },
+  "solutions": {
+    "title": "Nos solutions de construction",
+    "subtitle": "Une gamme complète de solutions modulaires en bois, conçues pour s'adapter à tous vos besoins architecturaux et environnementaux",
+    "cta": "Voir plus",
+    "proflex": {
+      "title": "SEDEC PROFLEX",
+      "description": "Solutions modulaires flexibles pour tous vos projets de construction"
+    },
+    "slc": {
+      "title": "SEDEC BLC",
+      "description": "Systèmes de construction légère et performants"
+    },
+    "design": {
+      "title": "SEDEC DESIGN",
+      "description": "Créations architecturales sur mesure et personnalisées"
+    },
+    "mob": {
+      "title": "SEDEC MOB",
+      "description": "Maisons ossature bois écologiques et durables"
+    },
+    "bureaux": {
+      "title": "BUREAUX DE VENTE",
+      "description": "Espaces commerciaux modulaires et élégants"
+    },
+    "learnMore": "Learn More"
+  },
+   "featuredProjects": {
+    "title": "Projet en vedette",
+    "subtitle": "Découvrez notre dernière réalisation : une construction modulaire alliant design moderne, performance énergétique et respect de l'environnement. Un exemple parfait de notre savoir-faire en matière d'architecture bois.",
+    "cta": "Voir plus"
+  }
+}
