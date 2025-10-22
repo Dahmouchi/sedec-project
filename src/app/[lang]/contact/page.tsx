@@ -25,7 +25,7 @@ export default function Contact() {
           </div>
 
           <div className="banner-scroll-down">
-            <Link href="#matterport" className="section-link">
+            <Link href="#contact" className="section-link">
               <span />
               <span />
               <span />

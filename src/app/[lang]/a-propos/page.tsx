@@ -28,7 +28,7 @@ export default function Mission() {
           </div>
 
           <div className="banner-scroll-down">
-            <Link href="#matterport" className="section-link">
+            <Link href="#about" className="section-link">
               <span />
               <span />
               <span />
@@ -71,7 +71,7 @@ export default function Mission() {
             <div className="row align-items-center">
               <div className="col-lg-6 order-0 order-lg-2">
                 <div className="vision-img text-center">
-                  <img src="/assets/img/images/mission_img.jpg" alt="" />
+                  <img src="/images/m.jpg" alt="" />
                 </div>
               </div>
               <div className="col-lg-6">

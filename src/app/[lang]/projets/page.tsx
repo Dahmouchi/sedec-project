@@ -72,11 +72,11 @@ export default function Project() {
 
     return (
         <>
-            <Layout headerStyle={5}>
+            <Layout headerStyle={7}>
                 <div className="w-full mb-28 h-[60vh] bg-cover bg-center relative"
                 style={{backgroundImage:"url(/images/bg.jpg)"}}>
                     <div className="w-full h-full bg-black/40 flex items-center justify-center">
-                        <h1 className="title text-white">Nos chalets</h1>
+                        <div className="title text-white text-7xl font-serif">Nos Chalets</div>
                     </div>
                 </div>
                 <ProjectFilter col="col-lg-6 col-md-6" />

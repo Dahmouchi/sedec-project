@@ -6,7 +6,7 @@
     "img": "scondinave.jpg",
     "status": "Under Construction",
     "type": "Chalet",
-    "location": "A cozy retreat inspired by Nordic simplicity and warmth.",
+    "location": "Confort Nordique",
     "description": "Nichée au cœur d’un paysage naturel apaisant, la métamorphose de ce chalet incarne une vision contemporaine du refuge scandinave. Chaque espace a été pensé comme une invitation à la quiétude, où la lumière naturelle sculpte les volumes et met en valeur la beauté des matériaux bruts. Le bois clair, le terrazzo et les fibres naturelles s’unissent pour créer une atmosphère chaleureuse, minimaliste et intemporelle. Plus qu’un simple lieu de vie, ce chalet devient une expérience sensorielle, un équilibre parfait entre confort moderne, authenticité et connexion à la nature environnante.",
     "features": [
       {
@@ -27,15 +27,16 @@
     "img": "chalet2.jpg",
     "status": "Under Construction",
     "type": "Chalet",
-    "location": "A mountain escape blending modern comfort with natural charm."
+    "location":       "Refuge Montagnard"
   },
   {
     "id": 3,
-    "title": "Chalet M&M (modern & minimal)",
+    "title": "Chalet M&M ",
     "img": "10.jpg",
     "status": "Complete",
     "type": "Chalet",
-    "location": "A stylish haven that combines minimalism and elegance."
+    "location":       "MINIMALIST & MODERN"
+
   },
   {
     "id": 4,
@@ -43,6 +44,6 @@
     "img": "3.jpg",
     "status": "Complete",
     "type": "Chalet",
-    "location": "A luxurious space infused with Moroccan-inspired design."
+    "location": "Histoire et Authenticité"
   }
 ]

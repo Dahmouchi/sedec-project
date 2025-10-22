@@ -129,7 +129,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                                     alt="Chalet Scandinavian"
                                     className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                   />
-                                  <span className="font-semibold text-gray-800 hover:text-amber-800">
+                                  <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
                                     Scandinavian
                                   </span>
                                 </Link>
@@ -143,7 +143,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                                     alt="Chalet Toubkal"
                                     className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                   />
-                                  <span className="font-semibold text-gray-800 hover:text-amber-800">
+                                  <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
                                     Toubkal
                                   </span>
                                 </Link>
@@ -157,7 +157,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                                     alt="Chalet M&M"
                                     className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                   />
-                                  <span className="font-semibold text-gray-800 hover:text-amber-800">
+                                  <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
                                     M&M
                                   </span>
                                 </Link>
@@ -171,7 +171,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                                     alt="Chalet Moroccan Touch"
                                     className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                   />
-                                  <span className="font-semibold text-gray-800 hover:text-amber-800">
+                                  <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
                                     Moroccan Touch
                                   </span>
                                 </Link>

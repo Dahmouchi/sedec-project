@@ -1,7 +1,7 @@
 const Newsletter = () => {
   return (
     <>
-      <section className="newsletter-area ">
+      <section className="newsletter-area" id="contact">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
