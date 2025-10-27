@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
+
 import Layout from "@/components/layouts/Layout";
 import { getDictionary } from "./dictionaries";
 import Banner4 from "@/components/sections/Banner4"

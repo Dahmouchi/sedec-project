@@ -8,108 +8,94 @@ import type { SwiperOptions } from "swiper/types";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
 const swiperOptions: SwiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
   slidesPerView: 5,
   spaceBetween: 30,
+  direction: "horizontal", // ✅ scrolls left to right
   autoplay: {
-    delay: 2500,
+    delay: 4500,
     disableOnInteraction: false,
   },
-  loop: true,
+  loop: false, // ✅ stop at the last slide
 
-  // Navigation
   navigation: {
     nextEl: ".h1n",
     prevEl: ".h1p",
   },
 
-  // Pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 
   breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-    },
-    575: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    767: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    991: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-    1199: {
-      slidesPerView: 5,
-      spaceBetween: 30,
-    },
-    1350: {
-      slidesPerView: 5,
-      spaceBetween: 30,
-    },
+    320: { slidesPerView: 1, spaceBetween: 30 },
+    575: { slidesPerView: 2, spaceBetween: 30 },
+    767: { slidesPerView: 3, spaceBetween: 30 },
+    991: { slidesPerView: 4, spaceBetween: 30 },
+    1199: { slidesPerView: 5, spaceBetween: 30 },
   },
 };
 
 const Roadmap = () => {
   return (
-    <>
-      <section className="roadmap-area section-py-140">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-6">
-              <div className="section-title text-center mb-50">
-                <span className="sub-title">Notre Parcours</span>
-                <h2 className="title">L&apos;Histoire de SEDEC</h2>
-              </div>
+    <section className="roadmap-area section-py-140">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-xl-6">
+            <div className="section-title text-center mb-50">
+              <span className="sub-title">Notre Parcours</span>
+              <h2 className="title">L&apos;Histoire de SEDEC</h2>
             </div>
           </div>
         </div>
-        <div className="row g-0">
-          <div className="col-lg-12">
-            <div className="roadmap-wrap">
-              <div className="swiper-container roadmap-active ">
-                <Swiper {...swiperOptions} className="swiper-wrapper py-10">
-                  <SwiperSlide>
-                    <div className="roadmap-item">
-                      <h4 className="title">1948</h4>
-                      <div className="roadmap-content">
-                        <span className="dot" />
-                        <p>
-                          Démarrage de la production sur le site de
-                          l&apos;entreprise.
-                        </p>
-                        <span>Début de l&apos;aventure SEDEC</span>
-                      </div>
-                    </div>
-                  </SwiperSlide>
+      </div>
 
-                  <SwiperSlide>
-                    <div className="roadmap-item">
-                      <h4 className="title">1960</h4>
-                      <div className="roadmap-content">
-                        <span className="dot" />
-                        <p>
-                          La société SEDEC devient une S.A. et contribue
-                          activement au développement des infrastructures
-                          sociales à travers tout le Maroc : écoles, logements,
-                          dispensaires, villages miniers, bases vie pour
-                          barrages, autoroutes, ports et bien d&apos;autres
-                          bâtiments.
-                        </p>
-                        <span>Naissance officielle de SEDEC S.A.</span>
-                      </div>
-                    </div>
-                  </SwiperSlide>
+      <div className="row g-0">
+        <div className="col-lg-12">
+          <div className="roadmap-wrap">
+            <div className="swiper-container roadmap-active">
+                           
 
-                  <SwiperSlide>
+              <Swiper
+                {...swiperOptions}
+                className="swiper-wrapper py-10"
+                onReachEnd={(swiper) => {
+                  swiper.autoplay.stop(); // ✅ stop autoplay at last slide
+                }}
+              >
+                {/* === SLIDES === */}
+                <SwiperSlide>
+                  <div className="roadmap-item ml-16">
+                    <h4 className="title">1948</h4>
+                    <div className="roadmap-content">
+                      <span className="dot" />
+                      <p>
+                        Démarrage de la production sur le site de l&apos;entreprise.
+                      </p>
+                      <span>Début de l&apos;aventure SEDEC</span>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="roadmap-item">
+                    <h4 className="title">1960</h4>
+                    <div className="roadmap-content">
+                      <span className="dot" />
+                      <p>
+                        La société SEDEC devient une S.A. et contribue activement
+                        au développement des infrastructures sociales à travers
+                        tout le Maroc.
+                      </p>
+                      <span>Naissance officielle de SEDEC S.A.</span>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
                     <div className="roadmap-item">
                       <h4 className="title">1996</h4>
                       <div className="roadmap-content">
@@ -185,13 +171,18 @@ const Roadmap = () => {
                       </div>
                     </div>
                   </SwiperSlide>
-                </Swiper>
-              </div>
+                  <SwiperSlide>
+                    <div className="roadmap-item">
+                     
+                    </div>
+                  </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
+
 export default Roadmap;

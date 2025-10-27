@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 "use client";
@@ -14,6 +15,7 @@ import Header5 from "./Header5";
 import Header6 from "./Header6";
 import Header7 from "./Header7";
 import PageHead from "./PageHead";
+import WhatsappShare from "../whatsappShare";
 
 interface LayoutProps {
   headerStyle?: number;
@@ -22,7 +24,38 @@ interface LayoutProps {
   children: ReactNode;
   noFooter?: boolean;
 }
+interface CombinedButtonsProps {
+  whatsappProps: any;
+  reservationFormId: string; // ID of your reservation form element
+}
 
+const CombinedButtons: React.FC<CombinedButtonsProps> = ({
+  whatsappProps,
+  reservationFormId,
+}) => {
+  return (
+    <div className="">
+      <WhatsappShare {...whatsappProps} />
+
+      <style jsx>{`
+        .reservation-scroll-btn {
+          width: 56px;
+          height: 56px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        @media (max-width: 600px) {
+          .reservation-scroll-btn {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      `}</style>
+    </div>
+  );
+};
 export default function Layout({
   headerStyle,
   headTitle,
@@ -30,18 +63,15 @@ export default function Layout({
   children,
   noFooter,
 }: LayoutProps) {
+  useEffect(() => {
+    import("wowjs").then((mod) => {
+      const WOW = mod.WOW || mod.default;
 
-useEffect(() => {
-  import("wowjs").then((mod) => {
-    const WOW = mod.WOW || mod.default;
-
-    if (typeof WOW === "function") {
-      new WOW({ live: false }); // Just call as a function
-    }
-  });
-}, []);
-
-
+      if (typeof WOW === "function") {
+        new WOW({ live: false }); // Just call as a function
+      }
+    });
+  }, []);
 
   // Mobile Menu
   const [isMobileMenu, setMobileMenu] = useState(false);
@@ -71,34 +101,45 @@ useEffect(() => {
 
   return (
     <>
-      <PageHead headTitle={headTitle} />
-      {!headerStyle && <Header1 handleMobileMenu={handleMobileMenu} scroll={undefined} />}
-      {headerStyle === 1 && (
-        <Header1 scroll={scroll} handleMobileMenu={handleMobileMenu} />
-      )}
-      {headerStyle === 2 && <Header2 scroll={scroll} />}
-      {headerStyle === 3 && (
-        <Header3 scroll={scroll} handleMobileMenu={handleMobileMenu} />
-      )}
-      {headerStyle === 4 && <Header4 />}
-      {headerStyle === 5 && (
-        <Header5 scroll={scroll} handleMobileMenu={handleMobileMenu} />
-      )}
-      {headerStyle === 6 && (
-        <Header6 scroll={scroll} handleMobileMenu={handleMobileMenu} />
-      )}
-      {headerStyle === 7 && (
-        <Header7 scroll={scroll} handleMobileMenu={handleMobileMenu} />
-      )}
+      <div className="relative">
+        <CombinedButtons
+          whatsappProps={{
+            phoneNumber: "1234567890",
+            message: "Bonjour je souhaite faire une réservation",
+          }}
+          reservationFormId="reservation-form"
+        />
+        <PageHead headTitle={headTitle} />
+        {!headerStyle && (
+          <Header1 handleMobileMenu={handleMobileMenu} scroll={undefined} />
+        )}
+        {headerStyle === 1 && (
+          <Header1 scroll={scroll} handleMobileMenu={handleMobileMenu} />
+        )}
+        {headerStyle === 2 && <Header2 scroll={scroll} />}
+        {headerStyle === 3 && (
+          <Header3 scroll={scroll} handleMobileMenu={handleMobileMenu} />
+        )}
+        {headerStyle === 4 && <Header4 />}
+        {headerStyle === 5 && (
+          <Header5 scroll={scroll} handleMobileMenu={handleMobileMenu} />
+        )}
+        {headerStyle === 6 && (
+          <Header6 scroll={scroll} handleMobileMenu={handleMobileMenu} />
+        )}
+        {headerStyle === 7 && (
+          <Header7 scroll={scroll} handleMobileMenu={handleMobileMenu} />
+        )}
 
-      <main>
-        {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
-        {children}
-      </main>
+        <main>
+          {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
+          {children}
+        </main>
 
-      {!noFooter && <Footer />}
+        {!noFooter && <Footer />}
 
-      <BackToTop />
+        <BackToTop />
+      </div>
     </>
   );
 }

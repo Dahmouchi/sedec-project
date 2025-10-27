@@ -12,17 +12,19 @@ interface ChaletGalleryProps {
 }
 
 export default function ChaletGallery({ gallery }: ChaletGalleryProps) {
-  const [activeTab, setActiveTab] = useState<"chambres" | "salon" | "exterieure">("chambres");
+  const [activeTab, setActiveTab] = useState<
+    "chambres" | "salon" | "exterieure"
+  >("chambres");
 
   const categories = ["chambres", "salon", "exterieure"] as const;
 
   return (
     <div className="w-full mt-6 container my-16">
       {/* Tabs */}
-       <div className="w-full flex justify-center my-10 text-center ">
-                            <div className="section-title">
-                                <h2 className="title">Galerie</h2>
-                                {/*<Link href="project" className="btn transparent-btn">
+      <div className="w-full flex justify-center my-10 text-center ">
+        <div className="section-title">
+          <h2 className="title">Galerie</h2>
+          {/*<Link href="project" className="btn transparent-btn">
                                     <div className="btn_m">
                                         <div className="btn_c">
                                             <div className="btn_t1">D</div>
@@ -30,17 +32,15 @@ export default function ChaletGallery({ gallery }: ChaletGalleryProps) {
                                         </div>
                                     </div>
                                 </Link>*/}
-                            </div>
-                        </div>
+        </div>
+      </div>
       <div className="flex gap-4 border-b border-gray-300 pb-2 mb-4 justify-center items-center">
         {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => setActiveTab(cat)}
             className={`capitalize px-4 py-2 text-sm font-medium rounded-t-lg transition-all ${
-              activeTab === cat
-                ? "bg-[#BD9A68] text-white"
-                : "text-gray-900"
+              activeTab === cat ? "bg-[#BD9A68] text-white" : "text-gray-900"
             }`}
           >
             {cat}

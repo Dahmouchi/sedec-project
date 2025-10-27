@@ -10,7 +10,7 @@ const Destination3 = () => {
             <div className="container">
                 <div className="section-title text-center ">
                     <span className="sub-title wow fadeInUp">Aperçu</span>
-                    <h2 className="wow fadeInUp  title1" data-wow-delay=".3s">
+                    <h2 className="wow fadeInUp  title" data-wow-delay=".3s">
                         Galerie SEDEC
                     </h2>
                 </div>
@@ -36,11 +36,11 @@ const Destination3 = () => {
                                 </div>
                                 <div className="col-md-6">
 
-                                <DestinationCard
+                                <div className='lg:block hidden'><DestinationCard
                                     img="/images/1.jpg"
                                     title="United Kingdom"
                                     content="174,688 Travelers"
-                                ></DestinationCard>
+                                ></DestinationCard></div>
 
                                 </div>
                             </div>
@@ -81,7 +81,7 @@ const Destination3 = () => {
                         </div>
                     </div>
                     <div className='w-full flex items-center justify-center mt-8'>
-                         <Link href="overview" className="btn transparent-btn">
+                         <Link href="/galerie" className="btn transparent-btn">
                                     <div className="btn_m">
                                         <div className="btn_c">
                                             <div className="btn_t1">Voir plus</div>

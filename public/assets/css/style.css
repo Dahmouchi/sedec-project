@@ -442,7 +442,7 @@ label {
     height       : 40px;
     line-height  : 40px;
     position     : fixed;
-    bottom       : -10%;
+    bottom       : 10%;
     right        : 30px;
     font-size    : 18px;
     border-radius: 3px;
@@ -611,6 +611,18 @@ label {
     opacity           : 0;
     z-index           : 9;
 }
+.navbar-wrap ul li .sub-menu3 {
+   
+    transform         : scale(1, 0);
+    transform-origin  : 0 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+    opacity           : 0;
+    z-index           : 9;
+}
 
 .navbar-wrap ul li .sub-menu .sub-menu {
     right: auto;
@@ -642,13 +654,20 @@ label {
 .navbar-wrap ul li .sub-menu li.active a {
     color: var(--tg-white);
 }
-
+.navbar-wrap ul li .sub-menu3 li a:hover,
+.navbar-wrap ul li .sub-menu3 li.active a {
+    color: var(--tg-white);
+}
 .navbar-wrap ul li:hover>.sub-menu {
     opacity   : 1;
     visibility: visible;
     transform : scale(1);
 }
-
+.navbar-wrap ul li:hover>.sub-menu3 {
+    opacity   : 1;
+    visibility: visible;
+    transform : scale(1);
+}
 .logo {
     margin: 0 55px;
 }
@@ -2073,6 +2092,88 @@ label {
     z-index            : 1;
     padding            : 200px 0 350px;
 }
+.banner-area-five1.banner-bg-four1::before {
+    content   : "";
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
+    z-index   : -1;
+}
+.banner-area-fivecharpente.banner-bg-fourcharpente {
+    background-image   : url(../../images/charpente.jpg);
+    background-size    : cover;
+    background-position: center;
+    position           : relative;
+    z-index            : 1;
+    padding            : 200px 0 350px;
+}
+.banner-area-fivecharpente.banner-bg-fourcharpente::before {
+    content   : "";
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
+    z-index   : -1;
+}
+.banner-area-fivetoubkal.banner-bg-fourtoubkal {
+    background-image   : url(../../images/chalet2.jpg);
+    background-size    : cover;
+    background-position: center;
+    position           : relative;
+    z-index            : 1;
+    padding            : 200px 0 350px;
+}
+.banner-area-fivetoubkal.banner-bg-fourtoubkal::before {
+    content   : "";
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
+    z-index   : -1;
+}
+.banner-area-fiveM.banner-bg-fourM {
+    background-image   : url(../../images/10.jpg);
+    background-size    : cover;
+    background-position: center;
+    position           : relative;
+    z-index            : 1;
+    padding            : 200px 0 350px;
+}
+.banner-area-fiveM.banner-bg-fourM::before {
+    content   : "";
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
+    z-index   : -1;
+}
+.banner-area-fivemorocco.banner-bg-fourmorocco {
+    background-image   : url(../../images/3.jpg);
+    background-size    : cover;
+    background-position: center;
+    position           : relative;
+    z-index            : 1;
+    padding            : 200px 0 350px;
+}
+.banner-area-fivemorocco.banner-bg-fourmorocco::before {
+    content   : "";
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
+    z-index   : -1;
+}
 .banner-area-five2.banner-bg-four2::before {
     content   : "";
     position  : absolute;
@@ -2109,16 +2210,7 @@ label {
     z-index            : 1;
     padding            : 200px 0 350px;
 }
-.banner-area-five1.banner-bg-four1::before {
-    content   : "";
-    position  : absolute;
-    left      : 0;
-    top       : 0;
-    width     : 100%;
-    height    : 100%;
-    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
-    z-index   : -1;
-}
+
 .banner-area-five.banner-bg-four::before {
     content   : "";
     position  : absolute;
@@ -2130,6 +2222,132 @@ label {
     z-index   : -1;
 }
 
+.banner-area-fivepergola.banner-bg-fourpergola {
+    background-image   : url(../../images/reel/pergola.jpg);
+    background-size    : cover;
+    background-position: center;
+    position           : relative;
+    z-index            : 1;
+    padding            : 200px 0 350px;
+}
+.banner-area-fivepergola.banner-bg-fourpergola::before {
+    content   : "";
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
+    z-index   : -1;
+}
+.banner-area-fivemur.banner-bg-fourmur {
+    background-image   : url(../../images/reel/villa-étage-1.jpg);
+    background-size    : cover;
+    background-position: center;
+    position           : relative;
+    z-index            : 1;
+    padding            : 200px 0 350px;
+}
+.banner-area-fivemur.banner-bg-fourmur::before {
+    content   : "";
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
+    z-index   : -1;
+}
+.banner-area-fivedurisol.banner-bg-fourdurisol {
+    background-image   : url(../../images/Durisol.jpg);
+    background-size    : cover;
+    background-position: center;
+    position           : relative;
+    z-index            : 1;
+    padding            : 200px 0 350px;
+}
+.banner-area-fivedurisol.banner-bg-fourdurisol::before {
+    content   : "";
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
+    z-index   : -1;
+}
+.banner-area-fivemetallique.banner-bg-fourmetallique {
+    background-image   : url(../../images/reel/charpente-ossature-metallique.jpg);
+    background-size    : cover;
+    background-position: center;
+    position           : relative;
+    z-index            : 1;
+    padding            : 200px 0 350px;
+}
+.banner-area-fivemetallique.banner-bg-fourmetallique::before {
+    content   : "";
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
+    z-index   : -1;
+}
+.banner-area-fivegards.banner-bg-fourgards {
+    background-image   : url(../../images/reel/Garde-Corps.webp);
+    background-size    : cover;
+    background-position: center;
+    position           : relative;
+    z-index            : 1;
+    padding            : 200px 0 350px;
+}
+.banner-area-fivegards.banner-bg-fourgards::before {
+    content   : "";
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
+    z-index   : -1;
+}
+.banner-area-fivepass.banner-bg-fourpass {
+    background-image   : url(../../images/reel/passerelle_corten.jpg);
+    background-size    : cover;
+    background-position: center;
+    position           : relative;
+    z-index            : 1;
+    padding            : 200px 0 350px;
+}
+.banner-area-fivepass.banner-bg-fourpass::before {
+    content   : "";
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
+    z-index   : -1;
+}
+.banner-area-fivevoit.banner-bg-fourvoit {
+    background-image   : url(../../images/reel/10592.webp);
+    background-size    : cover;
+    background-position: center;
+    position           : relative;
+    z-index            : 1;
+    padding            : 200px 0 350px;
+}
+.banner-area-fivevoit.banner-bg-fourvoit::before {
+    content   : "";
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.21) 51.04%, rgba(32, 32, 32, 0.7) 100%), linear-gradient(0deg, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.2));
+    z-index   : -1;
+}
 .banner-area-five .banner-content {
     text-align: center;
     position  : relative;
@@ -2457,10 +2675,57 @@ label {
 }
 
 .section-title .title {
-    font-size     : 48px;
+    font-size: 48px;
     text-transform: uppercase;
-    margin-bottom : 0;
-    line-height   : 1.29;
+    margin-bottom: 0;
+    line-height: 1.29;
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+     .title {
+        font-size: 38px; /* Adjust this size for mobile */
+    }
+}
+
+/* Optional: Extra small screens */
+@media (max-width: 480px) {
+    .section-title .title {
+        font-size: 34px; /* Even smaller for very small phones */
+    }
+}
+.whatsapp-share-fixed-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 24px;
+  background-color: #25D366;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .whatsapp-share-fixed-btn {
+    bottom: 200px; /* closer to bottom on mobile */
+    width: 50px;  /* optionally smaller */
+    height: 50px;
+  }
+}
+@media (max-width: 480px) {
+     .whatsapp-share-fixed-btn {
+    bottom: 80px; /* closer to bottom on mobile */
+    width: 50px;  /* optionally smaller */
+    height: 50px;
+  }
 }
 .title1 {
     font-size     : 48px;
@@ -2590,7 +2855,37 @@ label {
     justify-content    : center;
     border-radius      : 15px;
 }
+.video-bg1 {
+    background-image   : url(../../images/chalet2.jpg);
+    background-size    : cover;
+    background-position: center;
+    height             : 650px;
+    display            : flex;
+    align-items        : center;
+    justify-content    : center;
+    border-radius      : 15px;
+}
 
+.video-bg2 {
+    background-image   : url(../../images/10.jpg);
+    background-size    : cover;
+    background-position: center;
+    height             : 650px;
+    display            : flex;
+    align-items        : center;
+    justify-content    : center;
+    border-radius      : 15px;
+}
+.video-bg3 {
+    background-image   : url(../../images/3.jpg);
+    background-size    : cover;
+    background-position: center;
+    height             : 650px;
+    display            : flex;
+    align-items        : center;
+    justify-content    : center;
+    border-radius      : 15px;
+}
 .video-bg .play-btn {
     color      : var(--youtube);
     font-size  : 80px;
@@ -3026,17 +3321,15 @@ label {
     margin-bottom: 30px;
 }
 
-.project-details-title span {
-    display       : block;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-weight   : 500;
-    font-size     : 14px;
-    margin-bottom : 10px;
-}
 
 .project-details-title .title {
     font-size     : 72px;
+    text-transform: uppercase;
+    margin-bottom : 0;
+    line-height   : 1.30;
+}
+.ted {
+    font-size     : 32px;
     text-transform: uppercase;
     margin-bottom : 0;
     line-height   : 1.30;
@@ -4262,7 +4555,20 @@ label {
     padding      : 50px;
     margin: 20px;
 }
+/* ✅ Adjust padding for tablets and smaller devices */
+@media (max-width: 768px) {
+  .newsletter-inner {
+    padding: 30px;
+  }
+}
 
+/* ✅ Adjust even more for small phones */
+@media (max-width: 480px) {
+  .newsletter-inner {
+    padding: 20px;
+    margin: 10px;
+  }
+}
 .newsletter-content {
     text-align: center;
 }

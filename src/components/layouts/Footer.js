@@ -32,7 +32,7 @@ export default function Footer1({ }) {
                                         <h2 className="fw-title">liens utiles</h2>
                                         <div className="footer-link">
                                             <ul className="list-wrap">
-                                                <li><Link href="overview">Nos chalets</Link></li>
+                                                <li><Link href="overview">Nos Villas</Link></li>
                                                 <li><Link href="contact">À Propos</Link></li>
                                                 <li><Link href="contact">Galerie </Link></li>
                                                 <li><Link href="contact">Contact</Link></li>
@@ -61,10 +61,9 @@ export default function Footer1({ }) {
                                     </div>
                                     <div className="footer-social">
                                         <ul className="list-wrap">
-                                            <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                                            <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
-                                            <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
-                                            <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                                            <li><Link target="_blank" href="https://www.facebook.com/profile.php?id=sedec"><i className="fab fa-facebook-f" /></Link></li>
+                                            <li><Link target="_blank" href="https://www.instagram.com/sedecmaroc/"><i className="fab fa-instagram" /></Link></li>
+                                            <li><Link target="_blank" href="https://www.linkedin.com/company/109523022"><i className="fab fa-linkedin-in" /></Link></li>
                                         </ul>
                                     </div>
                                 </div>

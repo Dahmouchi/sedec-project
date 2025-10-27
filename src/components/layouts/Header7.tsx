@@ -28,9 +28,6 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                         contact@sedec.ma
                       </Link>
                     </li>
-                    <li>
-                      <Link href="0537741119">+ 212 (0) 537 741 119</Link>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -44,16 +41,20 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
           }`}
         >
           <div className="container custom-container">
+            <div className="flex items-center justify-between lg:hidden">
+              <Link href="/">
+                <img
+                  src= {`${scroll ? "/images/logo.png":"/images/logowhite.png"}`}
+                  className="w-14 h-auto"
+                  alt="Logo"
+                />
+              </Link>
+              <div onClick={handleMobileMenu}>
+                <Menu className={`${scroll ? "w-14 text-black":"w-14 text-white"}`} />
+              </div>
+            </div>
             <div className="row">
               <div className="col-12">
-                <div className="flex items-center justify-between lg:hidden">
-                  <Link href="/">
-                    <img src="/images/logo.png" alt="Logo" />
-                  </Link>
-                  <div onClick={handleMobileMenu}>
-                    <Menu className="w-14 text-white" />
-                  </div>
-                </div>
                 <div className="menu-wrap">
                   <nav className="menu-nav">
                     <div className="navbar-wrap main-menu d-none d-lg-flex">
@@ -63,7 +64,8 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                             <ul className="list-wrap">
                               <li>
                                 <Link
-                                  href="#"
+                                  target="_blank"
+                                  href="https://www.facebook.com/profile.php?id=sedec"
                                   className={
                                     scroll ? "text-[#BD9A68]" : "text-white"
                                   }
@@ -73,7 +75,8 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                               </li>
                               <li>
                                 <Link
-                                  href="#"
+                                  target="_blank"
+                                  href="https://www.instagram.com/sedecmaroc/"
                                   className={
                                     scroll ? "text-[#BD9A68]" : "text-white"
                                   }
@@ -83,17 +86,8 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                               </li>
                               <li>
                                 <Link
-                                  href="#"
-                                  className={
-                                    scroll ? "text-[#BD9A68]" : "text-white"
-                                  }
-                                >
-                                  <i className="fab fa-twitter" />
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="#"
+                                  target="_blank"
+                                  href="https://www.linkedin.com/company/109523022"
                                   className={
                                     scroll ? "text-[#BD9A68]" : "text-white"
                                   }
@@ -105,7 +99,8 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                           </li>
                         </ul>
                       </div>
-                      <ul className="navigation ">
+
+                      <ul className="navigation">
                         <li className="menu-item-has-children relative group">
                           <Link
                             href="/projets"
@@ -115,84 +110,171 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                                 : "text-white hover:text-blue-200"
                             }`}
                           >
-                            Nos chalets
+                            Nos Villas en Bois
                           </Link>
 
-                          {/* Submenu */}
-                          <ul className="sub-menu absolute left-0 top-full mt-2 hidden w-[1000px] bg-white shadow-lg rounded-lg p-6 group-hover:flex flex-wrap  z-50">
-                            <div className="flex w-full gap-1">
-                              {/* Chalet 1 */}
-                              <li className=" flex items-center text-center">
-                                <Link href="/projets/1">
-                                  <img
-                                    src="/images/scondinave.jpg"
-                                    alt="Chalet Scandinavian"
-                                    className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
-                                  />
-                                  <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
-                                    Scandinavian
-                                  </span>
-                                </Link>
-                              </li>
+                          {/* Submenu - Fixed full width */}
+                          <div className="fixed left-0 w-full hidden group-hover:block z-50">
+                            <ul className="bg-white shadow-lg py-6 w-full">
+                              <div className="flex justify-between gap-8  w-full max-w-7xl mx-auto px-6">
+                                {/* Chalet 1 */}
+                                <li className="flex flex-col items-center text-center w-full ">
+                                  <Link href="/projets/1" className="block">
+                                    <img
+                                      src="/images/scondinave.jpg"
+                                      alt="Chalet Scandinavian"
+                                      className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+                                    />
+                                    <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
+                                      Scandinavian
+                                    </span>
+                                  </Link>
+                                </li>
 
-                              {/* Chalet 2 */}
-                              <li className=" flex flex-col items-center text-center">
-                                <Link href="/projets/2">
-                                  <img
-                                    src="/images/chalet2.jpg"
-                                    alt="Chalet Toubkal"
-                                    className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
-                                  />
-                                  <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
-                                    Toubkal
-                                  </span>
-                                </Link>
-                              </li>
+                                {/* Chalet 2 */}
+                                <li className="flex flex-col items-center text-center w-full ">
+                                  <Link href="/projets/2" className="block">
+                                    <img
+                                      src="/images/chalet2.jpg"
+                                      alt="Chalet Toubkal"
+                                      className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+                                    />
+                                    <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
+                                      Toubkal
+                                    </span>
+                                  </Link>
+                                </li>
 
-                              {/* Chalet 3 */}
-                              <li className=" flex flex-col items-center text-center">
-                                <Link href="/projets/3">
-                                  <img
-                                    src="/images/10.jpg"
-                                    alt="Chalet M&M"
-                                    className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
-                                  />
-                                  <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
-                                    M&M
-                                  </span>
-                                </Link>
-                              </li>
+                                {/* Chalet 3 */}
+                                <li className="flex flex-col items-center text-center w-full ">
+                                  <Link href="/projets/3" className="block">
+                                    <img
+                                      src="/images/10.jpg"
+                                      alt="Chalet M&M"
+                                      className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+                                    />
+                                    <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
+                                      M&M
+                                    </span>
+                                  </Link>
+                                </li>
 
-                              {/* Chalet 4 */}
-                              <li className="flex flex-col items-center text-center">
-                                <Link href="/projets/4">
-                                  <img
-                                    src="/images/3.jpg"
-                                    alt="Chalet Moroccan Touch"
-                                    className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
-                                  />
-                                  <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
-                                    Moroccan Touch
-                                  </span>
-                                </Link>
-                              </li>
-                            </div>
-                          </ul>
+                                {/* Chalet 4 */}
+                                <li className="flex flex-col items-center text-center w-full ">
+                                  <Link href="/projets/4" className="block">
+                                    <img
+                                      src="/images/3.jpg"
+                                      alt="Chalet Moroccan Touch"
+                                      className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+                                    />
+                                    <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
+                                      Moroccan Touch
+                                    </span>
+                                  </Link>
+                                </li>
+                              </div>
+                            </ul>
+                          </div>
                         </li>
 
-                        <li className="menu-item-has-children ">
+                        <li className="menu-item-has-children">
                           <Link
-                            href="/a-propos"
+                            href="/charpente"
                             className={`transition-colors duration-300 ${
                               scroll
                                 ? "text-gray-900 hover:text-amber-800"
                                 : "text-white hover:text-blue-200"
                             }`}
                           >
-                            À Propos
+                            Charpente
                           </Link>
                         </li>
+
+                        <li className="menu-item-has-children relative group">
+                          <Link
+                            href="/pergola"
+                            className={`transition-colors duration-300 ${
+                              scroll
+                                ? "text-gray-900 hover:text-amber-800"
+                                : "text-white hover:text-blue-200"
+                            }`}
+                          >
+                            Pergola
+                          </Link>
+
+                          {/* Submenu - Fixed full width */}
+                          <div className="fixed left-0 w-full hidden group-hover:block z-50">
+                            <ul className="bg-white shadow-lg py-6 w-full">
+                              <div className="flex justify-between gap-8  w-full max-w-7xl mx-auto px-6">
+                                {/* Chalet 1 */}
+                                <li className="flex flex-col items-center text-center w-full ">
+                                  <Link href="/pergola/pergola" className="block">
+                                    <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
+                                      <img
+                                        src="/images/reel/pergola.jpg"
+                                        alt="Chalet Scandinavian"
+                                        className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+                                      />
+                                    </div>
+                                    <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
+                                      Pergola
+                                    </span>
+                                  </Link>
+                                </li>
+
+                                {/* Chalet 2 */}
+                                <li className="flex flex-col items-center text-center w-full ">
+                                  <Link href="/pergola/gards-corps" className="block">
+                                    <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl ">
+                                      <img
+                                        src="/images/reel/Garde-Corps.webp"
+                                        alt="Chalet Toubkal"
+                                        className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+                                      />
+                                    </div>
+                                    <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
+                                      Les Gardes corps
+                                    </span>
+                                  </Link>
+                                </li>
+
+                                {/* Chalet 3 */}
+                                <li className="flex flex-col items-center text-center w-full ">
+                                  <Link href="/pergola/abris-voitures" className="block">
+                                    <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
+                                      <img
+                                        src="/images/reel/10592.webp"
+                                        alt="Chalet M&M"
+                                        className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+                                      />
+                                    </div>
+                                    <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
+                                      Les abris voitures
+                                    </span>
+                                  </Link>
+                                </li>
+
+                                {/* Chalet 4 */}
+                                <li className="flex flex-col items-center text-center w-full ">
+                                  <Link href="/pergola/passerelles" className="block">
+                                    <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
+                                      <img
+                                        src="/images/reel/passerelle_corten.jpg"
+                                        alt="Chalet Moroccan Touch"
+                                        className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+                                      />
+                                    </div>
+                                    <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
+                                      Passerelles
+                                    </span>
+                                  </Link>
+                                </li>
+                              </div>
+                            </ul>
+                          </div>
+                        </li>
                       </ul>
+
                       <div className="logo transition-all duration-300">
                         <Link href="/">
                           <img
@@ -206,10 +288,92 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                           />
                         </Link>
                       </div>
+
                       <ul className="navigation right">
                         <li className="menu-item-has-children">
                           <Link
-                            href="#"
+                            href="/a-propos"
+                            className={`transition-colors duration-300 ${
+                              scroll
+                                ? "text-gray-900 hover:text-amber-800"
+                                : "text-white hover:text-blue-200"
+                            }`}
+                          >
+                            À Propos
+                          </Link>
+                        </li>
+
+                        <li className="menu-item-has-children relative group">
+                          <Link
+                            href="/batiments-modulaires"
+                            className={`transition-colors duration-300 ${
+                              scroll
+                                ? "text-gray-900 hover:text-amber-800"
+                                : "text-white hover:text-blue-200"
+                            }`}
+                          >
+                            Bâtiments modulaires
+                          </Link>
+
+                          {/* Submenu - Fixed full width */}
+                          <div className="fixed left-0 w-full hidden group-hover:block z-50">
+                            <ul className="bg-white shadow-lg py-6 w-full">
+                              <div className="flex justify-between gap-8  w-full max-w-7xl mx-auto px-6">
+                                {/* Chalet 1 */}
+                                <li className="flex flex-col items-center text-center w-full ">
+                                  <Link href="/batiments-modulaires/mur-ossature-bois" className="block">
+                                   <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
+                                      <img
+                                    
+                                      src="/images/sedec-mob.jpg"
+                                      alt="Chalet Scandinavian"
+                                      className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+                                    />
+                                    </div>
+                                    <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
+                                      Mur ossature bois
+                                    </span>
+                                  </Link>
+                                </li>
+
+                                {/* Chalet 2 */}
+                                <li className="flex flex-col items-center text-center w-full ">
+                                  <Link href="/batiments-modulaires/modulaire-metallique" className="block">
+                                   <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
+                                      
+                                    <img
+                                      src="/images/reel/charpente-ossature-metallique.jpg"
+                                      alt="Chalet Toubkal"
+                                      className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+                                    /></div>
+                                    <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
+                                      Modulaires Metalliques
+                                    </span>
+                                  </Link>
+                                </li>
+
+                                {/* Chalet 3 */}
+                                <li className="flex flex-col items-center text-center w-full ">
+                                  <Link href="/batiments-modulaires/durisol" className="block">
+                                     <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
+                                      <img
+                                      src="/images/Durisol.jpg"
+                                      alt="Chalet M&M"
+                                      className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+                                    /></div>
+                                    <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
+                                      Durisol
+                                    </span>
+                                  </Link>
+                                </li>
+                              </div>
+                            </ul>
+                          </div>
+                        </li>
+
+                        <li className="menu-item-has-children">
+                          <Link
+                            href="/galerie"
                             className={`transition-colors duration-300 ${
                               scroll
                                 ? "text-gray-900 hover:text-amber-800"
@@ -219,20 +383,8 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                             Galerie
                           </Link>
                         </li>
-
-                        <li>
-                          <Link
-                            href="/contact"
-                            className={`transition-colors duration-300 ${
-                              scroll
-                                ? "text-gray-900 hover:text-amber-800"
-                                : "text-white hover:text-blue-200"
-                            }`}
-                          >
-                            contact
-                          </Link>
-                        </li>
                       </ul>
+
                       <Link
                         href="/contact"
                         className={`btn transparent-btn wow fadeInUp ${
@@ -244,10 +396,8 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                       >
                         <div className="btn_m">
                           <div className="btn_c">
-                            <div className="btn_t1">Visitez notre showroom</div>
-                            <div className="btn_t2 text-white">
-                              Visitez notre showroom
-                            </div>
+                            <div className="btn_t1">Contact</div>
+                            <div className="btn_t2 text-white">Contact</div>
                           </div>
                         </div>
                       </Link>
@@ -271,28 +421,19 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                     <div className="social-links">
                       <ul className="clearfix list-wrap">
                         <li>
-                          <Link href="#">
+                          <Link href="https://www.facebook.com/profile.php?id=sedec" target="_blank">
                             <i className="fab fa-facebook-f" />
                           </Link>
                         </li>
+
                         <li>
-                          <Link href="#">
-                            <i className="fab fa-twitter" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="#">
+                          <Link href="https://www.instagram.com/sedecmaroc/" target="_blank">
                             <i className="fab fa-instagram" />
                           </Link>
                         </li>
                         <li>
-                          <Link href="#">
+                          <Link href="https://www.linkedin.com/company/109523022" target="_blank">
                             <i className="fab fa-linkedin-in" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="#">
-                            <i className="fab fa-youtube" />
                           </Link>
                         </li>
                       </ul>

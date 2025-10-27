@@ -87,9 +87,10 @@ export default async function RootLayout({
   return (
     <html lang={validatedLang} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${merriweather.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${merriweather.variable} antialiased relative`}
       >
         <div className="overflow-x-hidden">{children}</div>
+        
         <ToastContainer
           position="top-right"
           autoClose={5000}

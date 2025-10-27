@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import ProjectItem from "@/components/elements/ProjectItem"
 import Pagination from "@/components/elements/Pagination"
 import { useEffect, useState } from "react"
@@ -15,11 +17,7 @@ export default function ProjectFilter({ col }) {
         )
     })
 
-    // Get a list of unique values for status, type, and location
-    const uniqueStatus = [...new Set(projectData.map(user => user.status))]
-    const uniqueTypes = [...new Set(projectData.map(user => user.type))]
-    const uniqueLocation = [...new Set(projectData.map(user => user.location))]
-
+  
 
     let [currentPage, setCurrentPage] = useState(1)
     let showLimit = 4,
@@ -50,21 +48,7 @@ export default function ProjectFilter({ col }) {
     const getPaginatedProducts = filteredUsers.slice(startIndex, endIndex)
 
 
-    let start = Math.floor((currentPage - 1) / showPagination) * showPagination
-    let end = start + showPagination
-    const getPaginationGroup = pagination.slice(start, end)
-
-    const next = () => {
-        setCurrentPage((page) => page + 1)
-    }
-
-    const prev = () => {
-        setCurrentPage((page) => page - 1)
-    }
-
-    const handleActive = (item) => {
-        setCurrentPage(item)
-    }
+  
 
     return (
         <>

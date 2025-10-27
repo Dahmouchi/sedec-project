@@ -35,7 +35,7 @@ export default function Mission() {
             </Link>
           </div>
         </section>
-        <section id="about" className="about-area  section-pb-140">
+        <section id="about" className="about-area ">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-8 col-lg-10">
@@ -66,7 +66,7 @@ export default function Mission() {
 
         {/* mission-area-end */}
         {/* vision-area */}
-        <section className="vision-area  section-pb-140">
+        <section className="vision-area  ">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 order-0 order-lg-2">
@@ -75,8 +75,8 @@ export default function Mission() {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="vision-content">
-                  <div className="section-title mb-35">
+                <div className="mt-8">
+                  <div className="section-title">
                     <h2 className="title">Mot du PDG</h2>
                   </div>
                   <p>

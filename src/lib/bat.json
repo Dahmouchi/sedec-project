@@ -1,0 +1,31 @@
+
+[
+   {
+    "id": "mur-ossature-bois",
+    "title": "Mur ossature bois",
+    "img": "/reel/villa-étage-1.jpg",
+    "status": "Complete",
+    "type": "Chalet",
+    "location":"Solidité et esthétisme"
+
+  },
+  {
+    "id": "durisol ",
+    "title": "Durisol",
+    "img": "/Durisol.jpg",
+    "status": "Under Construction",
+    "type": "Chalet",
+    "location": "Innovation, isolation, écologie"
+      
+  },
+  {
+    "id": "modulaire-metallique",
+    "title": "Modulaire métallique",
+    "img": "/reel/charpente-ossature-metallique.jpg",
+    "status": "Under Construction",
+    "type": "Chalet",
+    "location":       "RSécurité et raffinement"
+  }
+ 
+
+]

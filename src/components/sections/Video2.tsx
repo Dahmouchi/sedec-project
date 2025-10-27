@@ -40,10 +40,10 @@ export default function Video2() {
             <div className="col-12">
               {" "}
               <div className="video-bg"> 
-                <div className="absolute bottom-10 right-50% bg-black/20 px-20 flex flex-col items-center justify-center py-2 rounded-full">
-                <img src="/images/logo.png" alt=""  className="w-24 h-auto"/>
-                  <h1 className=" text-white">Chalet Scandinavian </h1>
-                  <h4 className=" text-white">Visite virtuelle </h4>
+                <div className="absolute bottom-10 right-50% bg-black/20 lg:px-20 px-4 flex flex-col items-center justify-center py-2 rounded-full">
+                <img src="/images/logo.png" alt=""  className="lg:w-24 w-16 h-auto "/>
+                  <h1 className=" text-white text-center">Villa Scandinavian </h1>
+                  <h4 className=" text-white text-center">Visite virtuelle </h4>
                 </div>
                 
                <div

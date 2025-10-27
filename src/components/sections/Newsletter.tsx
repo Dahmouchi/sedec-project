@@ -15,7 +15,7 @@ const Newsletter = () => {
                           Votre vision, notre savoir-faire : Transformons vos idées en structures vivantes
                         </h2>
                       </div>
-                      <form action="#" className="newsletter-form">
+                      <form action="#" className="newsletter-form mx-0">
                         <ul className="list-wrap">
                           <li>
                             <input type="text" placeholder="Nom" required />
@@ -66,7 +66,7 @@ const Newsletter = () => {
                             traitement des données personnelles.
                           </label>
                         </div>
-                          <div className="flex items-center justify-end w-full">
+                          <div className="flex items-center justify-end w-full mt-4">
                             <li className="submit-btn">
                             <input type="submit" value="Envoyer" />
                           </li>

@@ -1,0 +1,37 @@
+
+[
+  {
+    "id": "pergola",
+    "title": "Pergola",
+    "img": "/reel/pergola.jpg",
+    "status": "Under Construction",
+    "type": "Chalet",
+    "location": "Élégance, confort, harmonie"
+      
+  },
+  {
+    "id": "gards-corps",
+    "title": "Carde Corps",
+    "img": "/reel/Garde-Corps.webp",
+    "status": "Under Construction",
+    "type": "Chalet",
+    "location":       "RSécurité et raffinement"
+  },
+  {
+    "id": "passerelles",
+    "title": "Passerelle",
+    "img": "/reel/passerelle_corten.jpg",
+    "status": "Complete",
+    "type": "Chalet",
+    "location":"Solidité et esthétisme"
+
+  },
+  {
+    "id": "abris-voitures",
+    "title": "Abris de voiture",
+    "img": "/reel/10592.webp",
+    "status": "Complete",
+    "type": "Chalet",
+    "location": "Protection, style, durabilité"
+  }
+]
