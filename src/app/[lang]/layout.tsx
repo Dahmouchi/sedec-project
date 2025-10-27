@@ -90,8 +90,8 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${merriweather.variable} antialiased relative`}
       >
-        <Suspense fallback={<div>Loading...</div>}>
-        <div className="overflow-x-hidden">{children}</div></Suspense>
+       
+        <div className="overflow-x-hidden">{children}</div>
         
         <ToastContainer
           position="top-right"

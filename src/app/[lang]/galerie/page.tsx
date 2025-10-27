@@ -1,6 +1,6 @@
 "use client"
 
-import { useSearchParams, useRouter } from "next/navigation"
+import { useRouter } from "next/navigation"
 import Gallery from "@/components/Gallery"
 import Layout from "@/components/layouts/Layout"
 import Link from "next/link"
@@ -41,10 +41,10 @@ const images = [
 const categories = ["charpente", "pergola", "villa-scandinave"]
 
 export default function GalleryPage() {
-  const searchParams = useSearchParams()
+  const searchParams = ["all"]
   const router = useRouter()
 
-  const selectedCategory = searchParams.get("category") || "all"
+  const selectedCategory =  "all"
   console.log(selectedCategory)
   const handleCategoryChange = (category: string) => {
      console.log(category)
