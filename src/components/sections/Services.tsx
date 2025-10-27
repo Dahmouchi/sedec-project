@@ -4,12 +4,12 @@ import Link from "next/link";
 const Services = () => {
   return (
     <>
-      <section className="services-area section section-pb-100">
+      <section className="services-area section ">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-7 col-lg-8">
               <div className="section-title text-center mb-55">
-                <span className="sub-title">Nos Offres</span>
+                <span className="sub-title">Ce qu&apos;on fait</span>
                 <h2 className="title">Nos Solutions</h2>
               </div>
             </div>
@@ -18,13 +18,13 @@ const Services = () => {
             <div className="col-lg-4 col-md-6 col-sm-10">
               <div className="services-item">
                 <div className=" my-4 flex items-center justify-center">
-                   <Link href="#">
+                   <Link href="/batiments-modulaires/durisol">
                     <div className="w-52 h-52 rounded-full bg-amber-400 bg-center bg-cover" style={{backgroundImage:"url(/images/Durisol.jpg)"}}></div>
                   </Link>
                 </div>
                 <div className="services-content">
                   <h2 className="title">
-                    <Link href="#">Durisol</Link>
+                    <Link href="/batiments-modulaires/durisol">Durisol</Link>
                   </h2>
                   <p>
                     Le durisol est un matériau innovant à base de bois
@@ -32,7 +32,7 @@ const Services = () => {
                     résistance et écologie, idéal pour les bâtiments durables.
                     Une solution moderne pour une construction responsable.
                   </p>
-                  <Link href="#" className="text-btn">
+                  <Link href="batiments-modulaires/durisol" className="text-btn">
                     En savoir plus
                   </Link>
                 </div>
@@ -42,13 +42,13 @@ const Services = () => {
             <div className="col-lg-4 col-md-6 col-sm-10">
               <div className="services-item">
                 <div className=" my-4 flex items-center justify-center">
-                  <Link href="#">
+                  <Link href="/charpente">
                     <div className="w-52 h-52 rounded-full bg-amber-400 bg-center bg-cover" style={{backgroundImage:"url(/images/charpente.jpg)"}}></div>
                   </Link>
                 </div>
                 <div className="services-content">
                   <h2 className="title">
-                    <Link href="#">Charpente</Link>
+                    <Link href="/charpente">Charpente</Link>
                   </h2>
                   <p>
                     Experts en charpente lamellée-collée (BLC / Glulam), nous
@@ -58,7 +58,7 @@ const Services = () => {
                     tout en respectant les normes de qualité les
                     plus exigeantes.
                   </p>
-                  <Link href="#" className="text-btn">
+                  <Link href="/charpente" className="text-btn">
                     En savoir plus
                   </Link>
                 </div>
@@ -68,13 +68,13 @@ const Services = () => {
             <div className="col-lg-4 col-md-6 col-sm-10">
               <div className="services-item">
                 <div className=" my-4 flex items-center justify-center">
-                   <Link href="#">
+                   <Link href="/batiments-modulaires/mur-ossature-bois">
                     <div className="w-52 h-52 rounded-full bg-amber-400 bg-center bg-cover" style={{backgroundImage:"url(/images/Mob.jpg)"}}></div>
                   </Link>
                 </div>
                 <div className="services-content">
                   <h2 className="title">
-                    <Link href="#">Mob</Link>
+                    <Link href="/batiments-modulaires/mur-ossature-bois">Mob</Link>
                   </h2>
                   <p>
                     une remarquable technologie d&apos;assemblage caractérisée
@@ -82,7 +82,7 @@ const Services = () => {
                     permet une grande flexibilité d&apos;usage et une
                     adaptabilité performante pour les tous type de projets.
                   </p>
-                  <Link href="#" className="text-btn">
+                  <Link href="/batiments-modulaires/mur-ossature-bois" className="text-btn">
                     En savoir plus
                   </Link>
                 </div>

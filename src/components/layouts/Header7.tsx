@@ -36,8 +36,8 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
         </div>
         <div
           id="sticky-header"
-          className={`menu-area transparent-header ${
-            scroll ? "sticky-menu" : ""
+          className={` transparent-header ${
+            scroll ? "sticky-menu menu-area" : ""
           }`}
         >
           <div className="container custom-container">
@@ -276,7 +276,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                       </ul>
 
                       <div className="logo transition-all duration-300">
-                        <Link href="/">
+                        <Link href="/fr">
                           <img
                             src={
                               scroll

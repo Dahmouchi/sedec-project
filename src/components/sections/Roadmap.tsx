@@ -41,7 +41,7 @@ const swiperOptions: SwiperOptions = {
 
 const Roadmap = () => {
   return (
-    <section className="roadmap-area section-py-140">
+    <section className="roadmap-area my-8 lg:my-32">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-6">
