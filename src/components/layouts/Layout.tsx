@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 "use client";
 
 import { useEffect, useState, ReactNode } from "react";
@@ -26,7 +25,7 @@ interface LayoutProps {
 }
 interface CombinedButtonsProps {
   whatsappProps: any;
-  reservationFormId: string; // ID of your reservation form element
+  reservationFormId: string;
 }
 
 const CombinedButtons: React.FC<CombinedButtonsProps> = ({
@@ -34,28 +33,12 @@ const CombinedButtons: React.FC<CombinedButtonsProps> = ({
   reservationFormId,
 }) => {
   return (
-    <div className="">
+    <div>
       <WhatsappShare {...whatsappProps} />
-
-      <style jsx>{`
-        .reservation-scroll-btn {
-          width: 56px;
-          height: 56px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        @media (max-width: 600px) {
-          .reservation-scroll-btn {
-            width: 50px;
-            height: 50px;
-          }
-        }
-      `}</style>
     </div>
   );
 };
+
 export default function Layout({
   headerStyle,
   headTitle,
@@ -63,83 +46,74 @@ export default function Layout({
   children,
   noFooter,
 }: LayoutProps) {
+ 
+
+  // ------------------------------
+  // WOW.js init
+  // ------------------------------
   useEffect(() => {
     import("wowjs").then((mod) => {
       const WOW = mod.WOW || mod.default;
-
-      if (typeof WOW === "function") {
-        new WOW({ live: false }); // Just call as a function
-      }
+      if (typeof WOW === "function") new WOW({ live: false });
     });
   }, []);
 
+  // ------------------------------
   // Mobile Menu
+  // ------------------------------
   const [isMobileMenu, setMobileMenu] = useState(false);
   const handleMobileMenu = () => {
     setMobileMenu((prev) => {
       const newState = !prev;
-      if (newState) {
-        document.body.classList.add("mobile-menu-visible");
-      } else {
-        document.body.classList.remove("mobile-menu-visible");
-      }
+      document.body.classList.toggle("mobile-menu-visible", newState);
       return newState;
     });
   };
 
+  // ------------------------------
   // Scroll Header
+  // ------------------------------
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollCheck = window.scrollY > 100;
-      setScroll(scrollCheck);
-    };
-
+    const handleScroll = () => setScroll(window.scrollY > 100);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // ------------------------------
+  // 🧠 Render
+ 
+  // ------------------------------
+  // Main Layout
+  // ------------------------------
   return (
-    <>
-      <div className="relative">
-        <CombinedButtons
-          whatsappProps={{
-            phoneNumber: "1234567890",
-            message: "Bonjour je souhaite faire une réservation",
-          }}
-          reservationFormId="reservation-form"
-        />
-        <PageHead headTitle={headTitle} />
-        {!headerStyle && (
-          <Header1 handleMobileMenu={handleMobileMenu} scroll={undefined} />
-        )}
-        {headerStyle === 1 && (
-          <Header1 scroll={scroll} handleMobileMenu={handleMobileMenu} />
-        )}
-        {headerStyle === 2 && <Header2 scroll={scroll} />}
-        {headerStyle === 3 && (
-          <Header3 scroll={scroll} handleMobileMenu={handleMobileMenu} />
-        )}
-        {headerStyle === 4 && <Header4 />}
-        {headerStyle === 5 && (
-          <Header5 scroll={scroll} handleMobileMenu={handleMobileMenu} />
-        )}
-        {headerStyle === 6 && (
-          <Header6 scroll={scroll} handleMobileMenu={handleMobileMenu} />
-        )}
-        {headerStyle === 7 && (
-          <Header7 scroll={scroll} handleMobileMenu={handleMobileMenu} />
-        )}
+    <div className="relative fade-in transition-opacity duration-700">
+      <CombinedButtons
+        whatsappProps={{
+          phoneNumber: "1234567890",
+          message: "Bonjour je souhaite faire une réservation",
+        }}
+        reservationFormId="reservation-form"
+      />
 
-        <main>
-          {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
-          {children}
-        </main>
+      <PageHead headTitle={headTitle} />
 
-        {!noFooter && <Footer />}
+      {!headerStyle && <Header1 handleMobileMenu={handleMobileMenu} scroll={undefined} />}
+      {headerStyle === 1 && <Header1 scroll={scroll} handleMobileMenu={handleMobileMenu} />}
+      {headerStyle === 2 && <Header2 scroll={scroll} />}
+      {headerStyle === 3 && <Header3 scroll={scroll} handleMobileMenu={handleMobileMenu} />}
+      {headerStyle === 4 && <Header4 />}
+      {headerStyle === 5 && <Header5 scroll={scroll} handleMobileMenu={handleMobileMenu} />}
+      {headerStyle === 6 && <Header6 scroll={scroll} handleMobileMenu={handleMobileMenu} />}
+      {headerStyle === 7 && <Header7 scroll={scroll} handleMobileMenu={handleMobileMenu} />}
 
-        <BackToTop />
-      </div>
-    </>
+      <main>
+        {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
+        {children}
+      </main>
+
+      {!noFooter && <Footer />}
+      <BackToTop />
+    </div>
   );
 }

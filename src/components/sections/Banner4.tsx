@@ -17,7 +17,7 @@ export default function HeroSection() {
         muted
         playsInline
       >
-        <source src="/test1.mov" type="video/mp4" />
+        <source src="https://player.vimeo.com/progressive_redirect/playback/1096483360/rendition/1080p/file.mp4?loc=external&signature=0271e61948a95da8f76b944243a7821756333f2dfa6d57f28288590d1ed3dc9b" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
