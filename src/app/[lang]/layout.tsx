@@ -13,6 +13,7 @@ import "../../../public/assets/css/spacing.css"
 import "../../../public/assets/css/style.css"
 import "../../../public/assets/css/swiper-bundle.min.css"
 import { ToastContainer } from "react-toastify";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -89,7 +90,8 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${merriweather.variable} antialiased relative`}
       >
-        <div className="overflow-x-hidden">{children}</div>
+        <Suspense fallback={<div>Loading...</div>}>
+        <div className="overflow-x-hidden">{children}</div></Suspense>
         
         <ToastContainer
           position="top-right"
