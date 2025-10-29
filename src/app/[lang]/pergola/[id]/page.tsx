@@ -104,7 +104,7 @@ const Pergola = () => {
                   </div>
                 </div>
               </section>
-              <section className="py-24 bg-[#202020]">
+              <section className="py-24 bg-[#272727]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-[#BD9A68] font-semibold tracking-widest uppercase text-sm mb-4">Galerie</p>

@@ -124,14 +124,22 @@ export const chalets = [
 
     gallery: {
       chambres: [
-        "/images/chalets/toubkal/1.jpg",
-        "/images/chalets/toubkal/2.jpg",
-        "/images/chalets/toubkal/3.jpg",
+        "/images/chalets/toubkal/c5.jpg",
+        "/images/chalets/toubkal/c6.jpg",
+        "/images/chalets/toubkal/c8.jpg",
+        "/images/chalets/toubkal/c9.jpg",
+        "/images/chalets/toubkal/c10.jpg",
+        "/images/chalets/toubkal/c7.jpg",
       ],
-      salon: ["/images/chalets/toubkal/s1.jpg", "/images/chalets/toubkal/s2.jpg", "/images/chalets/toubkal/s3.jpg", "/images/chalets/toubkal/s4.jpg"],
-      exterieure: [
-        "/images/chalets/toubkal/e1.jpg",
-        "/images/chalets/toubkal/e2.jpg",
+      salon: [
+        "/images/chalets/toubkal/s1.jpg", 
+        "/images/chalets/toubkal/s2.jpg", "/images/chalets/toubkal/s3.jpg", "/images/chalets/toubkal/s4.jpg"],
+       exterieure: [
+        "/images/chalets/scandinave/e1.jpg",
+        "/images/chalets/scandinave/e2.jpg",
+        "/images/chalets/scandinave/e3.jpg",
+        "/images/chalets/scandinave/e4.jpg",
+        "/images/chalets/scandinave/e5.jpg",
       ],
     },
   },
@@ -182,12 +190,27 @@ features: [
 
     gallery: {
       chambres: [
-        "/images/villas/mm/1.jpg",
-        "/images/villas/mm/2.jpg",
-        "/images/villas/mm/3.jpg",
+        "/images/chalets/mm/c7.jpg",
+        "/images/chalets/mm/c8.jpg",
       ],
-      salon: ["/images/villas/mm/s1.jpg", "/images/villas/mm/s2.jpg"],
-      exterieure: ["/images/villas/mm/e1.jpg", "/images/villas/mm/e2.jpg"],
+      salon: [
+        "/images/chalets/mm/s1.jpg", 
+        "/images/chalets/mm/s2.jpg",
+        "/images/chalets/mm/s3.jpg",
+        "/images/chalets/mm/s4.jpg",
+        "/images/chalets/mm/s5.jpg",
+        "/images/chalets/mm/s6.jpg"
+         
+      ],
+      exterieure: [
+        "/images/chalets/mm/e9.jpg",
+        "/images/chalets/mm/e10.jpg",
+        "/images/chalets/mm/e11.jpg",
+        "/images/chalets/mm/e12.jpg",
+        "/images/chalets/mm/e13.jpg",
+        "/images/chalets/mm/e14.jpg",
+        "/images/chalets/mm/e14.jpg",
+      ],
     },
   },
   {
@@ -237,17 +260,25 @@ features: [
 
     gallery: {
       chambres: [
-        "/images/villas/moroccan/1.jpg",
-        "/images/villas/moroccan/2.jpg",
-        "/images/villas/moroccan/3.jpg",
+        "/images/chalets/marroc/c6.jpg",
+        "/images/chalets/marroc/c7.jpg",
+        "/images/chalets/marroc/c8.jpg",
+        "/images/chalets/marroc/c9.jpg",
       ],
       salon: [
-        "/images/villas/moroccan/s1.jpg",
-        "/images/villas/moroccan/s2.jpg",
+        "/images/chalets/marroc/s1.jpg",
+        "/images/chalets/marroc/s2.jpg",
+        "/images/chalets/marroc/s3.jpg",
+        "/images/chalets/marroc/s4.jpg",
+        "/images/chalets/marroc/s5.jpg",
       ],
       exterieure: [
-        "/images/villas/moroccan/e1.jpg",
-        "/images/villas/moroccan/e2.jpg",
+        "/images/chalets/mm/e9.jpg",
+        "/images/chalets/mm/e10.jpg",
+        "/images/chalets/mm/e11.jpg",
+        "/images/chalets/mm/e12.jpg",
+        "/images/chalets/mm/e13.jpg",
+        
       ],
     },
   },

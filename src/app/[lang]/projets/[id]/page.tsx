@@ -15,13 +15,55 @@ import { chalets } from "@/lib/projects";
 import ChaletGallery from "@/components/elements/ChaletGallery";
 import Newsletter from "@/components/sections/Newsletter";
 import { useMemo } from "react";
-import { Play } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, X } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { motion, AnimatePresence } from "framer-motion";
 
+interface ChaletGalleryProps {
+  gallery: {
+    chambres: string[];
+    salon: string[];
+    exterieure: string[];
+  };
+}
 const BlogDetails: React.FC = () => {
   const [project, setProject] = useState<any | null>(null);
   const [open, setOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState<"chambres" | "salon" | "exterieure">("chambres");
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
+  const categories = ["chambres", "salon", "exterieure"] as const;
+
+  const handlePrevImage = () => {
+    if (selectedImageIndex !== null) {
+      setSelectedImageIndex(
+        (selectedImageIndex - 1 + project.gallery[activeTab].length) % project.gallery[activeTab].length
+      );
+    }
+  };
+
+  const handleNextImage = () => {
+    if (selectedImageIndex !== null) {
+      setSelectedImageIndex((selectedImageIndex + 1) % project.gallery[activeTab].length);
+    }
+  };
+
+  const handleImageClick = (index: number) => {
+    setSelectedImageIndex(index);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedImageIndex(null);
+  };
+
+  // Allow closing modal with "Esc"
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") handleCloseModal();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
   const modelId = "cb3PdBNtPt9"; // Replace with your actual Matterport model ID
 
   const mpUrl = useMemo(() => {
@@ -51,7 +93,7 @@ const BlogDetails: React.FC = () => {
 
   return (
     <Layout headerStyle={7}>
-      <section className={`max-h-screen ${project?.hero}`}>
+      <section className={`max-h-screen  ${project?.hero}`}>
         <div className="">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
@@ -96,46 +138,55 @@ const BlogDetails: React.FC = () => {
           </Link>
         </div>
       </section>
-      {project?.visit &&
-      <>
-        <div className="video-area-two" id="matterport">
-          {" "}
-          <div className="container">
+      {project?.visit && (
+        <>
+          <div className="video-area-two" id="matterport">
             {" "}
-            <div className="row">
+            <div className="container">
               {" "}
-              <div className="col-12">
+              <div className="row">
                 {" "}
-                <div className={`${project?.bg3d}`}>
-                   <div className="absolute bottom-10 right-50% bg-black/20 lg:px-20 px-8 flex flex-col items-center justify-center py-2 rounded-full">
-                <img src="/images/logo.png" alt=""  className="lg:w-24 w-16 h-auto "/>
-                  <span className=" text-white text-center text-3xl py-2 font-serif">{project?.title}</span>
-                  <h4 className=" text-white text-center">Visite virtuelle </h4>
-                </div>
+                <div className="col-12">
+                  {" "}
+                  <div className={`${project?.bg3d}`}>
+                    <div className="absolute bottom-10 right-50% bg-black/20 lg:px-20 px-8 flex flex-col items-center justify-center py-2 rounded-full">
+                      <img
+                        src="/images/logo.png"
+                        alt=""
+                        className="lg:w-24 w-16 h-auto "
+                      />
+                      <span className=" text-white text-center text-3xl py-2 font-serif">
+                        {project?.title}
+                      </span>
+                      <h4 className=" text-white text-center">
+                        Visite virtuelle{" "}
+                      </h4>
+                    </div>
 
-                  <div
-                    onClick={() => setOpen(true)}
-                    className="flex  items-center justify-center border-white border-4 hover:bg-amber-700 cursor-pointer text-white bg-amber-800/50  rounded-full w-16 h-16 transition-all duration-300"
-                  >
-                    <Play size={32} />
-                  </div>
+                    <div
+                      onClick={() => setOpen(true)}
+                      className="flex  items-center justify-center border-white border-4 hover:bg-amber-700 cursor-pointer text-white bg-amber-800/50  rounded-full w-16 h-16 transition-all duration-300"
+                    >
+                      <Play size={32} />
+                    </div>
+                  </div>{" "}
                 </div>{" "}
               </div>{" "}
             </div>{" "}
-          </div>{" "}
-        </div>
+          </div>
 
-        {/* Dialog for Matterport Viewer */}
-        <Dialog open={open} onOpenChange={setOpen}>
-          <DialogContent className=" !w-[90vw] !max-w-[1200px]  h-[80vh] p-0 overflow-hidden">
-            <iframe
-              src={mpUrl}
-              allowFullScreen
-              className="w-full h-full border-0"
-            />
-          </DialogContent>
-        </Dialog>
-      </>}
+          {/* Dialog for Matterport Viewer */}
+          <Dialog open={open} onOpenChange={setOpen}>
+            <DialogContent className=" !w-[90vw] !max-w-[1200px]  h-[80vh] p-0 overflow-hidden">
+              <iframe
+                src={mpUrl}
+                allowFullScreen
+                className="w-full h-full border-0"
+              />
+            </DialogContent>
+          </Dialog>
+        </>
+      )}
       {project && (
         <>
           {/* project-details-area */}
@@ -145,24 +196,24 @@ const BlogDetails: React.FC = () => {
                 <div className="grid lg:grid-cols-2 grid-cols-1">
                   <div className="w-full">
                     <div className="project-details-title">
-                      
-                     <span className=" text-black text-center lg:text-7xl text-4xl py-2 font-serif">{project?.title}</span>
+                      <span className=" text-black text-center lg:text-7xl text-4xl py-2 font-serif">
+                        {project?.title}
+                      </span>
 
-                     <div className="">
+                      <div className="">
                         <h1 className="font-light w-full text-gray-200">
-                          À partir de {" "}
-                          <span className="ted text-amber-400">{project?.price}</span>
-                     
+                          À partir de{" "}
+                          <span className="ted text-amber-400">
+                            {project?.price}
+                          </span>
                         </h1>
-                        
                       </div>
                     </div>
-                    
                   </div>
-                  
+
                   <div className="">
                     <div className="">
-                       <h3>{project.location}</h3>
+                      <h3>{project.location}</h3>
                       <p>{project.description || ""}</p>
                     </div>
                   </div>
@@ -193,8 +244,100 @@ const BlogDetails: React.FC = () => {
                 </div>
               </section>
             </div>
+            <div className="bg-[#272727] py-4 relative">
+              <div className="w-full mt-6 container my-16 ">
+      {/* Title */}
+      <div className="w-full flex justify-center my-10 text-center">
+        <div className="section-title">
+          <h2 className="title text-white">Galerie</h2>
+        </div>
+      </div>
 
-            <ChaletGallery gallery={project.gallery} />
+      {/* Tabs */}
+      <div className="flex gap-4 border-b border-gray-300 pb-2 mb-4 justify-center items-center">
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            onClick={() => setActiveTab(cat)}
+            className={`capitalize px-4 py-2 text-sm font-medium rounded-t-lg transition-all ${
+              activeTab === cat ? "bg-[#BD9A68] text-white" : "text-gray-900 hover:text-[#BD9A68]"
+            }`}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      {/* Gallery Grid */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {project.gallery[activeTab].map((img:any, i:any) => (
+          <img
+            key={i}
+            onClick={() => handleImageClick(i)}
+            src={img}
+            alt={`${activeTab} ${i}`}
+            className="rounded-lg object-cover w-full h-40 md:h-56 cursor-pointer hover:scale-105 transition-transform duration-300"
+          />
+        ))}
+      </div>
+
+      {/* Modal Viewer */}
+      <AnimatePresence>
+        {selectedImageIndex !== null && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 puts"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={handleCloseModal}
+          >
+            {/* Close Button */}
+            <button
+              onClick={handleCloseModal}
+              className="absolute top-5 right-5 text-white hover:text-gray-300 z-50"
+            >
+              <X className="w-8 h-8" />
+            </button>
+
+            {/* Prev Button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handlePrevImage();
+              }}
+              className="absolute left-5 text-white hover:text-gray-300 z-50"
+            >
+              <ChevronLeft className="w-10 h-10" />
+            </button>
+
+            {/* Image */}
+            <motion.img
+              key={selectedImageIndex}
+              src={project.gallery[activeTab][selectedImageIndex]}
+              alt={`Image ${selectedImageIndex + 1}`}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.3 }}
+              className="max-w-7xl max-h-[90vh] object-contain rounded-lg shadow-lg cursor-auto"
+              onClick={(e) => e.stopPropagation()}
+            />
+
+            {/* Next Button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handleNextImage();
+              }}
+              className="absolute right-5 text-white hover:text-gray-300 z-50"
+            >
+              <ChevronRight className="w-10 h-10" />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+            </div>
             {/* plan-area */}
             <div className="plan-area section-py-140">
               <div className="container">
@@ -226,10 +369,7 @@ const BlogDetails: React.FC = () => {
                 <div className="file-wrap">
                   <ul className="list-wrap">
                     <li>
-                      <Link
-                        href={"#"}
-                       download={project?.pdf}
-                      >
+                      <Link href={"#"} download={project?.pdf}>
                         <i className="flaticon-010-pdf" />
                         Télécharger La Brochure
                       </Link>
