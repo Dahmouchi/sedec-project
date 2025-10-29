@@ -2910,9 +2910,12 @@ label {
     position  : relative;
 }
 .puts{
-    z-index: 999;
+    z-index: 9999;
 }
 
+.puts1{
+    z-index: 999;
+}
 /*=============================
 	15. Features
 ===============================*/

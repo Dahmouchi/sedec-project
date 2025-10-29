@@ -48,11 +48,7 @@ export default function GalleryPage() {
   console.log(selectedCategory)
   const handleCategoryChange = (category: string) => {
      console.log(category)
-    if (category === "all") {
-      router.push("/galerie")
-    } else {
-      router.push(`/galerie?category=${category}`)
-    }
+    
   }
 
   return (
