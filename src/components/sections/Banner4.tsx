@@ -5,26 +5,11 @@ import Link from "next/link";
 
 export default function HeroSection() {
   const pathname = usePathname();
-const handleAnimationComplete = () => {
-  console.log('All letters have animated!');
-}
+
   return (
     <section className="banner-area-five banner-bg-four relative max-h-screen overflow-hidden">
       {/* Background Video */}
-      <video
-        key={pathname}
-        className="absolute top-0 left-0 w-full h-full object-cover z-[-2]"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source
-          src="https://pub-060265d5b1f645428fcbed1375c4fe21.r2.dev/booking/hero.MOV"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
+     
 
       {/* Overlay (optional to improve text contrast) */}
 

@@ -1,6 +1,5 @@
 "use client"
 
-import { useRouter } from "next/navigation"
 import Gallery from "@/components/Gallery"
 import Layout from "@/components/layouts/Layout"
 import Link from "next/link"
@@ -41,9 +40,7 @@ const images = [
 const categories = ["charpente", "pergola", "villa-scandinave"]
 
 export default function GalleryPage() {
-  const searchParams = ["all"]
-  const router = useRouter()
-
+ 
   const selectedCategory =  "all"
   console.log(selectedCategory)
   const handleCategoryChange = (category: string) => {
