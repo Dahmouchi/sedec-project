@@ -2,7 +2,6 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import SplitText from "../SplitText";
 
 export default function HeroSection() {
   const pathname = usePathname();
