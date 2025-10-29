@@ -128,7 +128,7 @@ const Pergola = () => {
           </div>
 
           <div className="text-center">
-            <Link href={"galerie"} className="bg-[#BD9A68] text-white w-fit px-8 py-4 rounded-lg hover:bg-[#A68A5A] transition flex items-center gap-2 font-semibold mx-auto">
+            <Link href={"/galerie"} className="bg-[#BD9A68] text-white w-fit px-8 py-4 rounded-lg hover:bg-[#A68A5A] transition flex items-center gap-2 font-semibold mx-auto">
               Voir la Galerie Complète <ArrowRight size={20} />
             </Link>
           </div>
