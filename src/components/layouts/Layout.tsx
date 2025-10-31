@@ -64,6 +64,7 @@ export default function Layout({
   // ------------------------------
   const [isMobileMenu, setMobileMenu] = useState(false);
   const handleMobileMenu = () => {
+    console.log("tes")
     setMobileMenu((prev) => {
       const newState = !prev;
       document.body.classList.toggle("mobile-menu-visible", newState);
