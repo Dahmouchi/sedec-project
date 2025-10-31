@@ -15,6 +15,7 @@ import Header6 from "./Header6";
 import Header7 from "./Header7";
 import PageHead from "./PageHead";
 import WhatsappShare from "../whatsappShare";
+import { QuickAccessButton } from "../quik";
 
 interface LayoutProps {
   headerStyle?: number;
@@ -88,13 +89,7 @@ export default function Layout({
   // ------------------------------
   return (
     <div className="relative fade-in transition-opacity duration-700">
-      <CombinedButtons
-        whatsappProps={{
-          phoneNumber: "1234567890",
-          message: "Bonjour je souhaite faire une réservation",
-        }}
-        reservationFormId="reservation-form"
-      />
+      <QuickAccessButton />
 
       <PageHead headTitle={headTitle} />
 

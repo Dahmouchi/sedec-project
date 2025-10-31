@@ -51,24 +51,89 @@ export const bat = [
     },
   ],
     gallery: [
-      "/images/chalets/scandinave/1.jpg",
-        "/images/chalets/scandinave/2.jpg",
-        "/images/chalets/scandinave/3.jpg",
-        "/images/chalets/scandinave/4.jpg",
-        "/images/chalets/scandinave/5.jpg",
-        "/images/chalets/scandinave/6.jpg",
-        "/images/chalets/scandinave/7.jpg",
-         "/images/chalets/scandinave/s1.jpg",
-        "/images/chalets/scandinave/s2.jpg",
-        "/images/chalets/scandinave/s3.jpg",
-        "/images/chalets/scandinave/s4.jpg",
-        "/images/chalets/scandinave/s5.jpg",
-        "/images/chalets/scandinave/s6.jpg",
-        "/images/chalets/scandinave/e1.jpg",
-        "/images/chalets/scandinave/e2.jpg",
-        "/images/chalets/scandinave/e3.jpg",
-        "/images/chalets/scandinave/e4.jpg",
-        "/images/chalets/scandinave/e5.jpg",
+      "/images/merc/img71.jpg",
+        "/images/merc/img76.jpg",
+        "/images/merc/img81.jpg",
+        "/images/merc/img86.jpg",
+        "/images/merc/img91.jpg",
+        "/images/merc/img96.jpg",
+        "/images/merc/img101.jpg",
+         "/images/merc/img106.jpg",
+        "/images/merc/img111.jpg",
+        "/images/merc/img116.jpg",
+        "/images/merc/img121.jpg",
+        "/images/merc/img126.jpg",
+        "/images/merc/img166.jpg",
+        "/images/merc/img171.jpg",
+        "/images/merc/img176.jpg",
+        
+    ],
+  },
+   {
+    id: "modulaire-metallique",
+    title: "Modulaire métallique",
+    img: "10.jpg",
+    status: "Complete",
+    visit: false,
+    bg3d: "video-bg2",
+    maquette: "/reel/passerelle_corten.jpg",
+    pdf: "/PROJET-CHT03-M&M.pdf",
+    hero: "banner-area-fivemetallique banner-bg-fourmetallique",
+    type: "Villa",
+    price: "1.4M MAD",
+    
+  subtitle: "Robustesse, flexibilité et modernité",
+  location:
+    "Des espaces conçus pour s’adapter à vos besoins professionnels, combinant performance et design industriel.",
+  description:
+    "Sedec propose des modules métalliques préfabriqués, parfaits pour les chantiers, bureaux temporaires ou bâtiments permanents. Une solution rapide, durable et élégante qui allie efficacité, confort et esthétisme.",
+  features: [
+    {
+      icon: Layers,
+      title: "Structure métallique durable",
+      detail:
+        "Fabriqués à partir d’acier galvanisé de haute qualité, nos modules garantissent une résistance optimale aux conditions climatiques et à l’usure du temps.",
+    },
+    {
+      icon: Wrench,
+      title: "Installation rapide",
+      detail:
+        "Grâce à leur conception modulaire, les unités sont montées et démontées facilement, réduisant considérablement les délais de construction.",
+    },
+    {
+      icon: Ruler,
+      title: "Personnalisation complète",
+      detail:
+        "Aménagements intérieurs sur mesure, finitions variées et options d’isolation pour répondre à toutes les exigences professionnelles.",
+    },
+    
+  ],
+
+     gallery: [
+       "/images/merc/img166.jpg",
+        "/images/merc/img171.jpg",
+        "/images/merc/img176.jpg",
+        "/images/merc/img43.jpg",
+        "/images/merc/img28.jpg",
+        "/images/merc/img25.jpg",
+        "/images/merc/img31.jpg",
+        "/images/merc/img37.jpg",
+        "/images/merc/img40.jpg",
+      "/images/merc/img71.jpg",
+        "/images/merc/img76.jpg",
+        "/images/merc/img81.jpg",
+        "/images/merc/img86.jpg",
+        "/images/merc/img91.jpg",
+        "/images/merc/img96.jpg",
+        "/images/merc/img101.jpg",
+         "/images/merc/img106.jpg",
+        "/images/merc/img111.jpg",
+        "/images/merc/img116.jpg",
+        "/images/merc/img121.jpg",
+        "/images/merc/img126.jpg",
+       
+
+        
     ],
   },
   {
@@ -134,66 +199,6 @@ export const bat = [
         "/images/chalets/scandinave/e5.jpg",
     ],
   },
-  {
-    id: "modulaire-metallique",
-    title: "Modulaire métallique",
-    img: "10.jpg",
-    status: "Complete",
-    visit: false,
-    bg3d: "video-bg2",
-    maquette: "/reel/passerelle_corten.jpg",
-    pdf: "/PROJET-CHT03-M&M.pdf",
-    hero: "banner-area-fivemetallique banner-bg-fourmetallique",
-    type: "Villa",
-    price: "1.4M MAD",
-    
-  subtitle: "Robustesse, flexibilité et modernité",
-  location:
-    "Des espaces conçus pour s’adapter à vos besoins professionnels, combinant performance et design industriel.",
-  description:
-    "Sedec propose des modules métalliques préfabriqués, parfaits pour les chantiers, bureaux temporaires ou bâtiments permanents. Une solution rapide, durable et élégante qui allie efficacité, confort et esthétisme.",
-  features: [
-    {
-      icon: Layers,
-      title: "Structure métallique durable",
-      detail:
-        "Fabriqués à partir d’acier galvanisé de haute qualité, nos modules garantissent une résistance optimale aux conditions climatiques et à l’usure du temps.",
-    },
-    {
-      icon: Wrench,
-      title: "Installation rapide",
-      detail:
-        "Grâce à leur conception modulaire, les unités sont montées et démontées facilement, réduisant considérablement les délais de construction.",
-    },
-    {
-      icon: Ruler,
-      title: "Personnalisation complète",
-      detail:
-        "Aménagements intérieurs sur mesure, finitions variées et options d’isolation pour répondre à toutes les exigences professionnelles.",
-    },
-    
-  ],
-
-    gallery: [
-      "/images/chalets/scandinave/1.jpg",
-        "/images/chalets/scandinave/2.jpg",
-        "/images/chalets/scandinave/3.jpg",
-        "/images/chalets/scandinave/4.jpg",
-        "/images/chalets/scandinave/5.jpg",
-        "/images/chalets/scandinave/6.jpg",
-        "/images/chalets/scandinave/7.jpg",
-         "/images/chalets/scandinave/s1.jpg",
-        "/images/chalets/scandinave/s2.jpg",
-        "/images/chalets/scandinave/s3.jpg",
-        "/images/chalets/scandinave/s4.jpg",
-        "/images/chalets/scandinave/s5.jpg",
-        "/images/chalets/scandinave/s6.jpg",
-        "/images/chalets/scandinave/e1.jpg",
-        "/images/chalets/scandinave/e2.jpg",
-        "/images/chalets/scandinave/e3.jpg",
-        "/images/chalets/scandinave/e4.jpg",
-        "/images/chalets/scandinave/e5.jpg",
-    ],
-  },
+ 
  
 ];

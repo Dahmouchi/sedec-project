@@ -53,7 +53,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                 <Menu className={`${scroll ? "w-14 text-black":"w-14 text-white"}`} />
               </div>
             </div>
-            <div className="row">
+            <div className=" hidden lg:block">
               <div className="col-12">
                 <div className="menu-wrap">
                   <nav className="menu-nav">
@@ -342,7 +342,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                                    <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
                                       
                                     <img
-                                      src="/images/reel/charpente-ossature-metallique.jpg"
+                                      src="/images/merc/img101.jpg"
                                       alt="Chalet Toubkal"
                                       className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                     /></div>

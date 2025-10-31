@@ -14,6 +14,7 @@ import Video2 from "@/components/sections/Video2"
 import Services from "@/components/sections/Services";
 import About from "@/components/sections/About";
 import Destination3 from "@/components/sections/Gallery";
+import Test from "@/components/sections/Test";
 
 export default async function Page({
   params,
@@ -27,6 +28,7 @@ export default async function Page({
             <Layout headerStyle={7}>
                 <Banner4 />
                 <Video2 />
+                <Test />
                 <About />
                 {/*<Brand />
                 <div className="section-pb-140"></div>*/}

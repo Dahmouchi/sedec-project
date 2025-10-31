@@ -9,6 +9,14 @@
     "location":"Solidité et esthétisme"
 
   },
+    {
+    "id": "modulaire-metallique",
+    "title": "Modulaire métallique",
+    "img": "/merc/img101.jpg",
+    "status": "Under Construction",
+    "type": "Chalet",
+    "location":       "RSécurité et raffinement"
+  },
   {
     "id": "durisol ",
     "title": "Durisol",
@@ -17,15 +25,8 @@
     "type": "Chalet",
     "location": "Innovation, isolation, écologie"
       
-  },
-  {
-    "id": "modulaire-metallique",
-    "title": "Modulaire métallique",
-    "img": "/reel/charpente-ossature-metallique.jpg",
-    "status": "Under Construction",
-    "type": "Chalet",
-    "location":       "RSécurité et raffinement"
   }
+
  
 
 ]
