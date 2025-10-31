@@ -94,7 +94,7 @@ export function QuickAccessButton() {
           isOpen ? "bg-[#c87704] hover:bg-[#ce8a2b] rotate-45" : "bg-[#BD9A68] hover:bg-[#BD9A68]"
         } text-white`}
       >
-        <img src={"/images/logoWhite.png"} alt="logo"/>
+        <img src={"/images/logowhite.png"} alt="logo"/>
       </div>
     </div>
   )
