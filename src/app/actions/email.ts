@@ -157,7 +157,7 @@ export async function SendContactForm(formData: FormData) {
     </div>
     
     <div class="footer">
-      © ${new Date().getFullYear()} Belfort Center. Tous droits réservés.
+      © ${new Date().getFullYear()} SEDEC. Tous droits réservés.
     </div>
   </div>
 </body>
@@ -166,7 +166,7 @@ export async function SendContactForm(formData: FormData) {
 
 
     await sendEmail(
-      "hassandahmouchi0@gmail.com",
+      "contact@sedec.ma",
       "Nouvelle demande de contact",
       emailContent
     );
