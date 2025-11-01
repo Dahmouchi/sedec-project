@@ -31,17 +31,17 @@ const Pergola = () => {
           <div className="">
             <div className="row justify-content-center">
               <div className="col-xl-8 col-lg-10">
-                <div className="banner-content">
+                <div className="banner-content lg:px-0 px-4">
                   <h1
                     className=" wow  fadeInUp  text-white text-center"
                     data-wow-delay=".2s"
                   >
-                    <span className="text-2xl lg:text-6xl">
+                    <span className="text-4xl lg:text-6xl">
                       {project?.subtitle}
                     </span>
                   </h1>
                   <div className="text-center text-white">
-                    <h2 className="text-3xl text-white font-serif font-bold mb-2">
+                    <h2 className="text-xl text-white font-serif font-bold mb-2">
                       {project?.title}
                     </h2>
                   </div>

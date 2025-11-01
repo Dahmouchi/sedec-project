@@ -36,7 +36,7 @@ const handleToggle = (key) => { if (isActive.key === key) { setIsActive({ status
           className={isActive.key === "1" ? "dropdown-btn open" : "dropdown-btn"}
           onClick={() => handleToggle("1")}
         >
-          <span className="fas fa-angle-down" />
+          <span className="fas fa-angle-down text-white" />
         </div>
       </li>
 
@@ -58,7 +58,7 @@ const handleToggle = (key) => { if (isActive.key === key) { setIsActive({ status
           className={isActive.key === "2" ? "dropdown-btn open" : "dropdown-btn"}
           onClick={() => handleToggle("2")}
         >
-          <span className="fas fa-angle-down" />
+          <span className="fas fa-angle-down text-white" />
         </div>
       </li>
 
@@ -77,7 +77,7 @@ const handleToggle = (key) => { if (isActive.key === key) { setIsActive({ status
           className={isActive.key === "3" ? "dropdown-btn open" : "dropdown-btn"}
           onClick={() => handleToggle("3")}
         >
-          <span className="fas fa-angle-down" />
+          <span className="fas fa-angle-down text-white" />
         </div>
       </li>
 <li>

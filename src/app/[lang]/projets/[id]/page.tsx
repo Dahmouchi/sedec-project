@@ -210,12 +210,12 @@ const BlogDetails: React.FC = () => {
                         </span>
 
                         <div className="">
-                          <h1 className="font-light w-full text-gray-200">
+                          <h3 className="font-light w-full text-gray-200">
                             À partir de{" "}
                             <span className="ted text-amber-400">
                               {project?.price}
                             </span>
-                          </h1>
+                          </h3>
                         </div>
                       </div>
                     </div>

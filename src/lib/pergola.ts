@@ -37,7 +37,7 @@ export const pergola = [
     type: "Villa",
     hero: "banner-area-fivepergola banner-bg-fourpergola",
     pdf: "/DEVIS-PHASE-01-AHA-CONCEPT.pdf",
-    subtitle: "L’art du confort en plein air.",
+    subtitle: "L’art du confort en plein air",
     location: "L’art du confort en plein air",
     // 🌿 Pergola
     description:
