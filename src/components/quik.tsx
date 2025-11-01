@@ -25,7 +25,7 @@ const WhatsAppIcon = () => (
       color: "bg-green-500 hover:bg-green-600",
       action: () => {
         const phoneNumber = "+212762744707"
-        const message = encodeURIComponent("Bonjour je souhaite faire une réservation")
+        const message = encodeURIComponent("Bonjour SEDEC, je souhaite prendre un rendez-vous")
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank")
       },
     },
@@ -33,7 +33,7 @@ const WhatsAppIcon = () => (
       id: "phone",
       icon: Phone,
       label: "Phone",
-      color: "bg-blue-500 hover:bg-blue-600",
+      color: "bg-[#604928] hover:bg-[#8c6f45]",
       action: () => {
         window.location.href = "tel:+212762744707"
       },

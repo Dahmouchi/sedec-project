@@ -31,10 +31,10 @@ export default function HeroSection() {
             <div className="banner-content text-center">
             
               <h1
-                className="title wow fadeInUp text-white pt-24"
+                className=" wow fadeInUp text-white lg:pt-24 px-8"
                 data-wow-delay=".2s"
-              >Ensemble, construisons vos projets en bois et matériaux durables
-                <span className="text-2xl lg:text-6xl">
+              ><span className="text-4xl lg:text-7xl">Ensemble, construisons vos projets en bois et matériaux durables
+                
                   
                 </span>
               </h1>

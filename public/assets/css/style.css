@@ -52,7 +52,7 @@
     --tg-body-font-family     : 'Montserrat', sans-serif;
     --tg-heading-font-family  : 'Vidaloka', serif;
     --tg-primary-color        : #BD9A68;
-    --tg-secondary-color      : #202020;
+    --tg-secondary-color      : #0a0909;
     --tg-body-background-color: #FEFFFB;
     --tg-secondary-background : #F9FAF1;
     --tg-body-font-color      : #797978;
@@ -2698,7 +2698,11 @@ label {
         font-size: 38px; /* Adjust this size for mobile */
     }
 }
-
+@media (min-width: 1388px) {
+     .title {
+        font-size: 8px; /* Adjust this size for mobile */
+    }
+}
 /* Optional: Extra small screens */
 @media (max-width: 480px) {
     .section-title .title {
@@ -3748,7 +3752,7 @@ label {
     display       : flex;
     flex-direction: column-reverse;
     align-items   : center;
-    width         : 414px;
+    width         : 370px;
     height        : 318px;
     flex          : 0 0 auto;
     align-self    : flex-start;

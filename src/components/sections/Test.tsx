@@ -38,7 +38,7 @@ const Test = () => {
         <li className="flex flex-col items-center text-center w-full ">
           <Link href="/pergola" className="block">
             <img
-              src="/images/reel/Pergola.jpg"
+              src="/images/reel/pergola.jpg"
               alt="Chalet M&M"
               className="w-full h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />

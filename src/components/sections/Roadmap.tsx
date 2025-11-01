@@ -1,25 +1,23 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { SwiperOptions } from "swiper/types";
+import { useRef } from "react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { ArrowBigRight } from "lucide-react";
 
 const swiperOptions: SwiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
   slidesPerView: 5,
   spaceBetween: 30,
   direction: "horizontal", // ✅ scrolls left to right
-  autoplay: {
-    delay: 4500,
-    disableOnInteraction: false,
-  },
   loop: false, // ✅ stop at the last slide
-
   navigation: {
     nextEl: ".h1n",
     prevEl: ".h1p",
@@ -40,6 +38,19 @@ const swiperOptions: SwiperOptions = {
 };
 
 const Roadmap = () => {
+  const swiperRef = useRef<any>(null);
+
+  const handleNextSlide = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+  const handlePreviesSlide = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+
   return (
     <section className="roadmap-area my-8 lg:my-32">
       <div className="container">
@@ -53,14 +64,27 @@ const Roadmap = () => {
         </div>
       </div>
 
-      <div className="row g-0">
+      <div className="row g-0 relative">
+         <div className="flex justify-between items-center mt-6 w-full absolute top-1/2 -translate-y-1/2 px-4 puts lg:px-16">
+          <div
+                  onClick={handlePreviesSlide}
+                  className="bg-[#BD9A68] rounded-full hover:bg-[#d18316] text-white font-medium py-3 px-6  transition-colors duration-200 flex items-center gap-2"
+                >
+                  <ArrowBigRight className="w-4 h-4 rotate-180" />
+                </div>
+                <div
+                  onClick={handleNextSlide}
+                  className="bg-[#BD9A68] hover:bg-[#d18316] text-white font-medium py-3 px-6 rounded-full transition-colors duration-200 flex items-center gap-2"
+                >
+                  <ArrowBigRight className="w-4 h-4" />
+                </div>
+              </div>
         <div className="col-lg-12">
           <div className="roadmap-wrap">
             <div className="swiper-container roadmap-active">
-                           
-
               <Swiper
                 {...swiperOptions}
+                ref={swiperRef}
                 className="swiper-wrapper py-10"
                 onReachEnd={(swiper) => {
                   swiper.autoplay.stop(); // ✅ stop autoplay at last slide
@@ -68,7 +92,7 @@ const Roadmap = () => {
               >
                 {/* === SLIDES === */}
                 <SwiperSlide>
-                  <div className="roadmap-item ml-16">
+                  <div className="roadmap-item lg:ml-16">
                     <h4 className="title">1948</h4>
                     <div className="roadmap-content">
                       <span className="dot" />
@@ -118,8 +142,7 @@ const Roadmap = () => {
                         <p>
                           Implantation de la première unité de fabrication des
                           charpentes en bois lamellé-collé au Maroc, une
-                          technique à haute performance adaptée aux grandes
-                          portées et aux architectures complexes.
+                          technique à haute performance.
                         </p>
                         <span>Première unité lamellé-collé</span>
                       </div>
@@ -164,8 +187,7 @@ const Roadmap = () => {
                         <p>
                           Modernisation et augmentation de la capacité de
                           production des structures bois lamellé-collé. Mise en
-                          place d&apos;une nouvelle unité de menuiserie aluminium,
-                          élargissant la gamme de finitions proposées.
+                          place d&apos;une nouvelle unité de menuiserie aluminium.
                         </p>
                         <span>Modernisation & menuiserie aluminium</span>
                       </div>
@@ -177,9 +199,13 @@ const Roadmap = () => {
                     </div>
                   </SwiperSlide>
               </Swiper>
+              
+              {/* Next Slide Button */}
+             
             </div>
           </div>
         </div>
+        
       </div>
     </section>
   );
