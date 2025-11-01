@@ -9,7 +9,7 @@ export default function Mission() {
     <>
       <Layout headerStyle={7}>
         {/* breadcrumb-area */}
-        <section className="banner-area-five2 banner-bg-four2 max-h-[30vh] mb-16">
+        <section className="banner-area-five2 banner-bg-four2  max-h-[85vh] mb-16">
           <div className="">
             <div className="row justify-content-center">
               <div className="col-xl-8 col-lg-10">
