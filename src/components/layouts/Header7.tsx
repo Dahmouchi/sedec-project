@@ -75,7 +75,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                                 <li>
                                   <Link
                                     target="_blank"
-                                    href="https://www.facebook.com/profile.php?id=sedec"
+                                    href="https://www.facebook.com/share/1BhAyyFBmw/"
                                     className={
                                       scroll ? "text-[#BD9A68]" : "text-white"
                                     }
@@ -456,7 +456,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                     <div className="social-links">
                       <ul className="clearfix list-wrap">
                         <li>
-                          <Link href="https://www.facebook.com/profile.php?id=sedec" target="_blank">
+                          <Link href="https://www.facebook.com/share/1BhAyyFBmw/" target="_blank">
                             <i className="fab fa-facebook-f" />
                           </Link>
                         </li>

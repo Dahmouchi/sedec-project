@@ -38,7 +38,7 @@ export const pergola = [
     hero: "banner-area-fivepergola banner-bg-fourpergola",
     pdf: "/DEVIS-PHASE-01-AHA-CONCEPT.pdf",
     subtitle: "L’art du confort en plein air.",
-    location: "L’art du confort en plein air.",
+    location: "L’art du confort en plein air",
     // 🌿 Pergola
     description:
       "Créez un espace de détente unique avec nos pergolas sur mesure. Réalisées en bois lamellé-collé ou en structure mixte, elles s’intègrent harmonieusement à votre jardin, terrasse ou espace professionnel. Design, confort et durabilité au service de votre extérieur.",
@@ -97,7 +97,7 @@ export const pergola = [
     type: "Villa",
     subtitle: "La sécurité qui sublime vos espaces",
     location:
-      "Une échappée en montagne qui mêle confort contemporain et charme naturel.",
+      "Une échappée en montagne qui mêle confort contemporain et charme naturel",
     description:
       "Nos garde-corps en bois allient sécurité, élégance et modernité. Adaptables à tout type de construction — escaliers, balcons, passerelles ou terrasses — ils assurent une protection fiable tout en sublimant vos espaces.",
     features: [
@@ -156,7 +156,7 @@ export const pergola = [
     price: "1.4M MAD",
     subtitle: "Entre robustesse et élégance, le lien parfait",
     location:
-      "A refined space where less is more, designed to deliver serenity and style.",
+      "A refined space where less is more, designed to deliver serenity and style",
     description:
       "Sedec conçoit des passerelles en bois robustes et esthétiques, idéales pour les parcs, hôtels ou zones piétonnes. Un savoir-faire technique au service de la nature, du design et de la durabilité.",
     features: [
@@ -215,7 +215,7 @@ export const pergola = [
     hero: "banner-area-fivevoit banner-bg-fourvoit",
     price: "1.5M MAD",
     location:
-      "Un lieu où le raffinement rencontre la riche tradition marocaine par des détails artisanaux et des couleurs chaleureuses.",
+      "Un lieu où le raffinement rencontre la riche tradition marocaine par des détails artisanaux et des couleurs chaleureuses",
     description:
       "Protégez vos véhicules avec nos abris en bois sur mesure. Pratiques, modernes et résistants, ils apportent une touche naturelle et élégante à votre espace extérieur.",
     features: [

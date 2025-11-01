@@ -35,7 +35,7 @@ const WhatsAppIcon = () => (
       label: "Phone",
       color: "bg-[#604928] hover:bg-[#8c6f45]",
       action: () => {
-        window.location.href = "tel:+212762744707"
+        window.location.href = "tel:+212537741119"
       },
 
     },

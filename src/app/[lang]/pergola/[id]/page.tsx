@@ -33,7 +33,7 @@ const Pergola = () => {
               <div className="col-xl-8 col-lg-10">
                 <div className="banner-content">
                   <h1
-                    className="title wow  fadeInUp  text-white text-center"
+                    className=" wow  fadeInUp  text-white text-center"
                     data-wow-delay=".2s"
                   >
                     <span className="text-2xl lg:text-6xl">

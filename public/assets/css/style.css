@@ -2277,7 +2277,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivemetallique.banner-bg-fourmetallique {
-    background-image   : url(../../images/reel/charpente-ossature-metallique.jpg);
+    background-image   : url(../../images/merc/img25.jpg);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2698,11 +2698,7 @@ label {
         font-size: 38px; /* Adjust this size for mobile */
     }
 }
-@media (min-width: 1388px) {
-     .title {
-        font-size: 8px; /* Adjust this size for mobile */
-    }
-}
+
 /* Optional: Extra small screens */
 @media (max-width: 480px) {
     .section-title .title {
