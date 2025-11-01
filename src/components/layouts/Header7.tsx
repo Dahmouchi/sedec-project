@@ -120,7 +120,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                                   : "text-white hover:text-blue-200"
                               }`}
                             >
-                              Nos Villas en Bois
+                              Villas en Bois
                             </Link>
 
                             {/* Submenu - Fixed full width */}
