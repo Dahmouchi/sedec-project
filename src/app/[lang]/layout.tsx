@@ -32,25 +32,41 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "SEDEC - Construction Modulaire Bois",
-  description: "L'excellence en construction modulaire bois. Solutions architecturales durables et innovantes.",
-  keywords: "location vacances, airbnb, logement, voyage, séjour, hébergement",
-  authors: [{ name: "StayNest" }],
-  creator: "StayNest",
-  publisher: "StayNest",
+  title: "SEDEC - Construction Modulaire Bois & Charpente | Depuis 1948",
+  description: "SEDEC, leader marocain en construction modulaire bois, charpente et pergolas depuis 1948. Solutions durables en villas bois, bâtiments modulaires et structures métalliques.",
+  keywords: "construction bois Maroc, charpente bois, maison bois, villa bois, bâtiment modulaire, pergola, abri voiture, garde-corps, SEDEC, construction modulaire, ossature bois, lamellé-collé",
+  authors: [{ name: "SEDEC" }],
+  creator: "SEDEC",
+  publisher: "SEDEC",
+  metadataBase: new URL('https://sedec.ma'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'fr': '/',
+    },
+  },
   openGraph: {
-    title: "StayNest - Trouvez votre refuge parfait",
-    description: "Découvrez des logements uniques et vivez des expériences inoubliables partout dans le monde.",
-    url: "https://staynest.com",
-    siteName: "StayNest",
+    title: "SEDEC - Construction Modulaire Bois & Charpente | Expert depuis 1948",
+    description: "Leader marocain en construction bois : villas, charpentes, pergolas et bâtiments modulaires. Expertise et qualité depuis 1948.",
+    url: "https://sedec.ma",
+    siteName: "SEDEC",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'SEDEC - Construction Modulaire Bois',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "StayNest - Trouvez votre refuge parfait",
-    description: "Découvrez des logements uniques et vivez des expériences inoubliables partout dans le monde.",
-    creator: "@staynest",
+    title: "SEDEC - Construction Modulaire Bois & Charpente",
+    description: "Expert en construction bois au Maroc depuis 1948. Villas, charpentes, pergolas et bâtiments modulaires.",
+    creator: "@sedecmaroc",
+    images: ['/images/twitter-image.jpg'],
   },
   robots: {
     index: true,
@@ -63,6 +79,16 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "your-google-verification-code",
+    yandex: "your-yandex-verification-code",
+    yahoo: "your-yahoo-verification-code",
+  },
+  category: "construction",
+  other: {
+    "facebook-domain-verification": "your-facebook-domain-verification",
+    "msvalidate.01": "your-bing-verification-code",
+  }
 };
 
 // Define supported languages type
