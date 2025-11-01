@@ -38,7 +38,7 @@ const Test = () => {
         <li className="flex flex-col items-center text-center w-full ">
           <Link href="/pergola" className="block">
             <img
-              src="/images/reel/Nos-metiers.jpg"
+              src="/images/reel/Pergola.jpg"
               alt="Chalet M&M"
               className="w-full h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />
@@ -57,7 +57,7 @@ const Test = () => {
               className="w-full h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />
             <h4 className="font-serif font-semibold text-gray-500 hover:text-amber-800">
-              Bâtiments Modulaire
+              Bâtiments Modulaires
             </h4>
           </Link>
         </li>

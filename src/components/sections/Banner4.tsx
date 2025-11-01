@@ -18,13 +18,12 @@ export default function HeroSection() {
         playsInline
       >
         <source
-          src="https://pub-060265d5b1f645428fcbed1375c4fe21.r2.dev/booking/hero.MOV"
+          src="https://pub-060265d5b1f645428fcbed1375c4fe21.r2.dev/booking/Hero_cropped.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
       </video>
 
-      {/* Overlay (optional to improve text contrast) */}
 
       <div className="">
         <div className="row justify-content-center">
@@ -32,13 +31,14 @@ export default function HeroSection() {
             <div className="banner-content text-center">
             
               <h1
-                className="title wow fadeInUp text-white"
+                className="title wow fadeInUp text-white pt-24"
                 data-wow-delay=".2s"
               >Ensemble, construisons vos projets en bois et matériaux durables
                 <span className="text-2xl lg:text-6xl">
                   
                 </span>
               </h1>
+      {/* Overlay (optional to improve text contrast) 
 
               <Link
                 href="#about"
@@ -51,14 +51,14 @@ export default function HeroSection() {
                     <div className="btn_t2">Découvrez nous</div>
                   </div>
                 </div>
-              </Link>
+              </Link>*/}
             </div>
           </div>
         </div>
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="banner-scroll-down absolute bottom-10 left-1/2 -translate-x-1/2">
+      <div className="banner-scroll-down absolute bottom-20 ">
         <Link href="#matterport" className="section-link">
           <span />
           <span />

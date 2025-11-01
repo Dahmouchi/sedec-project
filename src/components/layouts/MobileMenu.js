@@ -63,9 +63,7 @@ const handleToggle = (key) => { if (isActive.key === key) { setIsActive({ status
       </li>
 
       {/* À Propos */}
-      <li>
-        <Link href="/a-propos" onClick={closeMenu}>À Propos</Link>
-      </li>
+      
 
       {/* Bâtiments modulaires */}
       <li className={isActive.key === "3" ? "menu-item-has-children active" : "menu-item-has-children"}>
@@ -82,7 +80,9 @@ const handleToggle = (key) => { if (isActive.key === key) { setIsActive({ status
           <span className="fas fa-angle-down" />
         </div>
       </li>
-
+<li>
+        <Link href="/a-propos" onClick={closeMenu}>À Propos</Link>
+      </li>
       {/* Galerie */}
       <li>
         <Link href="/galerie" onClick={closeMenu}>Galerie</Link>

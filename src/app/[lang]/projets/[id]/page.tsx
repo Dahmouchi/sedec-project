@@ -164,9 +164,9 @@ const BlogDetails: React.FC = () => {
                           alt=""
                           className="lg:w-24 w-16 h-auto "
                         />
-                        <span className=" text-white text-center text-3xl py-2 font-serif">
+                        <h4 className=" text-white text-center text-3xl py-2 font-serif">
                           {project?.title}
-                        </span>
+                        </h4>
                         <h4 className=" text-white text-center">
                           Visite virtuelle{" "}
                         </h4>

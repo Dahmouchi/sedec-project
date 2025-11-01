@@ -49,7 +49,7 @@ const Pergola = () => {
               </div>
             </div>
           </div>
-          <div className="banner-scroll-down">
+          <div className="banner-scroll-down mt-8">
             <Link href="#about" className="section-link">
               <span />
               <span />

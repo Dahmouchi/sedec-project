@@ -139,7 +139,7 @@ export const bat = [
   {
     id: "durisol",
     maquette: "/reel/Garde-Corps.webp",
-    title: "Durisol",
+    title: "Durisol / Ciment de Bois",
     price: "1.2M MAD",
     pdf: "/PROJET-CHT02-Toubkal.pdf",
     bg3d: "video-bg1",

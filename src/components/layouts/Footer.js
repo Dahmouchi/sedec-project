@@ -11,7 +11,11 @@ export default function Footer1({ }) {
                                 <div className="col-xl-3 col-md-4 col-sm-5">
                                     <div className="footer-widget">
                                         <div className="footer-logo">
-                                            <Link href="/"><img src="/images/logowhite.png" className="w-36 h-auto" alt="" /></Link>
+                                            <Link href="/">
+                                            <div className="bg-white p-2 w-fit">
+                                                <img src="/images/logo.png" className="w-36 h-auto" alt="" />
+                                            </div>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

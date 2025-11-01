@@ -135,7 +135,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                             src={
                               scroll
                                 ? "/images/logo.png"
-                                : "/images/logowhite.png"
+                                : "/images/logo.png"
                             }
                             className="w-24 h-auto transition-all duration-300"
                             alt="Logo"

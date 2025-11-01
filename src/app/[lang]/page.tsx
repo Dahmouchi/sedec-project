@@ -35,8 +35,8 @@ export default async function Page({
                 <Project4 />
                 <Destination3 />
                 <Roadmap />
-                <Services />
-                 {/*<Team />*/}
+                 {/*<Services />
+                <Team />*/}
                 <Newsletter />
                 <Blog2 />
             </Layout>

@@ -24,7 +24,7 @@ const Services = () => {
                 </div>
                 <div className="services-content">
                   <h2 className="title">
-                    <Link href="/batiments-modulaires/durisol">Durisol</Link>
+                    <Link href="/batiments-modulaires/durisol">Durisol / Ciment de Bois</Link>
                   </h2>
                   <p>
                     Le durisol est un matériau innovant à base de bois

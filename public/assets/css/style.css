@@ -1479,11 +1479,11 @@ label {
     height            : 100%;
     z-index           : 99;
     border-radius     : 0px;
-    transition        : all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    -moz-transition   : all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    -ms-transition    : all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86)e;
-    -o-transition     : all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition        : all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -moz-transition   : all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -webkit-transition: all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -ms-transition    : all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86)e;
+    -o-transition     : all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     -webkit-transform : translateX(101%);
     -ms-transform     : translateX(101%);
     transform         : translateX(101%);
@@ -1520,11 +1520,11 @@ label {
     width             : 100%;
     height            : 100%;
     z-index           : 2;
-    transition        : all 700ms ease;
-    -moz-transition   : all 700ms ease;
-    -webkit-transition: all 700ms ease;
-    -ms-transition    : all 700ms ease;
-    -o-transition     : all 700ms ease;
+    transition        : all 1000ms ease;
+    -moz-transition   : all 1000ms ease;
+    -webkit-transition: all 1000ms ease;
+    -ms-transition    : all 1000ms ease;
+    -o-transition     : all 1000ms ease;
     opacity           : 0;
     visibility        : hidden;
     background        : rgba(0, 0, 0, 0.5);
@@ -1888,7 +1888,7 @@ label {
     left     : 50%;
     transform: translateX(-50%);
     bottom   : 50px;
-    top: 85%;
+    top: 75%;
 }
 
 .banner-scroll-down a {

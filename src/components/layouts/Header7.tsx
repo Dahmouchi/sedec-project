@@ -43,11 +43,13 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
           <div className="container custom-container">
             <div className="flex items-center justify-between lg:hidden">
               <Link href="/">
-                <img
-                  src= {`${scroll ? "/images/logo.png":"/images/logowhite.png"}`}
+               <div className="bg-white p-1">
+                 <img
+                  src= {`${scroll ? "/images/logo.png":"/images/logo.png"}`}
                   className="w-14 h-auto"
                   alt="Logo"
                 />
+               </div>
               </Link>
               <div onClick={handleMobileMenu}>
                 <Menu className={`${scroll ? "w-14 text-black":"w-14 text-white"}`} />
@@ -276,34 +278,23 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                       </ul>
 
                       <div className="logo transition-all duration-300">
-                        <Link href="/fr">
-                          <img
+                        <Link href="/fr" >
+                         <div className="bg-white mt-2">
+                           <img
                             src={
                               scroll
                                 ? "/images/logo.png"
-                                : "/images/logowhite.png"
+                                : "/images/logo.png"
                             }
                             className="w-24 h-auto transition-all duration-300"
                             alt="Logo"
                           />
+                         </div>
                         </Link>
                       </div>
 
                       <ul className="navigation right">
-                        <li className="menu-item-has-children">
-                          <Link
-                            href="/a-propos"
-                            className={`transition-colors duration-300 ${
-                              scroll
-                                ? "text-gray-900 hover:text-amber-800"
-                                : "text-white hover:text-blue-200"
-                            }`}
-                          >
-                            À Propos
-                          </Link>
-                        </li>
-
-                        <li className="menu-item-has-children relative group">
+                         <li className="menu-item-has-children relative group">
                           <Link
                             href="/batiments-modulaires"
                             className={`transition-colors duration-300 ${
@@ -342,7 +333,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                                    <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
                                       
                                     <img
-                                      src="/images/reel/charpente-ossature-metallique.jpg"
+                                      src="/images/merc/img101.jpg"
                                       alt="Chalet Toubkal"
                                       className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                     /></div>
@@ -362,7 +353,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                                       className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                     /></div>
                                     <span className="font-serif font-semibold text-gray-500 hover:text-amber-800">
-                                      Durisol
+                                      Durisol / Ciment de Bois
                                     </span>
                                   </Link>
                                 </li>
@@ -370,6 +361,20 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                             </ul>
                           </div>
                         </li>
+                        <li className="menu-item-has-children">
+                          <Link
+                            href="/a-propos"
+                            className={`transition-colors duration-300 ${
+                              scroll
+                                ? "text-gray-900 hover:text-amber-800"
+                                : "text-white hover:text-blue-200"
+                            }`}
+                          >
+                            À Propos
+                          </Link>
+                        </li>
+
+                       
 
                         <li className="menu-item-has-children">
                           <Link
@@ -412,7 +417,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                     </div>
                     <div className="nav-logo">
                       <Link href="/">
-                        <img src="/images/logo.png" alt="Logo" />
+                        <img src="/images/logo.png" alt="Logo" className="w-20 h-auto" />
                       </Link>
                     </div>
                     <div className="menu-outer">
