@@ -18,7 +18,7 @@ export default function Mission() {
                     className="title wow  fadeInUp  text-white text-center"
                     data-wow-delay=".2s"
                   >
-                    <span className="text-2xl lg:text-6xl">
+                    <span className="text-2xl lg:text-6xl ">
                       SEDEC : une histoire, des valeurs, des engagements
                     </span>
                   </h1>

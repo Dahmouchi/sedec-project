@@ -15,7 +15,7 @@ export default function Project() {
                 <div className="w-full mb-28 lg:h-[60vh] h-[45vh] bg-cover bg-center relative"
                 style={{backgroundImage:"url(/images/Bureau-de-ventes.jpg)"}}>
                     <div className="w-full h-full bg-black/40 flex items-center justify-center">
-                        <div className="title text-white text-7xl font-serif">Bâtiments modulaires</div>
+                        <div className="title text-white text-7xl font-serif text-center">Bâtiments modulaires</div>
                     </div>
                 </div>
                 <BatFilter col="col-lg-6 col-md-6" />

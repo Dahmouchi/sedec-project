@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Link from "next/link";
@@ -25,7 +26,7 @@ const handleToggle = (key) => { if (isActive.key === key) { setIsActive({ status
     <ul className="navigation">
       {/* Nos Villas en Bois */}
       <li className={isActive.key === "1" ? "menu-item-has-children active" : "menu-item-has-children"}>
-        <Link href="/projets" onClick={() => handleToggle("1")}>Nos Villas en Bois</Link>
+        <Link href="/projets" onClick={() => closeMenu()}>Nos Villas en Bois</Link>
         <ul className="sub-menu" style={{ display: isActive.key === "1" ? "block" : "none" }}>
           <li><Link href="/projets/1" onClick={closeMenu}>Scandinavian</Link></li>
           <li><Link href="/projets/2" onClick={closeMenu}>Toubkal</Link></li>
@@ -47,7 +48,7 @@ const handleToggle = (key) => { if (isActive.key === key) { setIsActive({ status
 
       {/* Pergola */}
       <li className={isActive.key === "2" ? "menu-item-has-children active" : "menu-item-has-children"}>
-        <Link href="/pergola" onClick={() => handleToggle("2")}>Pergola</Link>
+        <Link href="/pergola" onClick={() => closeMenu()}>Pergola</Link>
         <ul className="sub-menu" style={{ display: isActive.key === "2" ? "block" : "none" }}>
           <li><Link href="/pergola/pergola" onClick={closeMenu}>Pergola</Link></li>
           <li><Link href="/pergola/gards-corps" onClick={closeMenu}>Les Gardes Corps</Link></li>
@@ -67,7 +68,7 @@ const handleToggle = (key) => { if (isActive.key === key) { setIsActive({ status
 
       {/* Bâtiments modulaires */}
       <li className={isActive.key === "3" ? "menu-item-has-children active" : "menu-item-has-children"}>
-        <Link href="/batiments-modulaires" onClick={() => handleToggle("3")}>Bâtiments modulaires</Link>
+        <Link href="/batiments-modulaires" onClick={() => closeMenu()}>Bâtiments modulaires</Link>
         <ul className="sub-menu" style={{ display: isActive.key === "3" ? "block" : "none" }}>
           <li><Link href="/batiments-modulaires/mur-ossature-bois" onClick={closeMenu}>Mur ossature bois</Link></li>
           <li><Link href="/batiments-modulaires/modulaire-metallique" onClick={closeMenu}>Modulaires Métalliques</Link></li>

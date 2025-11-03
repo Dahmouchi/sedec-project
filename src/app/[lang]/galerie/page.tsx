@@ -19,7 +19,6 @@ const images = [
   { src: "/images/reel/r6.jpg", aspect_ratio: 4 / 3, category: "Villa-Scandinave" },
   { src: "/images/reel/r7.jpg", aspect_ratio: 4 / 3, category: "Villa-Scandinave" },
   { src: "/images/reel/r8.jpg", aspect_ratio: 4 / 3, category: "Villa-Scandinave" },
-  { src: "/images/reel/pergola4.jpeg", aspect_ratio: 4 / 3, category: "Pergola" },
   { src: "/images/reel/pergola3.png", aspect_ratio: 4 / 3, category: "Pergola" },
   { src: "/images/reel/pergola1.jpg", aspect_ratio: 4 / 3, category: "Pergola" },
   { src: "/images/reel/pergola2.jpeg", aspect_ratio: 4 / 3, category: "Pergola" },

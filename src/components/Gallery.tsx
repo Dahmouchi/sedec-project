@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import { useState, useMemo } from "react"
@@ -139,14 +140,13 @@ export default function Gallery({ images, categories = [], selectedCategory = "a
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.3 }}
-              className="max-w-6xl max-h-[90vh] flex justify-center items-center"
+              className="flex justify-center items-center"
             >
-              <Image
+              <img
                  src={filteredImages[selectedImageIndex].src || "/placeholder.svg"}
                alt={`Gallery image ${selectedImageIndex + 1}`}
-                width={1200}
-                height={800}
-                className="object-contain rounded-lg"
+                
+                className="object-contain rounded-lg w-full h-auto "
               />
             </motion.div>
 
