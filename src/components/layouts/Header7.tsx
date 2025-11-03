@@ -291,12 +291,12 @@ const closeMenu = () => {
 
                         <div className="logo transition-all duration-300">
                           <Link href="/fr" >
-                           <div className="bg-white mt-2">
+                           <div className=" mt-2">
                              <img
                               src={
                                 scroll
-                                  ? "/images/logo.png"
-                                  : "/images/logo.png"
+                                  ? "/images/logobgwhite.png"
+                                  : "/images/logobgwhite.png"
                               }
                               className="w-24 h-auto transition-all duration-300"
                               alt="Logo"
@@ -425,10 +425,10 @@ const closeMenu = () => {
                        {!isLargeScreen && (
               <div className="flex items-center justify-between ">
                 <Link href="/">
-                 <div className="bg-white p-1">
+                 <div className="">
                    <img
                    
-                    src= {`${scroll ? "/images/logo.png":"/images/logo.png"}`}
+                    src= {`${scroll ? "/images/logo.png":"/images/logobgwhite.png"}`}
                     className="w-14 h-auto"
                     alt="Logo"
                   />
@@ -452,7 +452,7 @@ const closeMenu = () => {
                     </div>
                     <div className="nav-logo">
                       <Link href="/">
-                        <img src="/images/logo.png" alt="Logo" className="w-20 h-auto" onClick={closeMenu} />
+                        <img src="/images/logobgwhite.png" alt="Logo" className="w-20 h-auto" onClick={closeMenu} />
                       </Link>
                     </div>
                     <div className="menu-outer">
