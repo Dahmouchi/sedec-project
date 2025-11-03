@@ -62,7 +62,7 @@ export default function Video2() {
         <DialogContent className=" !w-[90vw] !max-w-[1200px]  h-[80vh] p-0 overflow-hidden">
          
         <div className="relative">
-            <img src="/images/logobgwhite.png" alt="Logo" className="w-20 h-auto absolute bottom-26 left-6 z-50" />
+            <img src="/images/logobgwhite.png" alt="Logo" className="lg:w-20 w-16 h-auto absolute bottom-26 left-6 z-50" />
             <iframe
             src={mpUrl}
             allowFullScreen
