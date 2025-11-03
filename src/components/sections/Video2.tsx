@@ -60,12 +60,15 @@ export default function Video2() {
       {/* Dialog for Matterport Viewer */}
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className=" !w-[90vw] !max-w-[1200px]  h-[80vh] p-0 overflow-hidden">
-          
-          <iframe
+         
+        <div className="relative">
+            <img src="/images/logobgwhite.png" alt="Logo" className="w-20 h-auto absolute bottom-26 left-6 z-50" />
+            <iframe
             src={mpUrl}
             allowFullScreen
             className="w-full h-full border-0"
           />
+        </div>
         </DialogContent>
       </Dialog>
     </>
