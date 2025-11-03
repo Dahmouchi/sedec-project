@@ -1888,7 +1888,7 @@ label {
     left     : 50%;
     transform: translateX(-50%);
     bottom   : 50px;
-    top: 75%;
+    top: 85%;
 }
 
 .banner-scroll-down a {
@@ -2223,7 +2223,7 @@ label {
 
 
 .banner-area-fivepergola.banner-bg-fourpergola {
-    background-image   : url(../../images/reel/pergola.jpg);
+    background-image   : url(../../images/pergola4.jpg);
     background-size    : cover;
     background-position: center;
     position           : relative;

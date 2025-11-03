@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 
 export default function Header7({ handleMobileMenu, scroll }: any) {
   const [isLargeScreen, setIsLargeScreen] = useState(true);
+  const [isMobileMenu, setMobileMenu] = useState(false);
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -22,7 +23,10 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
     // Cleanup
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
-
+const closeMenu = () => {
+    setMobileMenu(false);
+    document.body.classList.remove("mobile-menu-visible");
+  };
   return (
     <>
       <header className="header-style-six">
@@ -221,7 +225,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                                     <Link href="/pergola/pergola" className="block">
                                       <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
                                         <img
-                                          src="/images/reel/pergola.jpg"
+                                          src="/images/pergola4.jpg"
                                           alt="Chalet Scandinavian"
                                           className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                         />
@@ -419,10 +423,11 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                       // Mobile menu content for screens under 1600px
                       <div className="mobile-menu-content">
                        {!isLargeScreen && (
-              <div className="flex items-center justify-between py-2">
+              <div className="flex items-center justify-between ">
                 <Link href="/">
                  <div className="bg-white p-1">
                    <img
+                   
                     src= {`${scroll ? "/images/logo.png":"/images/logo.png"}`}
                     className="w-14 h-auto"
                     alt="Logo"
@@ -447,7 +452,7 @@ export default function Header7({ handleMobileMenu, scroll }: any) {
                     </div>
                     <div className="nav-logo">
                       <Link href="/">
-                        <img src="/images/logo.png" alt="Logo" className="w-20 h-auto" />
+                        <img src="/images/logo.png" alt="Logo" className="w-20 h-auto" onClick={closeMenu} />
                       </Link>
                     </div>
                     <div className="menu-outer">
