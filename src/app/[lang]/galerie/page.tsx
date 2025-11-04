@@ -26,26 +26,7 @@ const images = [
     aspect_ratio: 4 / 3,
     category: "Autre",
   },
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier2.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Autre",
-  },
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier3.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Autre",
-  },
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier4.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Autre",
-  },
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier5.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Autre",
-  },
+ 
   {
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier6.jpg",
     aspect_ratio: 4 / 3,
@@ -94,21 +75,13 @@ const images = [
     aspect_ratio: 4 / 3,
     category: "Autre",
   },
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier9.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Autre",
-  },
+ 
   {
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier10.jpg",
     aspect_ratio: 4 / 3,
     category: "Autre",
   },
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier11.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Autre",
-  },
+ 
   {
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier12.jpg",
     aspect_ratio: 4 / 3,
@@ -124,11 +97,7 @@ const images = [
     aspect_ratio: 4 / 3,
     category: "Autre",
   },
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier15.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Autre",
-  },
+ 
   {
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier16.jpg",
     aspect_ratio: 4 / 3,
