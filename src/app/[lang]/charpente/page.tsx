@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @next/next/no-img-element */
-"use client"
+"use client";
 import Layout from "@/components/layouts/Layout";
 import Project3 from "@/components/sections/Project3";
 import Link from "next/link";
@@ -7,7 +8,33 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Footprints } from "lucide-react";
+const images = [
+  {
+    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente1.jpg",
+    category: "Charpente",
+  },
+  {
+    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente2.jpg",
+    category: "Charpente",
+  },
 
+  {
+    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente3.jpg",
+    category: "Charpente",
+  },
+  {
+    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente4.jpg",
+    category: "Charpente",
+  },
+  {
+    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente5.jpg",
+    category: "Charpente",
+  },
+  {
+    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente6.jpg",
+    category: "Charpente",
+  },
+];
 const Charpente = () => {
   const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -32,15 +59,14 @@ const Charpente = () => {
                     data-wow-delay=".2s"
                   >
                     <span className="text-2xl lg:text-6xl">
-                     Performance structurelle et
-                      élégance naturelle.
+                      Performance structurelle et élégance naturelle.
                     </span>
                   </h1>
-                   <div className="text-center text-white">
-                  <h2 className="text-3xl text-white font-serif font-bold mb-2">
-                    Charpente
-                  </h2>
-                </div>
+                  <div className="text-center text-white">
+                    <h2 className="text-3xl text-white font-serif font-bold mb-2">
+                      Charpente
+                    </h2>
+                  </div>
                 </div>
               </div>
             </div>
@@ -65,7 +91,10 @@ const Charpente = () => {
                   <h2 className="title">
                     Découvrez nos projets de charpente bois lamellée-collée
                   </h2>
-                  <Link href="/galerie?category=all" className="btn transparent-btn">
+                  <Link
+                    href="/galerie?category=all"
+                    className="btn transparent-btn"
+                  >
                     <div className="btn_m">
                       <div className="btn_c">
                         <div className="btn_t1">Voir tous les projets</div>
@@ -110,9 +139,7 @@ const Charpente = () => {
                         </div>
                         <div className="project-content">
                           <h3 className="title">
-                            <div >
-                              Hangar industriel bois
-                            </div>
+                            <div>Hangar industriel bois</div>
                           </h3>
                           <span>Tanger, Maroc</span>
                         </div>
@@ -131,9 +158,7 @@ const Charpente = () => {
                         </div>
                         <div className="project-content">
                           <h3 className="title">
-                            <div >
-                              Structure architecturale BLC
-                            </div>
+                            <div>Structure architecturale BLC</div>
                           </h3>
                           <span>Marrakech, Maroc</span>
                         </div>
@@ -164,97 +189,102 @@ const Charpente = () => {
                 </div>
               </div>
             </div>
-             <div className="w-full lg:hidden">
-                <div className="swiper-container project-active">
-                  <Swiper {...swiperOptions} className="swiper-wrapper">
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[35vh]"
-                              src="/images/reel/Nos-metiers.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <div>Salle sportive en BLC</div>
-                          </h3>
-                          <span>Casablanca, Maroc</span>
-                        </div>
+            <div className="w-full lg:hidden">
+              <div className="swiper-container project-active">
+                <Swiper {...swiperOptions} className="swiper-wrapper">
+                  <SwiperSlide>
+                    <div className="project-item">
+                      <div className="project-thumb">
+                        <Link href="/project/1">
+                          <img
+                            className="w-auto h-[35vh]"
+                            src="/images/reel/Nos-metiers.jpg"
+                            alt=""
+                          />
+                        </Link>
                       </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[35vh]"
-                              src="/images/charpente2.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <div >
-                              Hangar industriel bois
-                            </div>
-                          </h3>
-                          <span>Tanger, Maroc</span>
-                        </div>
+                      <div className="project-content">
+                        <h3 className="title">
+                          <div>Salle sportive en BLC</div>
+                        </h3>
+                        <span>Casablanca, Maroc</span>
                       </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[35vh]"
-                              src="/images/charpente3.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <div >
-                              Structure architecturale BLC
-                            </div>
-                          </h3>
-                          <span>Marrakech, Maroc</span>
-                        </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="project-item">
+                      <div className="project-thumb">
+                        <Link href="/project/1">
+                          <img
+                            className="w-auto h-[35vh]"
+                            src="/images/charpente2.jpg"
+                            alt=""
+                          />
+                        </Link>
                       </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[35vh]"
-                              src="/images/Durisol.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <Link href="/project/1">
-                              Complexe résidentiel bois
-                            </Link>
-                          </h3>
-                          <span>Rabat, Maroc</span>
-                        </div>
+                      <div className="project-content">
+                        <h3 className="title">
+                          <div>Hangar industriel bois</div>
+                        </h3>
+                        <span>Tanger, Maroc</span>
                       </div>
-                    </SwiperSlide>
-                  </Swiper>
-                </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="project-item">
+                      <div className="project-thumb">
+                        <Link href="/project/1">
+                          <img
+                            className="w-auto h-[35vh]"
+                            src="/images/charpente3.jpg"
+                            alt=""
+                          />
+                        </Link>
+                      </div>
+                      <div className="project-content">
+                        <h3 className="title">
+                          <div>Structure architecturale BLC</div>
+                        </h3>
+                        <span>Marrakech, Maroc</span>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="project-item">
+                      <div className="project-thumb">
+                        <Link href="/project/1">
+                          <img
+                            className="w-auto h-[35vh]"
+                            src="/images/Durisol.jpg"
+                            alt=""
+                          />
+                        </Link>
+                      </div>
+                      <div className="project-content">
+                        <h3 className="title">
+                          <Link href="/project/1">
+                            Complexe résidentiel bois
+                          </Link>
+                        </h3>
+                        <span>Rabat, Maroc</span>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
               </div>
+            </div>
           </div>
         </section>
-
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 container py-4">
+          {images.map((img: any, i: any) => (
+            <img
+              key={i}
+              src={img.src}
+              alt={`${img.category} ${i}`}
+              className="rounded-lg object-cover w-full h-40 md:h-56 cursor-pointer hover:scale-105 transition-transform duration-300"
+            />
+          ))}
+        </div>
         {/* SECTION 2 — Services */}
         <section className="services-area-two section-pt-140">
           <div className="container">
@@ -272,7 +302,6 @@ const Charpente = () => {
                       Visualisation, performance & esthétique bois
                     </h2>
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -288,17 +317,13 @@ const Charpente = () => {
                   <div className="col-lg-6">
                     <div className="project-thumb">
                       <Link href="/project/1">
-                        <img
-                          src="/images/charpente3.jpg"
-                          alt=""
-                        />
+                        <img src="/images/charpente3.jpg" alt="" />
                       </Link>
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="project-content-two">
                       <div className="section-title">
-                        
                         <h3 className="title">
                           <Link href="/project/1">
                             Salle multisports <br /> en charpente
@@ -350,7 +375,6 @@ const Charpente = () => {
                           </li>
                         </ul>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
@@ -359,7 +383,7 @@ const Charpente = () => {
               {/* You can duplicate this next item for 2-3 projects with same structure */}
               <div className="project-item-two">
                 <div className="row align-items-center">
-                   <div className="col-lg-6">
+                  <div className="col-lg-6">
                     <div className="project-thumb">
                       <Link href="/project/1">
                         <img
@@ -372,7 +396,6 @@ const Charpente = () => {
                   <div className="col-lg-6">
                     <div className="project-content-two">
                       <div className="section-title">
-                       
                         <h2 className="title">
                           <Link href="/project/2">
                             Pavillon éco-bois <br /> à ossature lamellée-collée
@@ -423,85 +446,86 @@ const Charpente = () => {
                           </li>
                         </ul>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-12 items-center lg:mt-36">
-                <img
-                  src="/images/charpente.jpg"
-                  alt="Passerelle"
-                  className="w-full rounded-xl shadow-lg"
-                />
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <h3 className="text-3xl font-serif text-[#202020]">
-                      Charpente bois (BLC)
-
-                    </h3>
+                  <img
+                    src="/images/charpente.jpg"
+                    alt="Passerelle"
+                    className="w-full rounded-xl shadow-lg"
+                  />
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <h3 className="text-3xl font-serif text-[#202020]">
+                        Charpente bois (BLC)
+                      </h3>
+                    </div>
+                    <p className="text-[#797978] leading-relaxed text-lg">
+                      Experts en charpente lamellée-collée (BLC / Glulam), nous
+                      réalisons des structures bois de grande portée, adaptées
+                      aux bâtiments industriels, sportifs, ou résidentiels. Nos
+                      charpentes associent résistance, légèreté et esthétisme,
+                      tout en respectant les normes de qualité les
+                      plus exigeantes.
+                    </p>
+                    <ul className="space-y-2 text-[#797978]">
+                      <li className="flex items-center gap-3">
+                        <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
+                        Robustesse garantie
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
+                        Design esthétique
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
+                        Savoir-faire technique
+                      </li>
+                    </ul>
                   </div>
-                  <p className="text-[#797978] leading-relaxed text-lg">
-                    Experts en charpente lamellée-collée (BLC / Glulam), nous réalisons des structures bois de grande portée, adaptées aux bâtiments industriels, sportifs, ou résidentiels.
-Nos charpentes associent résistance, légèreté et esthétisme, tout en respectant les normes de qualité les plus exigeantes.
-                  </p>
-                  <ul className="space-y-2 text-[#797978]">
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
-                      Robustesse garantie
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
-                      Design esthétique
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
-                      Savoir-faire technique
-                    </li>
-                  </ul>
                 </div>
-              </div>
-              <div className="grid md:grid-cols-2 gap-12 items-center lg:mt-36">
-  <img
-                  src="/images/reel/charpente-ossature-metallique.jpg"
-    alt="Charpente métallique"
-    className="w-full rounded-xl shadow-lg"
-  />
-  <div className="space-y-4">
-    <div className="flex items-center gap-3">
-      <h3 className="text-3xl font-serif text-[#202020]">
-        Charpente métallique
-      </h3>
-    </div>
-    <p className="text-[#797978] leading-relaxed text-lg">
-      Spécialistes de la conception et de la réalisation de charpentes métalliques, 
-      nous fabriquons des structures robustes et durables pour tous types de bâtiments 
-      — industriels, commerciaux ou publics.  
-      Nos charpentes allient précision, performance et adaptabilité pour répondre aux exigences 
-      les plus strictes en matière de solidité et de design architectural.
-    </p>
-    <ul className="space-y-2 text-[#797978]">
-      <li className="flex items-center gap-3">
-        <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
-        Résistance et durabilité exceptionnelles
-      </li>
-      <li className="flex items-center gap-3">
-        <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
-        Précision d&apos;ingénierie et finitions soignées
-      </li>
-      <li className="flex items-center gap-3">
-        <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
-        Adaptée à tout type de projet architectural
-      </li>
-    </ul>
-  </div>
-</div>
-
+                <div className="grid md:grid-cols-2 gap-12 items-center lg:mt-36">
+                  <img
+                    src="/images/reel/charpente-ossature-metallique.jpg"
+                    alt="Charpente métallique"
+                    className="w-full rounded-xl shadow-lg"
+                  />
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <h3 className="text-3xl font-serif text-[#202020]">
+                        Charpente métallique
+                      </h3>
+                    </div>
+                    <p className="text-[#797978] leading-relaxed text-lg">
+                      Spécialistes de la conception et de la réalisation de
+                      charpentes métalliques, nous fabriquons des structures
+                      robustes et durables pour tous types de bâtiments —
+                      industriels, commerciaux ou publics. Nos charpentes
+                      allient précision, performance et adaptabilité pour
+                      répondre aux exigences les plus strictes en matière de
+                      solidité et de design architectural.
+                    </p>
+                    <ul className="space-y-2 text-[#797978]">
+                      <li className="flex items-center gap-3">
+                        <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
+                        Résistance et durabilité exceptionnelles
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
+                        Précision d&apos;ingénierie et finitions soignées
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
+                        Adaptée à tout type de projet architectural
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          
         </section>
-  
       </Layout>
     </div>
   );

@@ -12,31 +12,24 @@ import "swiper/css/pagination";
 import Layout from "@/components/layouts/Layout";
 
 import { chalets } from "@/lib/projects";
-import ChaletGallery from "@/components/elements/ChaletGallery";
 import Newsletter from "@/components/sections/Newsletter";
 import { useMemo } from "react";
 import { ChevronLeft, ChevronRight, Play, X } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { motion, AnimatePresence } from "framer-motion";
 
-interface ChaletGalleryProps {
-  gallery: {
-    chambres: string[];
-    salon: string[];
-    exterieure: string[];
-  };
-}
+
 const BlogDetails: React.FC = () => {
   const [project, setProject] = useState<any | null>(null);
   const [open, setOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<
-    "chambres" | "salon" | "exterieure"
+    "chambres" | "salon" | "exterieure" | "reel"
   >("chambres");
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
     null
   );
 
-  const categories = ["chambres", "salon", "exterieure"] as const;
+  const categories = ["chambres", "salon", "exterieure" ,"reel"] as const;
 
   const handlePrevImage = () => {
     if (selectedImageIndex !== null) {

@@ -76,6 +76,34 @@ export const chalets = [
         "/images/chalets/scandinave/e4.jpg",
         "/images/chalets/scandinave/e5.jpg",
       ],
+      reel: [
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier1.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier2.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier3.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier4.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier5.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier6.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier7.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier8.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier9.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier10.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier11.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier12.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier13.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier14.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier15.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier16.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier17.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier18.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier19.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier20.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier21.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier22.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier23.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier24.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier25.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier26.jpg",
+      ],
     },
   },
   {
@@ -96,31 +124,31 @@ export const chalets = [
     description:
       "Villa Toubkal s’inspire d’un art de vivre en symbiose avec la nature, où la richesse des matières brutes et la sobriété des formes se conjuguent pour créer un intérieur chaleureux, intemporel et profondément ancré dans son environnement.",
     features: [
-  {
-    icon: Mountain,
-    title: "Matériaux bruts",
-    detail:
-      "Le bois massif et la pierre naturelle dominent, utilisés pour les sols, les revêtements et le mobilier. Ces matières intemporelles confèrent caractère, authenticité et durabilité à chaque espace.",
-  },
-  {
-    icon: Palette,
-    title: "Palette organique",
-    detail:
-      "Des tons terre — sable, ocre, brun et gris pierre — ponctués de touches vert olive et terracotta évoquent la nature environnante et insufflent une harmonie apaisante.",
-  },
-  {
-    icon: Ruler,
-    title: "Lignes sobres et artisanales",
-    detail:
-      "Le mobilier se distingue par des formes simples et fonctionnelles, sublimées par des finitions artisanales qui célèbrent le savoir-faire et la beauté du geste manuel.",
-  },
-  {
-    icon: Flame,
-    title: "Confort & chaleur",
-    detail:
-      "Textiles en lin, coton brut, laine et jute s’associent à des luminaires en verre soufflé pour créer une atmosphère douce, réconfortante et enveloppante.",
-  },
-],
+      {
+        icon: Mountain,
+        title: "Matériaux bruts",
+        detail:
+          "Le bois massif et la pierre naturelle dominent, utilisés pour les sols, les revêtements et le mobilier. Ces matières intemporelles confèrent caractère, authenticité et durabilité à chaque espace.",
+      },
+      {
+        icon: Palette,
+        title: "Palette organique",
+        detail:
+          "Des tons terre — sable, ocre, brun et gris pierre — ponctués de touches vert olive et terracotta évoquent la nature environnante et insufflent une harmonie apaisante.",
+      },
+      {
+        icon: Ruler,
+        title: "Lignes sobres et artisanales",
+        detail:
+          "Le mobilier se distingue par des formes simples et fonctionnelles, sublimées par des finitions artisanales qui célèbrent le savoir-faire et la beauté du geste manuel.",
+      },
+      {
+        icon: Flame,
+        title: "Confort & chaleur",
+        detail:
+          "Textiles en lin, coton brut, laine et jute s’associent à des luminaires en verre soufflé pour créer une atmosphère douce, réconfortante et enveloppante.",
+      },
+    ],
 
     gallery: {
       chambres: [
@@ -132,9 +160,12 @@ export const chalets = [
         "/images/chalets/toubkal/c7.jpg",
       ],
       salon: [
-        "/images/chalets/toubkal/s1.jpg", 
-        "/images/chalets/toubkal/s2.jpg", "/images/chalets/toubkal/s3.jpg", "/images/chalets/toubkal/s4.jpg"],
-       exterieure: [
+        "/images/chalets/toubkal/s1.jpg",
+        "/images/chalets/toubkal/s2.jpg",
+        "/images/chalets/toubkal/s3.jpg",
+        "/images/chalets/toubkal/s4.jpg",
+      ],
+      exterieure: [
         "/images/chalets/scandinave/e1.jpg",
         "/images/chalets/scandinave/e2.jpg",
         "/images/chalets/scandinave/e3.jpg",
@@ -155,13 +186,13 @@ export const chalets = [
     hero: "banner-area-fiveM banner-bg-fourM",
     type: "Villa",
     price: "1.4M MAD",
-   subtitle:
-  "Un havre de style alliant minimalisme pur et élégance sophistiquée.",
-location:
-  "Un espace raffiné où moins, c’est plus — conçu pour offrir sérénité et style.",
-description:
-  "Cette villa moderne et minimaliste met l’accent sur des lignes épurées, une lumière naturelle abondante et une palette neutre pour créer un environnement élégant et apaisant. Son design épuré favorise un mode de vie réfléchi et confortable.",
-features: [
+    subtitle:
+      "Un havre de style alliant minimalisme pur et élégance sophistiquée.",
+    location:
+      "Un espace raffiné où moins, c’est plus — conçu pour offrir sérénité et style.",
+    description:
+      "Cette villa moderne et minimaliste met l’accent sur des lignes épurées, une lumière naturelle abondante et une palette neutre pour créer un environnement élégant et apaisant. Son design épuré favorise un mode de vie réfléchi et confortable.",
+    features: [
       {
         icon: Layers,
         title: "Matériaux purs",
@@ -189,18 +220,14 @@ features: [
     ],
 
     gallery: {
-      chambres: [
-        "/images/chalets/mm/c7.jpg",
-        "/images/chalets/mm/c8.jpg",
-      ],
+      chambres: ["/images/chalets/mm/c7.jpg", "/images/chalets/mm/c8.jpg"],
       salon: [
-        "/images/chalets/mm/s1.jpg", 
+        "/images/chalets/mm/s1.jpg",
         "/images/chalets/mm/s2.jpg",
         "/images/chalets/mm/s3.jpg",
         "/images/chalets/mm/s4.jpg",
         "/images/chalets/mm/s5.jpg",
-        "/images/chalets/mm/s6.jpg"
-         
+        "/images/chalets/mm/s6.jpg",
       ],
       exterieure: [
         "/images/chalets/mm/e9.jpg",
@@ -230,33 +257,33 @@ features: [
       "Un lieu où le raffinement rencontre la riche tradition marocaine par des détails artisanaux et des couleurs chaleureuses.",
     description:
       "Cette villa incarne le luxe et l’authenticité marocaine à travers l’usage de motifs géométriques, de mosaïques colorées, et d’un mobilier artisanal. Chaque pièce transporte ses visiteurs dans une ambiance orientale élégante et accueillante.",
-   features: [
-  {
-    icon: Layers,
-    title: "Matériaux identitaires",
-    detail:
-      "Bois massif naturel, pierre locale, zellige artisanal, enduits à la chaux ou tadelakt, ferronnerie et laiton brossé composent une matière riche et authentique, reflet du savoir-faire marocain.",
-  },
-  {
-    icon: Palette,
-    title: "Palette chaleureuse",
-    detail:
-      "Des teintes terreuses — sable, ocre, terracotta, blanc cassé — s’harmonisent avec des accents emblématiques du Maroc tels que le bleu cobalt et le vert émeraude, créant une ambiance vibrante et chaleureuse.",
-  },
+    features: [
+      {
+        icon: Layers,
+        title: "Matériaux identitaires",
+        detail:
+          "Bois massif naturel, pierre locale, zellige artisanal, enduits à la chaux ou tadelakt, ferronnerie et laiton brossé composent une matière riche et authentique, reflet du savoir-faire marocain.",
+      },
+      {
+        icon: Palette,
+        title: "Palette chaleureuse",
+        detail:
+          "Des teintes terreuses — sable, ocre, terracotta, blanc cassé — s’harmonisent avec des accents emblématiques du Maroc tels que le bleu cobalt et le vert émeraude, créant une ambiance vibrante et chaleureuse.",
+      },
 
-  {
-    icon: Flame,
-    title: "Confort & chaleur",
-    detail:
-      "Tapis berbères, poufs en cuir, textiles en laine et lin évoquent une atmosphère douce et accueillante. Chaque détail souligne une connexion intime à la culture marocaine et à l’artisanat local.",
-  },
-  {
-    icon: Globe,
-    title: "Connexion à la culture locale",
-    detail:
-      "Éléments marocains subtilement intégrés, inspirés des traditions locales, ancrent le projet dans son territoire tout en préservant une esthétique contemporaine.",
-  },
-],
+      {
+        icon: Flame,
+        title: "Confort & chaleur",
+        detail:
+          "Tapis berbères, poufs en cuir, textiles en laine et lin évoquent une atmosphère douce et accueillante. Chaque détail souligne une connexion intime à la culture marocaine et à l’artisanat local.",
+      },
+      {
+        icon: Globe,
+        title: "Connexion à la culture locale",
+        detail:
+          "Éléments marocains subtilement intégrés, inspirés des traditions locales, ancrent le projet dans son territoire tout en préservant une esthétique contemporaine.",
+      },
+    ],
 
     gallery: {
       chambres: [
@@ -278,7 +305,6 @@ features: [
         "/images/chalets/mm/e11.jpg",
         "/images/chalets/mm/e12.jpg",
         "/images/chalets/mm/e13.jpg",
-        
       ],
     },
   },
