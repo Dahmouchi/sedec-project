@@ -122,7 +122,7 @@ export default function Gallery({ images, categories = [], selectedCategory = "a
           >
             <button
               onClick={handleCloseModal}
-              className="absolute top-5 right-5 text-white hover:text-gray-300"
+              className="absolute top-5 right-5 bg-white p-1 rounded-full text-black hover:text-gray-600"
             >
               <X className="w-8 h-8" />
             </button>

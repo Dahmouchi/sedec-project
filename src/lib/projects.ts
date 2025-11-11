@@ -23,7 +23,7 @@ export const chalets = [
     id: 1,
     title: "Villa SCANDINAVIAN",
     img: "scondinave.jpg",
-    price: "1.3M MAD",
+    price: "1.0 MMAD",
     visit: true,
     bg3d: "video-bg",
     maquette: "/images/maquette.png",
@@ -110,7 +110,7 @@ export const chalets = [
     id: 2,
     maquette: "/images/maquette.png",
     title: "Villa Toubkal",
-    price: "1.2M MAD",
+    price: "1.0 MMAD",
     pdf: "/Villa-Toubkal-Brochure.pdf",
     bg3d: "video-bg1",
     hero: "banner-area-fivetoubkal banner-bg-fourtoubkal",
@@ -185,7 +185,7 @@ export const chalets = [
     pdf: "/Villa-M&M-Brochure.pdf",
     hero: "banner-area-fiveM banner-bg-fourM",
     type: "Villa",
-    price: "1.4M MAD",
+    price: "0.8 MMAD",
     subtitle:
       "Un havre de style alliant minimalisme pur et élégance sophistiquée.",
     location:
@@ -252,7 +252,7 @@ export const chalets = [
     type: "Villa",
     subtitle: "Un espace luxueux empreint de l’essence du design marocain",
     hero: "banner-area-fivemorocco banner-bg-fourmorocco",
-    price: "1.5M MAD",
+    price: "0.8 MMAD",
     location:
       "Un lieu où le raffinement rencontre la riche tradition marocaine par des détails artisanaux et des couleurs chaleureuses.",
     description:

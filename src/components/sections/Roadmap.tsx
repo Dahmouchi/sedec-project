@@ -185,11 +185,11 @@ const Roadmap = () => {
                       <div className="roadmap-content">
                         <span className="dot" />
                         <p>
-                          Modernisation et augmentation de la capacité de
-                          production des structures bois lamellé-collé. Mise en
-                          place d&apos;une nouvelle unité de menuiserie aluminium.
-                        </p>
-                        <span>Modernisation & menuiserie aluminium</span>
+  Modernisation et extension de la production bois lamellé-collé,
+  lancement du modulaire métallique et création d&apos;une unité de menuiserie aluminium.
+</p>
+<span>Menuiserie aluminium</span>
+
                       </div>
                     </div>
                   </SwiperSlide>

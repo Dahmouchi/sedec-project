@@ -5,10 +5,7 @@ import Layout from "@/components/layouts/Layout";
 import Link from "next/link";
 
 const images = [
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente1.jpg",
-    category: "Charpente",
-  },
+
   {
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente2.jpg",
     category: "Charpente",
@@ -21,11 +18,7 @@ const images = [
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente4.jpg",
     category: "Charpente",
   },
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier1.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Autre",
-  },
+
  
   {
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier6.jpg",
@@ -103,22 +96,7 @@ const images = [
     aspect_ratio: 4 / 3,
     category: "Autre",
   },
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier17.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Autre",
-  },
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/atelier18.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Autre",
-  },
-
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier5.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Villa-Scandinave",
-  },
+  
   {
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier6.jpg",
     aspect_ratio: 4 / 3,
@@ -219,19 +197,14 @@ const images = [
     aspect_ratio: 4 / 3,
     category: "Villa-Scandinave",
   },
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scandinave/atelier26.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Villa-Scandinave",
-  },
+  
   { src: "/images/charpente.jpg", category: "Charpente" },
   {
     src: "/images/charpente2.jpg",
     aspect_ratio: 16 / 9,
     category: "Charpente",
   },
-  { src: "/images/matterport.jpg", aspect_ratio: 4 / 3, category: "Charpente" },
-  { src: "/images/4.jpg", aspect_ratio: 9 / 16, category: "Pergola" },
+  { src: "/images/pergola/pergola (4).jpg", aspect_ratio: 9 / 16, category: "Pergola" },
   { src: "/images/5.jpg", aspect_ratio: 16 / 9, category: "Villa-Scandinav" },
   { src: "/images/bg.jpg", aspect_ratio: 9 / 16, category: "Villa-Scandinave" },
   {
@@ -275,7 +248,7 @@ const images = [
     category: "Villa-Scandinave",
   },
   {
-    src: "/images/reel/pergola3.png",
+    src: "/images/pergola/pergola (1).jpg",
     aspect_ratio: 4 / 3,
     category: "Pergola",
   },
@@ -295,7 +268,7 @@ const images = [
     category: "Charpente",
   },
   {
-    src: "/images/SEDEC-Proflex.jpg",
+    src: "/images/pergola/pergola (2).jpg",
     aspect_ratio: 21 / 9,
     category: "Pergola",
   },
@@ -304,24 +277,17 @@ const images = [
     aspect_ratio: 4 / 3,
     category: "Villa-Scandinave",
   },
-  {
-    src: "/images/Mots-du-president1.jpg",
-    aspect_ratio: 16 / 9,
-    category: "Charpente",
-  },
-  { src: "/images/reel/assila.jpg", aspect_ratio: 4 / 3, category: "Pergola" },
+  
+  { src: "/images/pergola/pergola (3).jpg", aspect_ratio: 4 / 3, category: "Pergola" },
 
-  { src: "/images/reel/GUERITE.jpg", aspect_ratio: 4 / 3, category: "Pergola" },
+  { src: "/images/pergola/pergola (5).jpg", aspect_ratio: 4 / 3, category: "Pergola" },
+  { src: "/images/pergola/pergola (6).jpg", aspect_ratio: 4 / 3, category: "Pergola" },
   {
     src: "/images/reel/Bureau-1.jpg",
     aspect_ratio: 4 / 3,
     category: "Modulaire métalique",
   },
-  {
-    src: "/images/merc/img166.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Modulaire métallique",
-  },
+
   {
     src: "/images/merc/img171.jpg",
     aspect_ratio: 4 / 3,
@@ -362,36 +328,13 @@ const images = [
     aspect_ratio: 4 / 3,
     category: "Modulaire métallique",
   },
-  {
-    src: "/images/merc/img71.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Modulaire métallique",
-  },
-  {
-    src: "/images/merc/img76.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Modulaire métallique",
-  },
-  {
-    src: "/images/merc/img81.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Modulaire métallique",
-  },
+
   {
     src: "/images/merc/img86.jpg",
     aspect_ratio: 4 / 3,
     category: "Modulaire métallique",
   },
-  {
-    src: "/images/merc/img91.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Modulaire métallique",
-  },
-  {
-    src: "/images/merc/img96.jpg",
-    aspect_ratio: 4 / 3,
-    category: "Modulaire métallique",
-  },
+
   {
     src: "/images/merc/img101.jpg",
     aspect_ratio: 4 / 3,

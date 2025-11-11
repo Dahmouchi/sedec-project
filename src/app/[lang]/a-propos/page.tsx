@@ -1,16 +1,34 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import Layout from "@/components/layouts/Layout";
 import Newsletter from "@/components/sections/Newsletter";
 import Roadmap from "@/components/sections/Roadmap";
 import Services from "@/components/sections/Services";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 export default function Mission() {
+  const pathname = usePathname();
+
   return (
     <>
       <Layout headerStyle={7}>
         {/* breadcrumb-area */}
         <section className="banner-area-five2 banner-bg-four2  max-h-[85vh] mb-16">
           <div className="">
+            <video
+            key={pathname}
+            className="absolute top-0 left-0 w-full h-full object-cover z-[-2]"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source
+              src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/video/bureau1.mov"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
             <div className="row justify-content-center">
               <div className="col-xl-8 col-lg-10">
                 <div className="banner-content">
@@ -71,7 +89,7 @@ export default function Mission() {
             <div className="row align-items-center">
               <div className="col-lg-6 order-0 order-lg-2">
                 <div className="vision-img text-center">
-                  <img src="/images/m.jpg" alt="" />
+                  <img src="/images/logoM.png" alt="" />
                 </div>
               </div>
               <div className="col-lg-6">

@@ -8,20 +8,15 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Footprints } from "lucide-react";
+import { usePathname } from "next/navigation";
 const images = [
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente1.jpg",
-    category: "Charpente",
-  },
+
   {
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente2.jpg",
     category: "Charpente",
   },
 
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente3.jpg",
-    category: "Charpente",
-  },
+
   {
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente4.jpg",
     category: "Charpente",
@@ -30,10 +25,7 @@ const images = [
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente5.jpg",
     category: "Charpente",
   },
-  {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente6.jpg",
-    category: "Charpente",
-  },
+
 ];
 const Charpente = () => {
   const swiperOptions = {
@@ -46,11 +38,28 @@ const Charpente = () => {
     },
     loop: true,
   };
+    const pathname = usePathname();
+
   return (
     <div>
       <Layout headerStyle={7}>
         <section className="banner-area-fivecharpente banner-bg-fourcharpente max-h-[85vh] mb-16">
+
           <div className="">
+            <video
+            key={pathname}
+            className="absolute top-0 left-0 w-full h-full object-cover z-[-2]"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source
+              src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/video/charpente.mov"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
             <div className="row justify-content-center">
               <div className="col-xl-8 col-lg-10">
                 <div className="banner-content">
@@ -84,14 +93,190 @@ const Charpente = () => {
         {/* SECTION 1 — Projects Showcase */}
         <section className="project-area project-style-three py-16">
           <div className="container">
-            <div className="row">
-              <div className="col-xl-5">
+            <div className="">
+              <div className="">
                 <div className="section-title mb-50 text-center md:text-left">
                   <span className="sub-title">Nos réalisations</span>
                   <h2 className="title">
                     Découvrez nos projets de charpente bois lamellée-collée
                   </h2>
-                  <Link
+                  
+                </div>
+              </div>
+              <div className=" lg:block hidden">
+                <div className="swiper-container project-active">
+                  <Swiper {...swiperOptions} className="swiper-wrapper">
+                    <SwiperSlide>
+                      <div className="project-item">
+                        <div className="project-thumb">
+                          <Link href="/project/1">
+                            <img
+                              className="w-auto h-[65vh]"
+                              src="/images/salle-Omni.jpg"
+                              alt=""
+                            />
+                          </Link>
+                        </div>
+                        <div className="project-content">
+                          <h3 className="title">
+                            <div>Salle sportive en BLC</div>
+                          </h3>
+                          <span>Oujda, Maroc</span>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="project-item">
+                        <div className="project-thumb">
+                          <Link href="/project/1">
+                            <img
+                              className="w-auto h-[65vh]"
+                              src="/images/DSC00056.jpg"
+                              alt=""
+                            />
+                          </Link>
+                        </div>
+                        <div className="project-content">
+                          <h3 className="title">
+                            <Link href="/project/1">
+                              Gare Maritime Guinée
+                            </Link>
+                          </h3>
+                          <span>Guinée</span>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="project-item">
+                        <div className="project-thumb">
+                          <Link href="/project/1">
+                            <img
+                              className="w-auto h-[65vh]"
+                              src="/images/salle-Fes.jpg"
+                              alt=""
+                            />
+                          </Link>
+                        </div>
+                        <div className="project-content">
+                          <h3 className="title">
+                            <div>Salle sportive en BLC</div>
+                          </h3>
+                          <span>Fes, Maroc</span>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="project-item">
+                        <div className="project-thumb">
+                          <Link href="/project/1">
+                            <img
+                              className="w-auto h-[65vh]"
+                              src="/images/Amphie.jpg"
+                              alt=""
+                            />
+                          </Link>
+                        </div>
+                        <div className="project-content">
+                          <h3 className="title">
+                            <div>Amphi université ibn zohr agadir</div>
+                          </h3>
+                          <span>Agadir, Maroc</span>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    
+                  </Swiper>
+                </div>
+               
+              </div>
+            </div>
+            <div className="w-full lg:hidden">
+              <div className="swiper-container project-active">
+                <Swiper {...swiperOptions} className="swiper-wrapper">
+                    <SwiperSlide>
+                      <div className="project-item">
+                        <div className="project-thumb">
+                          <Link href="/project/1">
+                            <img
+                              className="w-auto h-[35vh]"
+                              src="/images/salle-Omni.jpg"
+                              alt=""
+                            />
+                          </Link>
+                        </div>
+                        <div className="project-content">
+                          <h3 className="title">
+                            <div>Salle sportive en BLC</div>
+                          </h3>
+                          <span>Oujda, Maroc</span>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="project-item">
+                        <div className="project-thumb">
+                          <Link href="/project/1">
+                            <img
+                              className="w-auto h-[35vh]"
+                              src="/images/DSC00056.jpg"
+                              alt=""
+                            />
+                          </Link>
+                        </div>
+                        <div className="project-content">
+                          <h3 className="title">
+                            <Link href="/project/1">
+                              Gare Maritime Guinée
+                            </Link>
+                          </h3>
+                          <span>Guinée</span>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="project-item">
+                        <div className="project-thumb">
+                          <Link href="/project/1">
+                            <img
+                              className="w-auto h-[35vh]"
+                              src="/images/salle-Fes.jpg"
+                              alt=""
+                            />
+                          </Link>
+                        </div>
+                        <div className="project-content">
+                          <h3 className="title">
+                            <div>Salle sportive en BLC</div>
+                          </h3>
+                          <span>Fes, Maroc</span>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="project-item">
+                        <div className="project-thumb">
+                          <Link href="/project/1">
+                            <img
+                              className="w-auto h-[35vh]"
+                              src="/images/Amphie.jpg"
+                              alt=""
+                            />
+                          </Link>
+                        </div>
+                        <div className="project-content">
+                          <h3 className="title">
+                            <div>Amphi université ibn zohr agadir</div>
+                          </h3>
+                          <span>Agadir, Maroc</span>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    
+                  </Swiper>
+              </div>
+            </div>
+            <div className="w-full flex items-center justify-center">
+                 <Link
                     href="/galerie?category=all"
                     className="btn transparent-btn"
                   >
@@ -102,180 +287,10 @@ const Charpente = () => {
                       </div>
                     </div>
                   </Link>
-                </div>
-              </div>
-              <div className="col-xl-7 lg:block hidden">
-                <div className="swiper-container project-active">
-                  <Swiper {...swiperOptions} className="swiper-wrapper">
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[45vh]"
-                              src="/images/reel/Nos-metiers.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <div>Salle sportive en BLC</div>
-                          </h3>
-                          <span>Casablanca, Maroc</span>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[45vh]"
-                              src="/images/charpente2.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <div>Hangar industriel bois</div>
-                          </h3>
-                          <span>Tanger, Maroc</span>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[45vh]"
-                              src="/images/charpente3.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <div>Structure architecturale BLC</div>
-                          </h3>
-                          <span>Marrakech, Maroc</span>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[45vh]"
-                              src="/images/Durisol.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <Link href="/project/1">
-                              Complexe résidentiel bois
-                            </Link>
-                          </h3>
-                          <span>Rabat, Maroc</span>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  </Swiper>
-                </div>
-              </div>
-            </div>
-            <div className="w-full lg:hidden">
-              <div className="swiper-container project-active">
-                <Swiper {...swiperOptions} className="swiper-wrapper">
-                  <SwiperSlide>
-                    <div className="project-item">
-                      <div className="project-thumb">
-                        <Link href="/project/1">
-                          <img
-                            className="w-auto h-[35vh]"
-                            src="/images/reel/Nos-metiers.jpg"
-                            alt=""
-                          />
-                        </Link>
-                      </div>
-                      <div className="project-content">
-                        <h3 className="title">
-                          <div>Salle sportive en BLC</div>
-                        </h3>
-                        <span>Casablanca, Maroc</span>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="project-item">
-                      <div className="project-thumb">
-                        <Link href="/project/1">
-                          <img
-                            className="w-auto h-[35vh]"
-                            src="/images/charpente2.jpg"
-                            alt=""
-                          />
-                        </Link>
-                      </div>
-                      <div className="project-content">
-                        <h3 className="title">
-                          <div>Hangar industriel bois</div>
-                        </h3>
-                        <span>Tanger, Maroc</span>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="project-item">
-                      <div className="project-thumb">
-                        <Link href="/project/1">
-                          <img
-                            className="w-auto h-[35vh]"
-                            src="/images/charpente3.jpg"
-                            alt=""
-                          />
-                        </Link>
-                      </div>
-                      <div className="project-content">
-                        <h3 className="title">
-                          <div>Structure architecturale BLC</div>
-                        </h3>
-                        <span>Marrakech, Maroc</span>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="project-item">
-                      <div className="project-thumb">
-                        <Link href="/project/1">
-                          <img
-                            className="w-auto h-[35vh]"
-                            src="/images/Durisol.jpg"
-                            alt=""
-                          />
-                        </Link>
-                      </div>
-                      <div className="project-content">
-                        <h3 className="title">
-                          <Link href="/project/1">
-                            Complexe résidentiel bois
-                          </Link>
-                        </h3>
-                        <span>Rabat, Maroc</span>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-              </div>
-            </div>
+               </div>
           </div>
         </section>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 container py-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 container py-4">
           {images.map((img: any, i: any) => (
             <img
               key={i}

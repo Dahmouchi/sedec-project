@@ -10,7 +10,7 @@ const About=()=> {
                         <div className="col-xl-8 col-lg-10">
                             <div className="section-title text-center mb-35">
                                 <span className="sub-title">Qui sommes-nous</span>
-                                <h2 className="title">Plus de 60 ans de leadership dans la construction en bois</h2>
+                                <h2 className="title">Plus de 70 ans de leadership dans la construction en bois</h2>
                             </div>
                             <div className="about-content text-center">
                                 <p>

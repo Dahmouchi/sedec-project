@@ -2113,7 +2113,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivecharpente.banner-bg-fourcharpente {
-    background-image   : url(../../images/charpente.jpg);
+    background-image   : url(https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/gallerie.png);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2223,7 +2223,7 @@ label {
 
 
 .banner-area-fivepergola.banner-bg-fourpergola {
-    background-image   : url(../../images/pergola4.jpg);
+    background-image   : url(../../images/pergola4.png);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2295,7 +2295,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivegards.banner-bg-fourgards {
-    background-image   : url(../../images/reel/Garde-Corps.webp);
+    background-image   : url(../../images/reel/carde.png);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2313,7 +2313,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivepass.banner-bg-fourpass {
-    background-image   : url(../../images/reel/passerelle_corten.jpg);
+    background-image   : url(../../images/reel/passerelle_corten.png);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2331,7 +2331,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivevoit.banner-bg-fourvoit {
-    background-image   : url(../../images/reel/10592.webp);
+    background-image   : url(../../images/reel/abris.png);
     background-size    : cover;
     background-position: center;
     position           : relative;

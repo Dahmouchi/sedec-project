@@ -18,7 +18,7 @@ export default function HeroSection() {
         playsInline
       >
         <source
-          src="https://pub-060265d5b1f645428fcbed1375c4fe21.r2.dev/booking/Hero_cropped.mp4"
+          src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/video/overview.MOV"
           type="video/mp4"
         />
         Your browser does not support the video tag.
