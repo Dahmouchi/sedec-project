@@ -225,7 +225,7 @@ const closeMenu = () => {
                                     <Link href="/pergola/pergola" className="block">
                                       <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
                                         <img
-                                          src="/images/pergola4.png"
+                                          src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola4.png"
                                           alt="Chalet Scandinavian"
                                           className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                         />
@@ -295,8 +295,8 @@ const closeMenu = () => {
                              <img
                               src={
                                 scroll
-                                  ? "/images/logoM.png"
-                                  : "/images/logoM.png"
+                                  ? "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png"
+                                  : "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png"
                               }
                               className="w-24 h-auto transition-all duration-300"
                               alt="Logo"
@@ -428,7 +428,7 @@ const closeMenu = () => {
                  <div className="">
                    <img
                    
-                    src= {`${scroll ? "/images/logoM.png":"/images/logoM.png"}`}
+                    src= {`${scroll ? "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png":"https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png"}`}
                     className="w-14 h-auto"
                     alt="Logo"
                   />
@@ -452,7 +452,7 @@ const closeMenu = () => {
                     </div>
                     <div className="nav-logo">
                       <Link href="/">
-                        <img src="/images/logoM.png" alt="Logo" className="w-20 h-auto" onClick={closeMenu} />
+                        <img src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png" alt="Logo" className="w-20 h-auto" onClick={closeMenu} />
                       </Link>
                     </div>
                     <div className="menu-outer">

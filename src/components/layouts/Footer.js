@@ -14,7 +14,7 @@ export default function Footer1({ }) {
                                         <div className="footer-logo">
                                             <Link href="/">
                                             <div className="bg-white p-2 w-fit">
-                                                <img src="/images/logoM.png" className="w-36 h-auto" alt="" />
+                                                <img src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png" className="w-36 h-auto" alt="" />
                                             </div>
                                             </Link>
                                         </div>

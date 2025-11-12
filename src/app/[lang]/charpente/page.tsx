@@ -126,7 +126,7 @@ const Charpente = () => {
                         <Link href="#">
                           <img
                             className="w-full h-[65vh] object-cover rounded-2xl shadow-md"
-                            src="/images/DSC00056.jpg"
+                            src="/images/DSC00056.JPG"
                             alt="Gare Maritime Guinée"
                           />
                         </Link>
@@ -164,7 +164,7 @@ const Charpente = () => {
                         <Link href="#">
                           <img
                             className="w-full h-[65vh] object-cover rounded-2xl shadow-md"
-                            src="/images/Amphie.jpg"
+                            src="/images/Amphie.JPG"
                             alt="Amphi université ibn zohr agadir"
                           />
                         </Link>
@@ -208,7 +208,7 @@ const Charpente = () => {
                         <Link href="#">
                           <img
                             className="w-auto h-[35vh]"
-                            src="/images/DSC00056.jpg"
+                            src="/images/DSC00056.JPG"
                             alt=""
                           />
                         </Link>
@@ -246,7 +246,7 @@ const Charpente = () => {
                         <Link href="#">
                           <img
                             className="w-auto h-[35vh]"
-                            src="/images/Amphie.jpg"
+                            src="/images/Amphie.JPG"
                             alt=""
                           />
                         </Link>
@@ -327,9 +327,9 @@ const Charpente = () => {
                     <div className="project-content-two">
                       <div className="section-title">
                         <h3 className="title">
-                          <Link href="#">
+                          <h1 >
                             Hangar à Oujda
-                          </Link>
+                          </h1>
                         </h3>
                       </div>
                       <div className="project-list">
@@ -398,9 +398,9 @@ const Charpente = () => {
                     <div className="project-content-two">
                       <div className="section-title">
                         <h2 className="title">
-                          <Link href="#">
+                          <h1 >
                             Salle Assazag
-                          </Link>
+                          </h1>
                         </h2>
                       </div>
                       <div className="project-list">

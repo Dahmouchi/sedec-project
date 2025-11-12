@@ -10,7 +10,7 @@ const Test = () => {
         <li className="flex flex-col items-center text-center w-full ">
           <Link href="/projets" className="block">
             <img
-              src="/images/scondinave.jpg"
+              src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scondinave.jpg"
               alt="Chalet Scandinavian"
               className="w-full h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />
@@ -38,7 +38,7 @@ const Test = () => {
         <li className="flex flex-col items-center text-center w-full ">
           <Link href="/pergola" className="block">
             <img
-              src="/images/pergola4.png"
+              src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola4.png"
               alt="Chalet M&M"
               className="w-full h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />

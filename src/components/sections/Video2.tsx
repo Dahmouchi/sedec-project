@@ -41,7 +41,7 @@ export default function Video2() {
               {" "}
               <div className="video-bg"> 
                 <div className="absolute bottom-10 right-50% bg-black/20 lg:px-20 px-4 flex flex-col items-center justify-center py-2 rounded-full">
-                <img src="/images/logoMM.png" alt=""  className="lg:w-24 w-16 h-auto "/>
+                <img src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoMM.png" alt=""  className="lg:w-24 w-16 h-auto "/>
                   <h2 className=" text-white text-center">Villa Scandinavian </h2>
                   <h4 className=" text-white text-center">Visite virtuelle </h4>
                 </div>
@@ -62,7 +62,7 @@ export default function Video2() {
         <DialogContent className=" !w-[90vw] !max-w-[1200px]  h-[80vh] p-0 overflow-hidden">
          
         <div className="relative">
-            <img src="/images/logoM.png" alt="Logo" className="lg:w-20 w-16 h-auto absolute bottom-26 left-6 z-50" />
+            <img src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png" alt="Logo" className="lg:w-20 w-16 h-auto absolute bottom-26 left-6 z-50" />
             <iframe
             src={mpUrl}
             allowFullScreen

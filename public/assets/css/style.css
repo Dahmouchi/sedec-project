@@ -2855,7 +2855,7 @@ label {
 	14. Video
 ===============================*/
 .video-bg {
-    background-image   : url(../../images/matterport.jpg);
+    background-image   : url("https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/matterport.jpg");
     background-size    : cover;
     background-position: center;
     height             : 650px;
