@@ -14,7 +14,7 @@ export default function Project() {
   return (
     <>
       <Layout headerStyle={7}>
-        <div className="w-full mb-28 lg:h-[80vh] h-[50vh] bg-cover bg-center relative">
+        <div className="w-full mb-28 lg:h-[85vh] h-[45vh] bg-cover bg-center relative">
           <video
             key={pathname}
             className="absolute top-0 left-0 w-full h-full object-cover z-[-2]"

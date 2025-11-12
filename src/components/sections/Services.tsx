@@ -19,7 +19,7 @@ const Services = () => {
               <div className="services-item">
                 <div className=" my-4 flex items-center justify-center">
                    <Link href="/batiments-modulaires/durisol">
-                    <div className="w-52 h-52 rounded-full bg-amber-400 bg-center bg-cover" style={{backgroundImage:"url(/images/Durisol.jpg)"}}></div>
+                    <div className="w-52 h-52 rounded-full bg-amber-400 bg-center bg-cover" style={{backgroundImage:"url(https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/durisole1.jpg)"}}></div>
                   </Link>
                 </div>
                 <div className="services-content">

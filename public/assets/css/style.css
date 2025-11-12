@@ -2118,7 +2118,6 @@ label {
     background-position: center;
     position           : relative;
     z-index            : 1;
-    padding            : 200px 0 350px;
 }
 .banner-area-fivecharpente.banner-bg-fourcharpente::before {
     content   : "";
@@ -2200,7 +2199,6 @@ label {
     background-position: center;
     position           : relative;
     z-index            : 1;
-    padding            : 200px 0 350px;
 }
 .banner-area-five3.banner-bg-four3::before {
     content   : "";
@@ -2241,7 +2239,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivemur.banner-bg-fourmur {
-    background-image   : url(../../images/reel/villa-étage-1.jpg);
+    background-image   : url("https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/mur(2).JPG");
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2259,7 +2257,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivedurisol.banner-bg-fourdurisol {
-    background-image   : url(../../images/Durisol.jpg);
+    background-image   : url(https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/durisole1.jpg);
     background-size    : cover;
     background-position: center;
     position           : relative;

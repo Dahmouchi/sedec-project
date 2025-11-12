@@ -383,8 +383,8 @@ export default function GalleryPage() {
 
   return (
     <Layout headerStyle={7}>
-      <section className="banner-area-fivecharpente banner-bg-fourcharpente max-h-[85vh] mb-16">
-        <div className="">
+      <section className="banner-area-fivecharpente py-11 banner-bg-fourcharpente h-[45vh] lg:h-[85vh] mb-16">
+        <div className="w-full h-full flex items-center justify-center">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
               <div className="banner-content">

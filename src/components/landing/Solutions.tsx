@@ -42,7 +42,7 @@ export function SolutionsGallerySection({ translations}: any) {
     },
     {
       id: "mob",
-      image: "/images/sedec-mob.jpg",
+      image: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/mur(1).JPG",
       title: translations.mob.title,
       description: translations.mob.description,
       accentColor: "white",

@@ -15,7 +15,7 @@ export default function Project() {
     <>
       <Layout headerStyle={7}>
         <div
-          className="w-full mb-28 lg:h-[80vh] h-[50vh] bg-cover bg-center relative"
+          className="w-full mb-28 lg:h-[85vh] h-[45vh] bg-cover bg-center  relative"
           
         >
          

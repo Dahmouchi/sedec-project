@@ -328,7 +328,7 @@ const closeMenu = () => {
                                      <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
                                         <img
                                       
-                                        src="/images/sedec-mob.jpg"
+                                        src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/mur(1).JPG"
                                         alt="Chalet Scandinavian"
                                         className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                       />
@@ -360,7 +360,7 @@ const closeMenu = () => {
                                     <Link href="/batiments-modulaires/durisol" className="block">
                                        <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
                                         <img
-                                        src="/images/Durisol.jpg"
+                                        src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/durisole1.jpg"
                                         alt="Chalet M&M"
                                         className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                       /></div>
@@ -428,7 +428,7 @@ const closeMenu = () => {
                  <div className="">
                    <img
                    
-                    src= {`${scroll ? "/images/logo.png":"/images/logoM.png"}`}
+                    src= {`${scroll ? "/images/logoM.png":"/images/logoM.png"}`}
                     className="w-14 h-auto"
                     alt="Logo"
                   />

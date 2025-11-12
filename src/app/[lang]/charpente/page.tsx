@@ -10,12 +10,10 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Footprints } from "lucide-react";
 import { usePathname } from "next/navigation";
 const images = [
-
   {
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente2.jpg",
     category: "Charpente",
   },
-
 
   {
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente4.jpg",
@@ -25,7 +23,6 @@ const images = [
     src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente5.jpg",
     category: "Charpente",
   },
-
 ];
 const Charpente = () => {
   const swiperOptions = {
@@ -38,28 +35,27 @@ const Charpente = () => {
     },
     loop: true,
   };
-    const pathname = usePathname();
+  const pathname = usePathname();
 
   return (
     <div>
       <Layout headerStyle={7}>
-        <section className="banner-area-fivecharpente banner-bg-fourcharpente max-h-[85vh] mb-16">
-
-          <div className="">
+        <section className="banner-area-fivecharpente banner-bg-fourcharpente h-[45vh] lg:h-[85vh] mb-16 px-4">
+          <div className="w-full h-full flex items-center justify-center">
             <video
-            key={pathname}
-            className="absolute top-0 left-0 w-full h-full object-cover z-[-2]"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source
-              src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/video/charpente.mov"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+              key={pathname}
+              className="absolute top-0 left-0 w-full h-full object-cover z-[-2]"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source
+                src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/video/charpente.mov"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
             <div className="row justify-content-center">
               <div className="col-xl-8 col-lg-10">
                 <div className="banner-content">
@@ -100,194 +96,185 @@ const Charpente = () => {
                   <h2 className="title">
                     Découvrez nos projets de charpente bois lamellée-collée
                   </h2>
-                  
                 </div>
               </div>
               <div className=" lg:block hidden">
-                <div className="swiper-container project-active">
-                  <Swiper {...swiperOptions} className="swiper-wrapper">
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[65vh]"
-                              src="/images/salle-Omni.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <div>Salle sportive en BLC</div>
-                          </h3>
-                          <span>Oujda, Maroc</span>
-                        </div>
+                <div className=" w-full">
+                  <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-16 py-10">
+                    {/* Project 1 */}
+                    <div className="project-item">
+                      <div className="project-thumb">
+                        <Link href="#">
+                          <img
+                            className="w-full h-[65vh] object-cover rounded-2xl shadow-md"
+                            src="/images/salle-Omni.jpg"
+                            alt="Salle sportive en BLC Oujda"
+                          />
+                        </Link>
                       </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[65vh]"
-                              src="/images/DSC00056.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <Link href="/project/1">
-                              Gare Maritime Guinée
-                            </Link>
-                          </h3>
-                          <span>Guinée</span>
-                        </div>
+                      <div className="project-content mt-4">
+                        <h3 className="text-xl font-semibold">
+                          Salle sportive en BLC
+                        </h3>
+                        <span className="text-gray-500">Oujda, Maroc</span>
                       </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[65vh]"
-                              src="/images/salle-Fes.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <div>Salle sportive en BLC</div>
-                          </h3>
-                          <span>Fes, Maroc</span>
-                        </div>
+                    </div>
+
+                    {/* Project 2 */}
+                    <div className="project-item">
+                      <div className="project-thumb">
+                        <Link href="#">
+                          <img
+                            className="w-full h-[65vh] object-cover rounded-2xl shadow-md"
+                            src="/images/DSC00056.jpg"
+                            alt="Gare Maritime Guinée"
+                          />
+                        </Link>
                       </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[65vh]"
-                              src="/images/Amphie.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <div>Amphi université ibn zohr agadir</div>
-                          </h3>
-                          <span>Agadir, Maroc</span>
-                        </div>
+                      <div className="project-content mt-4">
+                        <h3 className="text-xl font-semibold">
+                          <Link href="#">Gare Maritime Guinée</Link>
+                        </h3>
+                        <span className="text-gray-500">Guinée</span>
                       </div>
-                    </SwiperSlide>
-                    
-                  </Swiper>
+                    </div>
+
+                    {/* Project 3 */}
+                    <div className="project-item">
+                      <div className="project-thumb">
+                        <Link href="#">
+                          <img
+                            className="w-full h-[65vh] object-cover rounded-2xl shadow-md"
+                            src="/images/salle-Fes.jpg"
+                            alt="Salle sportive en BLC Fes"
+                          />
+                        </Link>
+                      </div>
+                      <div className="project-content mt-4">
+                        <h3 className="text-xl font-semibold">
+                          Salle sportive en BLC
+                        </h3>
+                        <span className="text-gray-500">Fes, Maroc</span>
+                      </div>
+                    </div>
+
+                    {/* Project 4 */}
+                    <div className="project-item">
+                      <div className="project-thumb">
+                        <Link href="#">
+                          <img
+                            className="w-full h-[65vh] object-cover rounded-2xl shadow-md"
+                            src="/images/Amphie.jpg"
+                            alt="Amphi université ibn zohr agadir"
+                          />
+                        </Link>
+                      </div>
+                      <div className="project-content mt-4">
+                        <h3 className="text-xl font-semibold">
+                          Amphi université Ibn Zohr Agadir
+                        </h3>
+                        <span className="text-gray-500">Agadir, Maroc</span>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-               
               </div>
             </div>
             <div className="w-full lg:hidden">
               <div className="swiper-container project-active">
                 <Swiper {...swiperOptions} className="swiper-wrapper">
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[35vh]"
-                              src="/images/salle-Omni.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <div>Salle sportive en BLC</div>
-                          </h3>
-                          <span>Oujda, Maroc</span>
-                        </div>
+                  <SwiperSlide>
+                    <div className="project-item">
+                      <div className="project-thumb">
+                        <Link href="#">
+                          <img
+                            className="w-auto h-[35vh]"
+                            src="/images/salle-Omni.jpg"
+                            alt=""
+                          />
+                        </Link>
                       </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[35vh]"
-                              src="/images/DSC00056.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <Link href="/project/1">
-                              Gare Maritime Guinée
-                            </Link>
-                          </h3>
-                          <span>Guinée</span>
-                        </div>
+                      <div className="project-content">
+                        <h3 className="title">
+                          <div>Salle sportive en BLC</div>
+                        </h3>
+                        <span>Oujda, Maroc</span>
                       </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[35vh]"
-                              src="/images/salle-Fes.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <div>Salle sportive en BLC</div>
-                          </h3>
-                          <span>Fes, Maroc</span>
-                        </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="project-item">
+                      <div className="project-thumb">
+                        <Link href="#">
+                          <img
+                            className="w-auto h-[35vh]"
+                            src="/images/DSC00056.jpg"
+                            alt=""
+                          />
+                        </Link>
                       </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="project-item">
-                        <div className="project-thumb">
-                          <Link href="/project/1">
-                            <img
-                              className="w-auto h-[35vh]"
-                              src="/images/Amphie.jpg"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
-                        <div className="project-content">
-                          <h3 className="title">
-                            <div>Amphi université ibn zohr agadir</div>
-                          </h3>
-                          <span>Agadir, Maroc</span>
-                        </div>
+                      <div className="project-content">
+                        <h3 className="title">
+                          <Link href="#">Gare Maritime Guinée</Link>
+                        </h3>
+                        <span>Guinée</span>
                       </div>
-                    </SwiperSlide>
-                    
-                  </Swiper>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="project-item">
+                      <div className="project-thumb">
+                        <Link href="#">
+                          <img
+                            className="w-auto h-[35vh]"
+                            src="/images/salle-Fes.jpg"
+                            alt=""
+                          />
+                        </Link>
+                      </div>
+                      <div className="project-content">
+                        <h3 className="title">
+                          <div>Salle sportive en BLC</div>
+                        </h3>
+                        <span>Fes, Maroc</span>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="project-item">
+                      <div className="project-thumb">
+                        <Link href="#">
+                          <img
+                            className="w-auto h-[35vh]"
+                            src="/images/Amphie.jpg"
+                            alt=""
+                          />
+                        </Link>
+                      </div>
+                      <div className="project-content">
+                        <h3 className="title">
+                          <div>Amphi université ibn zohr agadir</div>
+                        </h3>
+                        <span>Agadir, Maroc</span>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
               </div>
             </div>
             <div className="w-full flex items-center justify-center">
-                 <Link
-                    href="/galerie?category=all"
-                    className="btn transparent-btn"
-                  >
-                    <div className="btn_m">
-                      <div className="btn_c">
-                        <div className="btn_t1">Voir tous les projets</div>
-                        <div className="btn_t2">Voir tous les projets</div>
-                      </div>
-                    </div>
-                  </Link>
-               </div>
+              <Link
+                href="/galerie?category=all"
+                className="btn transparent-btn"
+              >
+                <div className="btn_m">
+                  <div className="btn_c">
+                    <div className="btn_t1">Voir tous les projets</div>
+                    <div className="btn_t2">Voir tous les projets</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
         </section>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 container py-4">
@@ -306,7 +293,7 @@ const Charpente = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="services-img-two text-center">
-                  <img src="/images/charpente.jpg" alt="" />
+                  <img src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/B.A(5).jpg" alt="" />
                 </div>
               </div>
               <div className="col-lg-6">
@@ -331,8 +318,8 @@ const Charpente = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-6">
                     <div className="project-thumb">
-                      <Link href="/project/1">
-                        <img src="/images/charpente3.jpg" alt="" />
+                      <Link href="#">
+                        <img src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/B.A(4).jpg" alt="" />
                       </Link>
                     </div>
                   </div>
@@ -340,9 +327,8 @@ const Charpente = () => {
                     <div className="project-content-two">
                       <div className="section-title">
                         <h3 className="title">
-                          <Link href="/project/1">
-                            Salle multisports <br /> en charpente
-                            lamellée-collée
+                          <Link href="#">
+                            Hangar à Oujda
                           </Link>
                         </h3>
                       </div>
@@ -354,7 +340,7 @@ const Charpente = () => {
                             </div>
                             <div className="content">
                               <p>
-                                Portée <br /> Jusqu&apos;à 40 m sans appui
+                                Portée <br /> Jusqu&apos;à 25x100 m sans appui
                               </p>
                             </div>
                           </li>
@@ -364,7 +350,7 @@ const Charpente = () => {
                             </div>
                             <div className="content">
                               <p>
-                                État <br /> Réalisé en 2024
+                                État <br /> Réalisé en 2006
                               </p>
                             </div>
                           </li>
@@ -384,7 +370,7 @@ const Charpente = () => {
                             </div>
                             <div className="content">
                               <p>
-                                Type <br /> Structure bois architecturale
+                                Type <br /> Hangar
                               </p>
                             </div>
                           </li>
@@ -400,9 +386,9 @@ const Charpente = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-6">
                     <div className="project-thumb">
-                      <Link href="/project/1">
+                      <Link href="#">
                         <img
-                          src="/images/reel/place-citoyens-ste-adele-photo05.jpg"
+                          src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpenteP.jpg"
                           alt=""
                         />
                       </Link>
@@ -412,8 +398,8 @@ const Charpente = () => {
                     <div className="project-content-two">
                       <div className="section-title">
                         <h2 className="title">
-                          <Link href="/project/2">
-                            Pavillon éco-bois <br /> à ossature lamellée-collée
+                          <Link href="#">
+                            Salle Assazag
                           </Link>
                         </h2>
                       </div>
@@ -425,7 +411,7 @@ const Charpente = () => {
                             </div>
                             <div className="content">
                               <p>
-                                Surface <br /> 1200 m²
+                                Surface <br /> +200 m²
                               </p>
                             </div>
                           </li>
@@ -455,7 +441,7 @@ const Charpente = () => {
                             </div>
                             <div className="content">
                               <p>
-                                Type <br /> Construction résidentielle
+                                Type <br /> Salle de Sport
                               </p>
                             </div>
                           </li>
@@ -466,7 +452,7 @@ const Charpente = () => {
                 </div>
                 <div className="grid md:grid-cols-2 gap-12 items-center lg:mt-36">
                   <img
-                    src="/images/charpente.jpg"
+                    src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente2.jpg"
                     alt="Passerelle"
                     className="w-full rounded-xl shadow-lg"
                   />
@@ -500,43 +486,7 @@ const Charpente = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="grid md:grid-cols-2 gap-12 items-center lg:mt-36">
-                  <img
-                    src="/images/reel/charpente-ossature-metallique.jpg"
-                    alt="Charpente métallique"
-                    className="w-full rounded-xl shadow-lg"
-                  />
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <h3 className="text-3xl font-serif text-[#202020]">
-                        Charpente métallique
-                      </h3>
-                    </div>
-                    <p className="text-[#797978] leading-relaxed text-lg">
-                      Spécialistes de la conception et de la réalisation de
-                      charpentes métalliques, nous fabriquons des structures
-                      robustes et durables pour tous types de bâtiments —
-                      industriels, commerciaux ou publics. Nos charpentes
-                      allient précision, performance et adaptabilité pour
-                      répondre aux exigences les plus strictes en matière de
-                      solidité et de design architectural.
-                    </p>
-                    <ul className="space-y-2 text-[#797978]">
-                      <li className="flex items-center gap-3">
-                        <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
-                        Résistance et durabilité exceptionnelles
-                      </li>
-                      <li className="flex items-center gap-3">
-                        <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
-                        Précision d&apos;ingénierie et finitions soignées
-                      </li>
-                      <li className="flex items-center gap-3">
-                        <span className="w-2 h-2 bg-[#BD9A68] rounded-full"></span>
-                        Adaptée à tout type de projet architectural
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>

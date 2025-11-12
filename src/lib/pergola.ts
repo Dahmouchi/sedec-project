@@ -63,15 +63,16 @@ export const pergola = [
       },
     ],
     gallery: [
-      "/images/pergola/pergola (0).png",
-        "/images/pergola/pergola (1).jpg",
-        "/images/pergola/pergola (2).jpg",
-        "/images/pergola/pergola (3).jpg",
-        "/images/pergola/pergola (4).jpg",
-        "/images/pergola/pergola (5).jpg",
-        "/images/pergola/pergola (6).jpg",
-        "/images/pergola/pergola (7).jpg",
-         "/images/pergola/pergola (8).jpg",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(0).png",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(1).jpg",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(2).png",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(3).jpg",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(4).jpg",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(5).jpg",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(6).jpg",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(7).jpg",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(8).jpg",
+
     ],
   },
   {
@@ -113,9 +114,9 @@ export const pergola = [
     ],
 
     gallery: [
-      "/images/gard/gard (1).jpg",
-      "/images/gard/gard (1).png",
-      "/images/gard/gard (2).jpg",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/gard/gard1.jpg",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/gard/gard1.png",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/gard/gard2.jpg",
 
     ],
   },
@@ -158,9 +159,9 @@ export const pergola = [
     ],
 
     gallery: [
-      "/images/passrelle/passrelle (1).jpg",
-       "/images/passrelle/passrelle (1).png",
-       "/images/passrelle/passrelle (2).jpg",
+      "/images/passrelle/passrelle(1).JPG",
+       "/images/passrelle/passrelle(1).png",
+       "/images/passrelle/passrelle(2).JPG",
     ],
   },
   {
@@ -202,12 +203,12 @@ export const pergola = [
     ],
 
     gallery: [
-      "/images/abri/abri (1).jpg",
-        "/images/abri/abri (2).jpg",
-        "/images/abri/abri (3).jpg",
-        "/images/abri/abri (4).jpg",
-        "/images/abri/abri (5).jpg",
-        "/images/abri/abris.png",
+      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/abri/abri1.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/abri/abri2.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/abri/abri3.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/abri/abri4.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/abri/abri5.jpg",
+        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/abri/abris.png",
     ],
   },
 ];

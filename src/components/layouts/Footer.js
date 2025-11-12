@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link"
 
 export default function Footer1({ }) {
@@ -13,7 +14,7 @@ export default function Footer1({ }) {
                                         <div className="footer-logo">
                                             <Link href="/">
                                             <div className="bg-white p-2 w-fit">
-                                                <img src="/images/logo.png" className="w-36 h-auto" alt="" />
+                                                <img src="/images/logoM.png" className="w-36 h-auto" alt="" />
                                             </div>
                                             </Link>
                                         </div>

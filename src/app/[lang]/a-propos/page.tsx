@@ -13,8 +13,8 @@ export default function Mission() {
     <>
       <Layout headerStyle={7}>
         {/* breadcrumb-area */}
-        <section className="banner-area-five2 banner-bg-four2  max-h-[85vh] mb-16">
-          <div className="">
+        <section className="banner-area-five2 banner-bg-four2 h-[45vh] lg:h-[85vh] mb-16 ">
+          <div className="w-full h-full relative flex items-center justify-center">
             <video
             key={pathname}
             className="absolute top-0 left-0 w-full h-full object-cover z-[-2]"
