@@ -146,7 +146,7 @@ export default function Gallery({ images, categories = [], selectedCategory = "a
                  src={filteredImages[selectedImageIndex].src || "/placeholder.svg"}
                alt={`Gallery image ${selectedImageIndex + 1}`}
                 
-                className="object-contain rounded-lg w-full h-auto "
+                className="object-contain rounded-lg  w-full h-auto "
               />
             </motion.div>
 

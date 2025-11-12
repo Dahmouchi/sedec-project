@@ -192,7 +192,7 @@ const BlogDetails: React.FC = () => {
         {project && (
           <>
             {/* project-details-area */}
-            <section className="project-details-area">
+            <section className="mt-16">
               <div className="container">
                 <div className="project-details-top">
                   <div className="grid lg:grid-cols-2 grid-cols-1">
@@ -256,7 +256,7 @@ const BlogDetails: React.FC = () => {
                   </div>
 
                   {/* Tabs */}
-                  <div className="flex gap-4 border-b border-gray-300 pb-2 mb-4 justify-center items-center">
+                  <div className="flex gap-4 flex-wrap border-b border-gray-300 pb-2 mb-4 justify-center items-center">
                     {categories.map((cat) => (
                       <button
                         key={cat}
@@ -323,7 +323,7 @@ const BlogDetails: React.FC = () => {
                           animate={{ opacity: 1, scale: 1 }}
                           exit={{ opacity: 0, scale: 0.95 }}
                           transition={{ duration: 0.3 }}
-                          className="max-w-7xl max-h-[90vh] object-contain rounded-lg shadow-lg cursor-auto"
+                          className="w-7xl max-h-[90vh] object-contain rounded-lg shadow-lg cursor-auto"
                           onClick={(e) => e.stopPropagation()}
                         />
 

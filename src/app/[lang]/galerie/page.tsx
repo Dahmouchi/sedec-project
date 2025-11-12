@@ -204,7 +204,7 @@ const images = [
     aspect_ratio: 16 / 9,
     category: "Charpente",
   },
-  { src: "/images/pergola/pergola (4).jpg", aspect_ratio: 9 / 16, category: "Pergola" },
+  { src: "/images/pergola/pergola(4).jpg", aspect_ratio: 9 / 16, category: "Pergola" },
   { src: "/images/5.jpg", aspect_ratio: 16 / 9, category: "Villa-Scandinav" },
   { src: "/images/bg.jpg", aspect_ratio: 9 / 16, category: "Villa-Scandinave" },
   {
@@ -248,7 +248,7 @@ const images = [
     category: "Villa-Scandinave",
   },
   {
-    src: "/images/pergola/pergola (1).jpg",
+    src: "/images/pergola/pergola(1).jpg",
     aspect_ratio: 4 / 3,
     category: "Pergola",
   },
@@ -268,7 +268,7 @@ const images = [
     category: "Charpente",
   },
   {
-    src: "/images/pergola/pergola (2).jpg",
+    src: "/images/pergola/pergola(2).jpg",
     aspect_ratio: 21 / 9,
     category: "Pergola",
   },
@@ -278,10 +278,10 @@ const images = [
     category: "Villa-Scandinave",
   },
   
-  { src: "/images/pergola/pergola (3).jpg", aspect_ratio: 4 / 3, category: "Pergola" },
+  { src: "/images/pergola/pergola(3).jpg", aspect_ratio: 4 / 3, category: "Pergola" },
 
-  { src: "/images/pergola/pergola (5).jpg", aspect_ratio: 4 / 3, category: "Pergola" },
-  { src: "/images/pergola/pergola (6).jpg", aspect_ratio: 4 / 3, category: "Pergola" },
+  { src: "/images/pergola/pergola(5).jpg", aspect_ratio: 4 / 3, category: "Pergola" },
+  { src: "/images/pergola/pergola(6).jpg", aspect_ratio: 4 / 3, category: "Pergola" },
   {
     src: "/images/reel/Bureau-1.jpg",
     aspect_ratio: 4 / 3,
