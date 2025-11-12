@@ -2076,7 +2076,6 @@ label {
 
 /* banner-five */
 .banner-area-five.banner-bg-four {
-    background-image   : url(../../images/bg.jpg);
     background-size    : cover;
     background-position: center;
     position           : relative;
