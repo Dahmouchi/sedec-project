@@ -9,7 +9,7 @@ export default function BatGridView({ item, col }) {
                     <div className="project-thumb">
                         <Link href={`/batiments-modulaires/${item.id}`}>
                         <div className="w-full h-[25vh] lg:h-[50vh] rounded-xl">
-                            <img src={`/images/${item.img}`} alt="" className="w-full h-full bg-cover"/>
+                            <img src={`${item.img}`} alt="" className="w-full h-full bg-cover"/>
 
                         </div>
                         </Link>

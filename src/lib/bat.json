@@ -3,7 +3,7 @@
    {
     "id": "mur-ossature-bois",
     "title": "Mur ossature bois",
-    "img": "/reel/villa-étage-1.jpg",
+    "img": "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/mur(1).JPG",
     "status": "Complete",
     "type": "Chalet",
     "location":"Solidité et esthétisme"
@@ -12,7 +12,7 @@
     {
     "id": "modulaire-metallique",
     "title": "Modulaire métallique",
-    "img": "/merc/img176.jpg",
+    "img": "/images/merc/img176.jpg",
     "status": "Under Construction",
     "type": "Chalet",
     "location":       "RSécurité et raffinement"
