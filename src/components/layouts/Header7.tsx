@@ -3,26 +3,11 @@
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 import { Menu } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Header7({ handleMobileMenu, scroll }: any) {
-  const [isLargeScreen, setIsLargeScreen] = useState(true);
   const [isMobileMenu, setMobileMenu] = useState(false);
 
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsLargeScreen(window.innerWidth >= 1366);
-    };
-
-    // Initial check
-    checkScreenSize();
-
-    // Add event listener
-    window.addEventListener('resize', checkScreenSize);
-
-    // Cleanup
-    return () => window.removeEventListener('resize', checkScreenSize);
-  }, []);
 const closeMenu = () => {
     setMobileMenu(false);
     document.body.classList.remove("mobile-menu-visible");
@@ -70,7 +55,6 @@ const closeMenu = () => {
                 <div className="menu-wrap">
                   <nav className="menu-nav">
                     {/* Desktop Menu - Only shows on screens 1600px and above */}
-                    {isLargeScreen ? (
                       <div className="navbar-wrap main-menu d-none d-lg-flex">
                         <div className="header-action">
                           <ul className="list-wrap">
@@ -419,16 +403,12 @@ const closeMenu = () => {
                           </div>
                         </Link>
                       </div>
-                    ) : (
-                      // Mobile menu content for screens under 1600px
-                      <div className="mobile-menu-content">
-                       {!isLargeScreen && (
+                      <div className="mobile-menu-content lg:hidden">
               <div className="flex items-center justify-between ">
                 <Link href="/">
                  <div className="">
                    <img
-                   
-                    src= {`${scroll ? "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png":"https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png"}`}
+                    src= {"https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png"}
                     className="w-14 h-auto"
                     alt="Logo"
                   />
@@ -438,9 +418,7 @@ const closeMenu = () => {
                   <Menu className={`${scroll ? "w-14 text-black":"w-14 text-white"}`} />
                 </div>
               </div>
-            )}
                       </div>
-                    )}
                   </nav>
                 </div>
 
