@@ -198,7 +198,6 @@ const images = [
     category: "Villa-Scandinave",
   },
   
-  { src: "/optimized/charpente.webp", category: "Charpente" },
   {
     src: "/optimized/charpente2.webp",
     aspect_ratio: 16 / 9,
@@ -282,6 +281,12 @@ const images = [
 
   { src: "/optimized/pergola/pergola(5).webp", aspect_ratio: 4 / 3, category: "Pergola" },
   { src: "/optimized/pergola/pergola(6).webp", aspect_ratio: 4 / 3, category: "Pergola" },
+    { src: "/optimized/pergola/pergola(7).webp", aspect_ratio: 4 / 3, category: "Pergola" },
+
+      { src: "/optimized/pergola/pergola(8).webp", aspect_ratio: 4 / 3, category: "Pergola" },
+
+        { src: "/optimized/pergola/pergola(9).webp", aspect_ratio: 4 / 3, category: "Pergola" },
+
   {
     src: "/optimized/reel/Bureau-1.webp",
     aspect_ratio: 4 / 3,

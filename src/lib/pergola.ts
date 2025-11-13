@@ -63,16 +63,13 @@ export const pergola = [
       },
     ],
     gallery: [
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(0).png",
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(1).jpg",
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(2).png",
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(3).jpg",
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(4).jpg",
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(5).jpg",
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(6).jpg",
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(7).jpg",
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola/pergola(8).jpg",
-
+      "/optimized/pergola/pergola(0).webp",
+      "/optimized/pergola/pergola(1).webp",
+      "/optimized/pergola/pergola(2).webp",
+      "/optimized/pergola/pergola(3).webp",
+      "/optimized/pergola/pergola(4).webp",
+      "/optimized/pergola/pergola(5).webp",
+      
     ],
   },
   {
