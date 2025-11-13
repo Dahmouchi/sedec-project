@@ -12,7 +12,7 @@ const Test = () => {
             <img
               src="/optimized/scondinave.webp"
               alt="Chalet Scandinavian"
-              className="w-[40vh] h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+              className="w-[45vh] h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />
             <h4 className="font-serif font-semibold text-gray-500 hover:text-amber-800">
               Villas en Bois
@@ -26,7 +26,7 @@ const Test = () => {
             <img
               src="/optimized/charpente/charpente1.webp"
               alt="Chalet Toubkal"
-              className="w-[40vh] h-[27vh]  object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+              className="w-[45vh] h-[27vh]  object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />
             <h4 className="font-serif font-semibold text-gray-500 hover:text-amber-800">
               Charpente
@@ -40,7 +40,7 @@ const Test = () => {
             <img
               src="/optimized/pergola4.webp"
               alt="Chalet M&M"
-              className="w-[40vh] h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+              className="w-[45vh] h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />
             <h4 className="font-serif font-semibold text-gray-500 hover:text-amber-800">
               Pergola
@@ -54,7 +54,7 @@ const Test = () => {
             <img
               src="/optimized/merc/img176.webp"
               alt="Chalet Moroccan Touch"
-              className="w-[40vh] h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
+              className="w-[45vh] h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />
             <h4 className="font-serif font-semibold text-gray-500 hover:text-amber-800">
               Bâtiments Modulaires
