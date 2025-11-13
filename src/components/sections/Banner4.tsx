@@ -33,9 +33,7 @@ export default function HeroSection() {
               <h1
                 className=" wow fadeInUp text-white lg:pt-24 px-8"
                 data-wow-delay=".2s"
-              ><span className="text-4xl lg:text-7xl">Ensemble, construisons vos projets en bois et matériaux durables
-                
-                  
+              ><span className="text-4xl lg:text-7xl">Ensemble, construisons vos projets en bois et en modulaire métallique
                 </span>
               </h1>
       {/* Overlay (optional to improve text contrast) 
