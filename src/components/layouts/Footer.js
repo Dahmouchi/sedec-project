@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link"
+import { redirect } from "next/navigation"
 
 export default function Footer1({ }) {
     return (
@@ -61,16 +62,18 @@ export default function Footer1({ }) {
                         <div className="footer-bottom">
                             <div className="row">
                                 <div className="col-lg-12">
-                                    <div className="copyright-text text-center">
-                                        <p>Copyright © <span>SEDEC</span> {new Date().getFullYear()}. All Rights Reserved</p>
-                                    </div>
-                                    <div className="footer-social">
+                                     <div className="footer-social mb-4">
                                         <ul className="list-wrap">
                                             <li><Link target="_blank" href="https://www.facebook.com/profile.php?id=sedec"><i className="fab fa-facebook-f" /></Link></li>
                                             <li><Link target="_blank" href="https://www.instagram.com/sedecmaroc/"><i className="fab fa-instagram" /></Link></li>
                                             <li><Link target="_blank" href="https://www.linkedin.com/company/109523022"><i className="fab fa-linkedin-in" /></Link></li>
                                         </ul>
                                     </div>
+                                    <div className="copyright-text text-center">
+                                        <p>Copyright © <span>SEDEC</span> {new Date().getFullYear()}. All Rights Reserved </p>
+                                         <p onClick={()=>redirect("https://buildalittlebiz.com/")} className="cursor-pointer">By BuildalittleBiz</p>
+                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>

@@ -49,7 +49,7 @@ const Test = () => {
         </li>
 
         {/* Chalet 4 */}
-        <li className="flex flex-col items-center text-center w-full ">
+        <li className="flex flex-col items-center text-center w-full lg:px-0 px-2">
           <Link href="/batiments-modulaires" className="block">
             <img
               src="/optimized/merc/img176.webp"

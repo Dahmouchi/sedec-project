@@ -9,7 +9,7 @@ export function QuickAccessButton() {
   const [isOpen, setIsOpen] = useState(false)
 
   const openWhatsApp = () => {
-    const phoneNumber = "+212762744707"
+    const phoneNumber = "+212668506882"
     const message = encodeURIComponent("Bonjour SEDEC, je souhaite prendre un rendez-vous")
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank")
   }
