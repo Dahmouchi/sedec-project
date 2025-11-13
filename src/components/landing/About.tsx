@@ -84,7 +84,7 @@ export function AboutSection({ translations }: HeaderProps) {
             <Button
               size="lg"
               style={{
-                backgroundImage: "url(/images/background1.jpg)",
+                backgroundImage: "url(/optimized/background1.webp)",
               }}
               className="bg-[#8E3921] hover:bg-[#6B4423] text-white border-2 border-white rounded-full px-8 py-6 text-lg font-medium"
             >
@@ -96,7 +96,7 @@ export function AboutSection({ translations }: HeaderProps) {
           <div className="relative">
             <div className="relative  overflow-hidden shadow-xl">
               <img
-                src="/images/Bureau-de-ventes.jpg"
+                src="/optimized/Bureau-de-ventes.webp"
                 alt="SEDEC modular wooden building"
                 className="w-full h-auto"
               />

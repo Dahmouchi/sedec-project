@@ -3,7 +3,7 @@
   {
     "id": 1,
     "title": "Villa SCANDINAVIAN",
-    "img": "scondinave.jpg",
+    "img": "scondinave.webp",
     "status": "Under Construction",
     "type": "Villa",
     "location": "Confort Nordique",
@@ -24,7 +24,7 @@
   {
     "id": 2,
     "title": "Villa Toubkal",
-    "img": "chalet2.jpg",
+    "img": "chalet2.webp",
     "status": "Under Construction",
     "type": "Villa",
     "location":       "Refuge Montagnard"
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "title": "Villa M&M ",
-    "img": "10.jpg",
+    "img": "10.webp",
     "status": "Complete",
     "type": "Villa",
     "location":       "MINIMALIST & MODERN"
@@ -41,7 +41,7 @@
   {
     "id": 4,
     "title": "Villa Moroccan Touch",
-    "img": "3.jpg",
+    "img": "3.webp",
     "status": "Complete",
     "type": "Villa",
     "location": "Histoire et Authenticité"

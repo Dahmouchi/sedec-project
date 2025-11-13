@@ -85,7 +85,7 @@ export function QuickAccessButton() {
             : "bg-[#BD9A68] hover:bg-[#BD9A68]"
         } text-white`}
       >
-        <img src="/images/customer-service.png" alt="logo" className="w-8 h-8" />
+        <img src="/optimized/customer-service.webp" alt="logo" className="w-8 h-8" />
       </div>
     </div>
   )

@@ -3,7 +3,7 @@
    {
     "id": "mur-ossature-bois",
     "title": "Mur ossature bois",
-    "img": "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/mur(1).JPG",
+    "img": "/optimized/charpente/mur1.webp",
     "status": "Complete",
     "type": "Chalet",
     "location":"Solidité et esthétisme"
@@ -12,7 +12,7 @@
     {
     "id": "modulaire-metallique",
     "title": "Modulaire métallique",
-    "img": "/images/merc/img176.jpg",
+    "img": "/optimized/merc/img176.webp",
     "status": "Under Construction",
     "type": "Chalet",
     "location":       "RSécurité et raffinement"
@@ -20,7 +20,7 @@
   {
     "id": "durisol ",
     "title": "Durisol / Ciment de Bois",
-    "img": "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/durisole1.jpg",
+    "img": "/optimized/charpente/durisole1.webp",
     "status": "Under Construction",
     "type": "Chalet",
     "location": "Innovation, isolation, écologie"

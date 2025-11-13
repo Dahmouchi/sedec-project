@@ -11,16 +11,16 @@ import { Footprints } from "lucide-react";
 import { usePathname } from "next/navigation";
 const images = [
   {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente2.jpg",
+    src: "/optimized/charpente/charpente2.webp",
     category: "Charpente",
   },
 
   {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente4.jpg",
+    src: "/optimized/charpente/charpente4.webp",
     category: "Charpente",
   },
   {
-    src: "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente5.jpg",
+    src: "/optimized/charpente/charpente5.webp",
     category: "Charpente",
   },
 ];
@@ -107,7 +107,7 @@ const Charpente = () => {
                         <Link href="#">
                           <img
                             className="w-full h-[65vh] object-cover rounded-2xl shadow-md"
-                            src="/images/salle-Omni.jpg"
+                            src="/optimized/salle-Omni.webp"
                             alt="Salle sportive en BLC Oujda"
                           />
                         </Link>
@@ -126,7 +126,7 @@ const Charpente = () => {
                         <Link href="#">
                           <img
                             className="w-full h-[65vh] object-cover rounded-2xl shadow-md"
-                            src="/images/DSC00056.JPG"
+                            src="/optimized/DSC00056.webp"
                             alt="Gare Maritime Guinée"
                           />
                         </Link>
@@ -145,7 +145,7 @@ const Charpente = () => {
                         <Link href="#">
                           <img
                             className="w-full h-[65vh] object-cover rounded-2xl shadow-md"
-                            src="/images/salle-Fes.jpg"
+                            src="/optimized/salle-Fes.webp"
                             alt="Salle sportive en BLC Fes"
                           />
                         </Link>
@@ -164,7 +164,7 @@ const Charpente = () => {
                         <Link href="#">
                           <img
                             className="w-full h-[65vh] object-cover rounded-2xl shadow-md"
-                            src="/images/Amphie.JPG"
+                            src="/optimized/Amphie.webp"
                             alt="Amphi université ibn zohr agadir"
                           />
                         </Link>
@@ -189,7 +189,7 @@ const Charpente = () => {
                         <Link href="#">
                           <img
                             className="w-auto h-[35vh]"
-                            src="/images/salle-Omni.jpg"
+                            src="/optimized/salle-Omni.webp"
                             alt=""
                           />
                         </Link>
@@ -208,7 +208,7 @@ const Charpente = () => {
                         <Link href="#">
                           <img
                             className="w-auto h-[35vh]"
-                            src="/images/DSC00056.JPG"
+                            src="/optimized/DSC00056.webp"
                             alt=""
                           />
                         </Link>
@@ -227,7 +227,7 @@ const Charpente = () => {
                         <Link href="#">
                           <img
                             className="w-auto h-[35vh]"
-                            src="/images/salle-Fes.jpg"
+                            src="/optimized/salle-Fes.webp"
                             alt=""
                           />
                         </Link>
@@ -246,7 +246,7 @@ const Charpente = () => {
                         <Link href="#">
                           <img
                             className="w-auto h-[35vh]"
-                            src="/images/Amphie.JPG"
+                            src="/optimized/Amphie.webp"
                             alt=""
                           />
                         </Link>
@@ -293,7 +293,7 @@ const Charpente = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="services-img-two text-center">
-                  <img src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/B.A(5).jpg" alt="" />
+                  <img src="/optimized/charpente/B.A5.webp" alt="" />
                 </div>
               </div>
               <div className="col-lg-6">
@@ -319,7 +319,7 @@ const Charpente = () => {
                   <div className="col-lg-6">
                     <div className="project-thumb">
                       <Link href="#">
-                        <img src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/B.A(4).jpg" alt="" />
+                        <img src="/optimized/charpente/B.A4.webp" alt="" />
                       </Link>
                     </div>
                   </div>
@@ -327,9 +327,7 @@ const Charpente = () => {
                     <div className="project-content-two">
                       <div className="section-title">
                         <h3 className="title">
-                          <h1 >
                             Hangar à Oujda
-                          </h1>
                         </h3>
                       </div>
                       <div className="project-list">
@@ -388,7 +386,7 @@ const Charpente = () => {
                     <div className="project-thumb">
                       <Link href="#">
                         <img
-                          src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpenteP.jpg"
+                          src="/optimized/charpente/charpenteP.webp"
                           alt=""
                         />
                       </Link>
@@ -398,9 +396,7 @@ const Charpente = () => {
                     <div className="project-content-two">
                       <div className="section-title">
                         <h2 className="title">
-                          <h1 >
                             Salle Assazag
-                          </h1>
                         </h2>
                       </div>
                       <div className="project-list">
@@ -452,7 +448,7 @@ const Charpente = () => {
                 </div>
                 <div className="grid md:grid-cols-2 gap-12 items-center lg:mt-36">
                   <img
-                    src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente2.jpg"
+                    src="/optimized/charpente/charpente2.webp"
                     alt="Passerelle"
                     className="w-full rounded-xl shadow-lg"
                   />

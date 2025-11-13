@@ -29,7 +29,7 @@ export default function Project() {
             playsInline
           >
             <source
-              src="https://pub-060265d5b1f645428fcbed1375c4fe21.r2.dev/booking/Hero_cropped.mp4"
+              src="/optimized-videos/test1.webm"
               type="video/mp4"
             />
             Your browser does not support the video tag.

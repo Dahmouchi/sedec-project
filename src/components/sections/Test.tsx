@@ -10,7 +10,7 @@ const Test = () => {
         <li className="flex flex-col items-center text-center w-full ">
           <Link href="/projets" className="block">
             <img
-              src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/scondinave.jpg"
+              src="/optimized/scondinave.webp"
               alt="Chalet Scandinavian"
               className="w-full h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />
@@ -24,7 +24,7 @@ const Test = () => {
         <li className="flex flex-col items-center text-center w-full ">
           <Link href="/charpente" className="block">
             <img
-              src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/charpente1.jpg"
+              src="/optimized/charpente/charpente1.webp"
               alt="Chalet Toubkal"
               className="w-full h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />
@@ -38,7 +38,7 @@ const Test = () => {
         <li className="flex flex-col items-center text-center w-full ">
           <Link href="/pergola" className="block">
             <img
-              src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola4.png"
+              src="/optimized/pergola4.webp"
               alt="Chalet M&M"
               className="w-full h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />
@@ -52,7 +52,7 @@ const Test = () => {
         <li className="flex flex-col items-center text-center w-full ">
           <Link href="/batiments-modulaires" className="block">
             <img
-              src="/images/merc/img176.jpg"
+              src="/optimized/merc/img176.webp"
               alt="Chalet Moroccan Touch"
               className="w-full h-[27vh] object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
             />

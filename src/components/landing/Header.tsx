@@ -66,7 +66,7 @@ export function SedecHeader({ translations, locale = "fr" }: HeaderProps) {
 
           {/* Logo - Center */}
           <Link href={`/${locale}`} className="flex flex-col items-center gap-1 w-full">
-            <img src="/images/logo.png" alt="Logo" className="lg:w-26 w-16 h-auto" />
+            <img src="/optimized/logoMM.webp" alt="Logo" className="lg:w-26 w-16 h-auto" />
           </Link>
 
           {/* Right Navigation - Desktop */}

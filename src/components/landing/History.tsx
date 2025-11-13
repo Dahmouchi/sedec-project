@@ -67,7 +67,7 @@ export default function SEDECTimeline() {
     <div
       className="relative min-h-screen w-full flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: "url('/images/tree.png')",
+        backgroundImage: "url('/optimized/tree.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

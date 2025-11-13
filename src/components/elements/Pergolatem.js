@@ -9,7 +9,7 @@ export default function PergolaGridView({ item, col }) {
                     <div className="project-thumb">
                         <Link href={`/pergola/${item.id}`}>
                         <div className="w-full lg:h-[50vh] h-[25vh] rounded-xl">
-                            <img src={`/images/${item.img}`} alt="" className="w-full h-full bg-cover"/>
+                            <img src={`${item.img}`} alt="" className="w-full h-full bg-cover"/>
 
                         </div>
                         </Link>

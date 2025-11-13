@@ -119,7 +119,7 @@ const closeMenu = () => {
                                   <li className="flex flex-col items-center text-center w-full ">
                                     <Link href="/projets/1" className="block">
                                       <img
-                                        src="/images/scondinave.jpg"
+                                        src="/optimized/scondinave.webp"
                                         alt="Chalet Scandinavian"
                                         className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                       />
@@ -133,7 +133,7 @@ const closeMenu = () => {
                                   <li className="flex flex-col items-center text-center w-full ">
                                     <Link href="/projets/2" className="block">
                                       <img
-                                        src="/images/chalet2.jpg"
+                                        src="/optimized/chalet2.webp"
                                         alt="Chalet Toubkal"
                                         className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                       />
@@ -147,7 +147,7 @@ const closeMenu = () => {
                                   <li className="flex flex-col items-center text-center w-full ">
                                     <Link href="/projets/3" className="block">
                                       <img
-                                        src="/images/10.jpg"
+                                        src="/optimized/10.webp"
                                         alt="Chalet M&M"
                                         className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                       />
@@ -161,7 +161,7 @@ const closeMenu = () => {
                                   <li className="flex flex-col items-center text-center w-full ">
                                     <Link href="/projets/4" className="block">
                                       <img
-                                        src="/images/3.jpg"
+                                        src="/optimized/3.webp"
                                         alt="Chalet Moroccan Touch"
                                         className="w-full h-auto object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                       />
@@ -209,7 +209,7 @@ const closeMenu = () => {
                                     <Link href="/pergola/pergola" className="block">
                                       <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
                                         <img
-                                          src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/pergola4.png"
+                                          src="/optimized/pergola4.webp"
                                           alt="Chalet Scandinavian"
                                           className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                         />
@@ -225,7 +225,7 @@ const closeMenu = () => {
                                     <Link href="/pergola/gards-corps" className="block">
                                       <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl ">
                                         <img
-                                          src="/images/reel/carde.png"
+                                          src="/optimized/reel/carde.webp"
                                           alt="Chalet Toubkal"
                                           className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                         />
@@ -241,7 +241,7 @@ const closeMenu = () => {
                                     <Link href="/pergola/abris-voitures" className="block">
                                       <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
                                         <img
-                                          src="/images/reel/abris.png"
+                                          src="/optimized/reel/abris.webp"
                                           alt="Chalet M&M"
                                           className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                         />
@@ -257,7 +257,7 @@ const closeMenu = () => {
                                     <Link href="/pergola/passerelles" className="block">
                                       <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
                                         <img
-                                          src="/images/reel/passerelle_corten.png"
+                                          src="/optimized/reel/passerelle_corten.webp"
                                           alt="Chalet Moroccan Touch"
                                           className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                         />
@@ -279,8 +279,8 @@ const closeMenu = () => {
                              <img
                               src={
                                 scroll
-                                  ? "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png"
-                                  : "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png"
+                                  ? "/optimized/logoM.webp"
+                                  : "/optimized/logoM.webp"
                               }
                               className="w-24 h-auto transition-all duration-300"
                               alt="Logo"
@@ -312,7 +312,7 @@ const closeMenu = () => {
                                      <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
                                         <img
                                       
-                                        src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/mur(1).JPG"
+                                        src="/optimized/charpente/mur1.webp"
                                         alt="Chalet Scandinavian"
                                         className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                       />
@@ -329,7 +329,7 @@ const closeMenu = () => {
                                      <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
                                         
                                       <img
-                                        src="/images/merc/img101.jpg"
+                                        src="/optimized/merc/img101.webp"
                                         alt="Chalet Toubkal"
                                         className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                       /></div>
@@ -344,7 +344,7 @@ const closeMenu = () => {
                                     <Link href="/batiments-modulaires/durisol" className="block">
                                        <div className="h-[20vh] mb-4 w-auto bg-cover rounded-xl bg-red-500">
                                         <img
-                                        src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/durisole1.jpg"
+                                        src="/optimized/charpente/durisole1.webp"
                                         alt="Chalet M&M"
                                         className="w-full h-full object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105"
                                       /></div>
@@ -408,7 +408,7 @@ const closeMenu = () => {
                 <Link href="/">
                  <div className="">
                    <img
-                    src= {"https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png"}
+                    src= {"/optimized/logoM.webp"}
                     className="w-14 h-auto"
                     alt="Logo"
                   />
@@ -430,7 +430,7 @@ const closeMenu = () => {
                     </div>
                     <div className="nav-logo">
                       <Link href="/">
-                        <img src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png" alt="Logo" className="w-20 h-auto" onClick={closeMenu} />
+                        <img src="/optimized/logoM.webp" alt="Logo" className="w-20 h-auto" onClick={closeMenu} />
                       </Link>
                     </div>
                     <div className="menu-outer">

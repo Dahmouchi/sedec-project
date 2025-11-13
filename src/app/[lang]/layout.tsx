@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/optimized/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'SEDEC - Construction Modulaire Bois',
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     title: "SEDEC - Construction Modulaire Bois & Charpente",
     description: "Expert en construction bois au Maroc depuis 1948. Villas, charpentes, pergolas et bâtiments modulaires.",
     creator: "@sedecmaroc",
-    images: ['/images/twitter-image.jpg'],
+    images: ['/optimized/twitter-image.jpg'],
   },
   robots: {
     index: true,

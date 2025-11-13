@@ -89,7 +89,7 @@ export default function Mission() {
             <div className="row align-items-center">
               <div className="col-lg-6 order-0 order-lg-2">
                 <div className="vision-img text-center">
-                  <img src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/logoM.png" alt="" />
+                  <img src="/optimized/logoM.webp" alt="" />
                 </div>
               </div>
               <div className="col-lg-6">

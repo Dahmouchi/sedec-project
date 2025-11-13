@@ -2094,7 +2094,7 @@ label {
 }
 
 .banner-area-five1.banner-bg-four1 {
-    background-image   : url(../../images/scondinave.jpg);
+    background-image   : url(../../optimized/scondinave.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2112,7 +2112,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivecharpente.banner-bg-fourcharpente {
-    background-image   : url(https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/autre/gallerie.png);
+    background-image   : url(../../optimized//durisole/bg.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2129,7 +2129,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivetoubkal.banner-bg-fourtoubkal {
-    background-image   : url(../../images/chalet2.jpg);
+    background-image   : url(../../optimized/chalet2.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2147,7 +2147,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fiveM.banner-bg-fourM {
-    background-image   : url(../../images/10.jpg);
+    background-image   : url(../../optimized/10.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2165,7 +2165,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivemorocco.banner-bg-fourmorocco {
-    background-image   : url(../../images/3.jpg);
+    background-image   : url(../../optimized/3.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2193,7 +2193,7 @@ label {
     z-index   : -1;
 }
 .banner-area-five2.banner-bg-four2 {
-    background-image   : url(../../images/2.jpg);
+    background-image   : url(../../optimized/2.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2210,7 +2210,7 @@ label {
     z-index   : -1;
 }
 .banner-area-five3.banner-bg-four3 {
-    background-image   : url(../../images/3.jpg);
+    background-image   : url(../../optimized/3.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2220,7 +2220,7 @@ label {
 
 
 .banner-area-fivepergola.banner-bg-fourpergola {
-    background-image   : url(../../images/pergola4.png);
+    background-image   : url(../../optimized/pergola4.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2238,7 +2238,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivemur.banner-bg-fourmur {
-    background-image   : url("https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/mur(2).JPG");
+    background-image   : url(../../optimized/charpente/mur2.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2256,7 +2256,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivedurisol.banner-bg-fourdurisol {
-    background-image   : url(https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/charpente/durisole1.jpg);
+    background-image   : url(../../optimized/charpente/durisole1.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2274,7 +2274,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivemetallique.banner-bg-fourmetallique {
-    background-image   : url(../../images/merc/img25.jpg);
+    background-image   : url(../../optimized/merc/img25.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2292,7 +2292,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivegards.banner-bg-fourgards {
-    background-image   : url(../../images/reel/carde.png);
+    background-image   : url(../../optimized/reel/carde.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2310,7 +2310,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivepass.banner-bg-fourpass {
-    background-image   : url(../../images/reel/passerelle_corten.png);
+    background-image   : url(../../optimized/reel/passerelle_corten.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2328,7 +2328,7 @@ label {
     z-index   : -1;
 }
 .banner-area-fivevoit.banner-bg-fourvoit {
-    background-image   : url(../../images/reel/abris.png);
+    background-image   : url(../../optimized/reel/abris.webp);
     background-size    : cover;
     background-position: center;
     position           : relative;
@@ -2854,7 +2854,7 @@ label {
 	14. Video
 ===============================*/
 .video-bg {
-    background-image   : url("https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/matterport.jpg");
+    background-image   : url(../../optimized/matterport.webp);
     background-size    : cover;
     background-position: center;
     height             : 650px;
@@ -2864,7 +2864,7 @@ label {
     border-radius      : 15px;
 }
 .video-bg1 {
-    background-image   : url(../../images/chalet2.jpg);
+    background-image   : url(../../optimized/chalet2.webp);
     background-size    : cover;
     background-position: center;
     height             : 650px;
@@ -2875,7 +2875,7 @@ label {
 }
 
 .video-bg2 {
-    background-image   : url(../../images/10.jpg);
+    background-image   : url(../../optimized/10.webp);
     background-size    : cover;
     background-position: center;
     height             : 650px;
@@ -2885,7 +2885,7 @@ label {
     border-radius      : 15px;
 }
 .video-bg3 {
-    background-image   : url(../../images/3.jpg);
+    background-image   : url(../../optimized/3.webp);
     background-size    : cover;
     background-position: center;
     height             : 650px;

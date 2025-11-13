@@ -18,7 +18,6 @@ import { ChevronLeft, ChevronRight, Play, X } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { motion, AnimatePresence } from "framer-motion";
 
-
 const BlogDetails: React.FC = () => {
   const [project, setProject] = useState<any | null>(null);
   const [open, setOpen] = useState(false);
@@ -29,7 +28,7 @@ const BlogDetails: React.FC = () => {
     null
   );
 
-  const categories = ["chambres", "salon", "exterieure" ,"reel"] as const;
+  const categories = ["chambres", "salon", "exterieure", "reel"] as const;
 
   const handlePrevImage = () => {
     if (selectedImageIndex !== null) {
@@ -153,7 +152,7 @@ const BlogDetails: React.FC = () => {
                     <div className={`${project?.bg3d}`}>
                       <div className="absolute bottom-10 right-50% bg-black/20 lg:px-20 px-8 flex flex-col items-center justify-center py-2 rounded-full">
                         <img
-                          src="/images/logo.png"
+                          src="/optimized/logoMM.webp"
                           alt=""
                           className="lg:w-24 w-16 h-auto "
                         />
@@ -257,19 +256,21 @@ const BlogDetails: React.FC = () => {
 
                   {/* Tabs */}
                   <div className="flex gap-4 flex-wrap border-b border-gray-300 pb-2 mb-4 justify-center items-center">
-                    {categories.map((cat) => (
-                      <button
-                        key={cat}
-                        onClick={() => setActiveTab(cat)}
-                        className={`capitalize px-4 py-2 text-sm font-medium rounded-t-lg transition-all ${
-                          activeTab === cat
-                            ? "bg-[#BD9A68] text-white"
-                            : "text-gray-900 hover:text-[#BD9A68]"
-                        }`}
-                      >
-                        {cat}
-                      </button>
-                    ))}
+                    {categories
+                      .filter((cat) => cat !== "reel" || project.id === 1)
+                      .map((cat) => (
+                        <button
+                          key={cat}
+                          onClick={() => setActiveTab(cat)}
+                          className={`capitalize px-4 py-2 text-sm font-medium rounded-t-lg transition-all ${
+                            activeTab === cat
+                              ? "bg-[#BD9A68] text-white"
+                              : "text-gray-900 hover:text-[#BD9A68]"
+                          }`}
+                        >
+                          {cat}
+                        </button>
+                      ))}
                   </div>
 
                   {/* Gallery Grid */}
@@ -373,12 +374,12 @@ const BlogDetails: React.FC = () => {
                   <div className="file-wrap">
                     <ul className="list-wrap">
                       <li>
-                      <a
-                    href={project?.pdf || "/brochure.pdf"} // e.g. /brochure.pdf
-                    download
-                    target="_blank"
-                    data-wow-delay=".4s"
-                  >
+                        <a
+                          href={project?.pdf || "/brochure.pdf"} // e.g. /brochure.pdf
+                          download
+                          target="_blank"
+                          data-wow-delay=".4s"
+                        >
                           <i className="flaticon-010-pdf" />
                           Télécharger La Brochure
                         </a>

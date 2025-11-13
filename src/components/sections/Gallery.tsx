@@ -21,13 +21,13 @@ const Destination3 = () => {
                                 <div className="col-md-6">
 
                                 <DestinationCard
-                                    img="/images/2.jpg"
+                                    img="/optimized/2.webp"
                                     title="United Kingdom"
                                     content="174,688 Travelers"
                                 ></DestinationCard>
 
                                 <DestinationCard
-                                    img="/images/4.jpg"
+                                    img="/optimized/4.webp"
                                     title="United Kingdom"
                                     content="174,688 Travelers"
                                 ></DestinationCard>
@@ -37,7 +37,7 @@ const Destination3 = () => {
                                 <div className="col-md-6">
 
                                 <div className='lg:block hidden'><DestinationCard
-                                    img="/images/1.jpg"
+                                    img="/optimized/1.webp"
                                     title="United Kingdom"
                                     content="174,688 Travelers"
                                 ></DestinationCard></div>
@@ -50,13 +50,13 @@ const Destination3 = () => {
                                 <div className="col-md-6">
 
                                 <DestinationCard
-                                    img="/images/5.jpg"
+                                    img="/optimized/5.webp"
                                     title="United Kingdom"
                                     content="174,688 Travelers"
                                 ></DestinationCard>
 
                                 <DestinationCard
-                                    img="/images/6.jpg"
+                                    img="/optimized/6.webp"
                                     title="United Kingdom"
                                     content="174,688 Travelers"
                                 ></DestinationCard>
@@ -64,13 +64,13 @@ const Destination3 = () => {
                                 </div>
                                 <div className="col-md-6">
                                 <DestinationCard
-                                    img="/images/7.jpg"
+                                    img="/optimized/7.webp"
                                     title="United Kingdom"
                                     content="174,688 Travelers"
                                 ></DestinationCard>
 
                                 <DestinationCard
-                                    img="/images/8.jpg"
+                                    img="/optimized/8.webp"
                                     title="United Kingdom"
                                     content="174,688 Travelers"
                                 ></DestinationCard>

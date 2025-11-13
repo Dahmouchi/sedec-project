@@ -28,7 +28,7 @@ export function SedecHero({ translations }: HeroProps) {
         className="absolute inset-0 bg-cover bg-center h-full"
         style={{
           backgroundImage:
-            "url(/images/Bureau-de-ventes.jpg)",
+            "url(/optimized/Bureau-de-ventes.webp)",
         }}
       >
         <div className="absolute inset-0 bg-black/30 "></div>
@@ -44,7 +44,7 @@ export function SedecHero({ translations }: HeroProps) {
               size="lg"
                 style={{
           backgroundImage:
-            "url(/images/background1.jpg)",
+            "url(/optimized/background1.webp)",
         }}
               className="bg-[#8E3921] hover:bg-[#6B4423] text-white border-2 border-white rounded-full px-8 py-6 text-lg font-medium"
             >
@@ -71,7 +71,7 @@ export function SedecHero({ translations }: HeroProps) {
               className="absolute inset-0 bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(/images/pic1.jpg)",
+                  "url(/optimized/pic1.webp)",
               }}
             >
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>

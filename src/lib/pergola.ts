@@ -32,7 +32,7 @@ export const pergola = [
     price: "1.3M MAD",
     visit: true,
     bg3d: "video-bg",
-    maquette: "/images/maquette.png",
+    maquette: "/optimized/maquette.webp",
     status: "Under Construction",
     type: "Villa",
     hero: "banner-area-fivepergola banner-bg-fourpergola",
@@ -114,9 +114,9 @@ export const pergola = [
     ],
 
     gallery: [
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/gard/gard1.jpg",
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/gard/gard1.png",
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/gard/gard2.jpg",
+      "/optimized/gard/gard1.webp",
+      "/optimized/gard/gard3.webp",
+      "/optimized/gard/gard2.webp",
 
     ],
   },
@@ -159,9 +159,9 @@ export const pergola = [
     ],
 
     gallery: [
-      "/images/passrelle/passrelle(1).JPG",
-       "/images/passrelle/passrelle(1).png",
-       "/images/passrelle/passrelle(2).JPG",
+      "/optimized/passrelle/passrelle(1).webp",
+       "/optimized/passrelle/passrelle(3).webp",
+       "/optimized/passrelle/passrelle(2).webp",
     ],
   },
   {
@@ -203,12 +203,12 @@ export const pergola = [
     ],
 
     gallery: [
-      "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/abri/abri1.jpg",
-        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/abri/abri2.jpg",
-        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/abri/abri3.jpg",
-        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/abri/abri4.jpg",
-        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/abri/abri5.jpg",
-        "https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/abri/abris.png",
+      "/optimized/abri/abri(1).webp",
+        "/optimized/abri/abri(2).webp",
+        "/optimized/abri/abri(3).webp",
+        "/optimized/abri/abri(4).webp",
+        "/optimized/abri/abri(5).webp",
+        "/optimized/abri/abris.webp",
     ],
   },
 ];

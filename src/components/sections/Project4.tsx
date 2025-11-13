@@ -28,7 +28,7 @@ const Project4=()=> {
                                     <div className="col-md-6">
                                         <div className="project-item">
                                             <div className="project-thumb">
-                                                <Link href="/projets/1"><img src="/images/scondinave.jpg" alt="" /></Link>
+                                                <Link href="/projets/1"><img src="/optimized/scondinave.webp" alt="" /></Link>
                                             </div>
                                             <div className="project-content">
                                                 <h2 className="title"><Link href="/project/1">Villa Scandinavian</Link></h2>
@@ -39,7 +39,7 @@ const Project4=()=> {
                                     <div className="col-md-6">
                                         <div className="project-item">
                                             <div className="project-thumb">
-                                                <Link href="/projets/2"><img src="/images/chalet2.jpg" className="h-full" alt="" /></Link>
+                                                <Link href="/projets/2"><img src="/optimized/chalet2.webp" className="h-full" alt="" /></Link>
                                             </div>
                                             <div className="project-content">
                                                 <h2 className="title"><Link href="/project/1">Villa Toubkal</Link></h2>
@@ -50,7 +50,7 @@ const Project4=()=> {
                                     <div className="col-md-6">
                                         <div className="project-item">
                                             <div className="project-thumb">
-                                                <Link href="/projets/3"><img src="/images/10.jpg" alt="" /></Link>
+                                                <Link href="/projets/3"><img src="/optimized/10.webp" alt="" /></Link>
                                             </div>
                                             <div className="project-content">
                                                 <h2 className="title"><Link href="/project/1">Villa M&M</Link></h2>
@@ -61,7 +61,7 @@ const Project4=()=> {
                                     <div className="col-md-6">
                                         <div className="project-item">
                                             <div className="project-thumb">
-                                                <Link href="/projets/4"><img src="/images/3.jpg" alt="" /></Link>
+                                                <Link href="/projets/4"><img src="/optimized/3.webp" alt="" /></Link>
                                             </div>
                                             <div className="project-content">
                                                 <h2 className="title"><Link href="/project/1">Villa Morrocan Touch</Link></h2>

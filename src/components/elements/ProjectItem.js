@@ -7,7 +7,7 @@ export default function GridView({ item, col }) {
             <div className={col}>
                 <div className="project-item">
                     <div className="project-thumb">
-                        <Link href={`/projets/${item.id}`}><img src={`/images/${item.img}`} alt="" /></Link>
+                        <Link href={`/projets/${item.id}`}><img src={`/optimized/${item.img}`} alt="" /></Link>
                     </div>
                     <div className="project-content">
                         <h3 className="title"><Link href={`/projets/${item.id}`}>{item.title}</Link></h3>
