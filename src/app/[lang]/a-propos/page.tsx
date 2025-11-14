@@ -69,8 +69,8 @@ export default function Mission() {
                     Établissements Carrères-Durisol (SEDEC) est une société
                     anonyme spécialisée dans la construction de bâtiments
                     préfabriqués à Ossature bois, modulaire métallique et
-                    fabrication de charpentes en bois lamellé-collé
-                    ArabOMarocherche. SEDEC a participé activement au
+                    fabrication de charpentes en bois lamellé-collé. 
+                    SEDEC a participé activement au
                     développement des infrastructures à travers tout le Maroc
                     par l&apos;édification de milliers d&apos;écoles,
                   </p>
