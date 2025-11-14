@@ -16,19 +16,19 @@ export default function Mission() {
         <section className="banner-area-five2 banner-bg-four2 h-[45vh] lg:h-[85vh] mb-16 ">
           <div className="w-full h-full relative flex items-center justify-center">
             <video
-            key={pathname}
-            className="absolute top-0 left-0 w-full h-full object-cover z-[-2]"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source
-              src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/video/bureau1.mov"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+              key={pathname}
+              className="absolute top-0 left-0 w-full h-full object-cover z-[-2]"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source
+                src="https://pub-afc9974860af4d5aab3484c7d13caccf.r2.dev/video/bureau1.mov"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
             <div className="row justify-content-center">
               <div className="col-xl-8 col-lg-10">
                 <div className="banner-content">
@@ -68,11 +68,11 @@ export default function Mission() {
                     Créée en 1948, la Société d&apos;Exploitation des
                     Établissements Carrères-Durisol (SEDEC) est une société
                     anonyme spécialisée dans la construction de bâtiments
-                    préfabriqués à ossature bois et la fabrication de charpentes
-                    en bois lamellé-collé ArabOMarocherche. SEDEC a participé
-                    activement au développement des infrastructures à travers
-                    tout le Maroc par l&apos;édification de milliers
-                    d&apos;écoles,
+                    préfabriqués à Ossature bois, modulaire métallique et
+                    fabrication de charpentes en bois lamellé-collé
+                    ArabOMarocherche. SEDEC a participé activement au
+                    développement des infrastructures à travers tout le Maroc
+                    par l&apos;édification de milliers d&apos;écoles,
                   </p>
                 </div>
               </div>
