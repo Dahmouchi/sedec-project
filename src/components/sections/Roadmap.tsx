@@ -65,20 +65,20 @@ const Roadmap = () => {
       </div>
 
       <div className="row g-0 relative">
-         <div className="flex justify-between items-center mt-6 w-full absolute top-1/2 -translate-y-1/2 px-4 puts lg:px-16">
+        <div className="flex justify-between items-center mt-6 w-full absolute top-1/2 -translate-y-1/2 px-4 puts lg:px-16">
           <div
-                  onClick={handlePreviesSlide}
-                  className="bg-[#BD9A68] rounded-full hover:bg-[#d18316] text-white font-medium py-3 px-6  transition-colors duration-200 flex items-center gap-2"
-                >
-                  <ArrowBigRight className="w-4 h-4 rotate-180" />
-                </div>
-                <div
-                  onClick={handleNextSlide}
-                  className="bg-[#BD9A68] hover:bg-[#d18316] text-white font-medium py-3 px-6 rounded-full transition-colors duration-200 flex items-center gap-2"
-                >
-                  <ArrowBigRight className="w-4 h-4" />
-                </div>
-              </div>
+            onClick={handlePreviesSlide}
+            className="bg-[#BD9A68] rounded-full hover:bg-[#d18316] text-white font-medium py-3 px-6  transition-colors duration-200 flex items-center gap-2"
+          >
+            <ArrowBigRight className="w-4 h-4 rotate-180" />
+          </div>
+          <div
+            onClick={handleNextSlide}
+            className="bg-[#BD9A68] hover:bg-[#d18316] text-white font-medium py-3 px-6 rounded-full transition-colors duration-200 flex items-center gap-2"
+          >
+            <ArrowBigRight className="w-4 h-4" />
+          </div>
+        </div>
         <div className="col-lg-12">
           <div className="roadmap-wrap">
             <div className="swiper-container roadmap-active">
@@ -97,7 +97,8 @@ const Roadmap = () => {
                     <div className="roadmap-content">
                       <span className="dot" />
                       <p>
-                        Démarrage de la production sur le site de l&apos;entreprise.
+                        Démarrage de la production sur le site de
+                        l&apos;entreprise.
                       </p>
                       <span>Début de l&apos;aventure SEDEC</span>
                     </div>
@@ -110,9 +111,9 @@ const Roadmap = () => {
                     <div className="roadmap-content">
                       <span className="dot" />
                       <p>
-                        La société SEDEC devient une S.A. et contribue activement
-                        au développement des infrastructures sociales à travers
-                        tout le Maroc.
+                        La société SEDEC devient une S.A. et contribue
+                        activement au développement des infrastructures sociales
+                        à travers tout le Maroc.
                       </p>
                       <span>Naissance officielle de SEDEC S.A.</span>
                     </div>
@@ -120,92 +121,115 @@ const Roadmap = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div className="roadmap-item">
-                      <h4 className="title">1996</h4>
-                      <div className="roadmap-content">
-                        <span className="dot" />
-                        <p>
-                          Lancement du concept de la maison en bois, une
-                          innovation majeure alliant esthétique, résistance et
-                          confort.
-                        </p>
-                        <span>Innovation : Maison en bois</span>
-                      </div>
+                  <div className="roadmap-item">
+                    <h4 className="title">1996</h4>
+                    <div className="roadmap-content">
+                      <span className="dot" />
+                      <p>
+                        Lancement du concept de la maison en bois, une
+                        innovation majeure alliant esthétique, résistance et
+                        confort.
+                      </p>
+                      <span>Innovation : Maison en bois</span>
                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="roadmap-item">
-                      <h4 className="title">2000</h4>
-                      <div className="roadmap-content">
-                        <span className="dot" />
-                        <p>
-                          Implantation de la première unité de fabrication des
-                          charpentes en bois lamellé-collé au Maroc, une
-                          technique à haute performance.
-                        </p>
-                        <span>Première unité lamellé-collé</span>
-                      </div>
+                <SwiperSlide>
+                  <div className="roadmap-item">
+                    <h4 className="title">2000</h4>
+                    <div className="roadmap-content">
+                      <span className="dot" />
+                      <p>
+                        Implantation de la première unité de fabrication des
+                        charpentes en bois lamellé-collé au Maroc, une technique
+                        à haute performance.
+                      </p>
+                      <span>Première unité lamellé-collé</span>
                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="roadmap-item">
-                      <h4 className="title">2008</h4>
-                      <div className="roadmap-content">
-                        <span className="dot" />
-                        <p>
-                          Mise en place du système de certification ISO 9001,
-                          traduisant notre engagement à améliorer la
-                          satisfaction de nos clients.
-                        </p>
-                        <span>Certification ISO 9001</span>
-                      </div>
+                <SwiperSlide>
+                  <div className="roadmap-item">
+                    <h4 className="title">2008</h4>
+                    <div className="roadmap-content">
+                      <span className="dot" />
+                      <p>
+                        Mise en place du système de certification ISO 9001,
+                        traduisant notre engagement à améliorer la satisfaction
+                        de nos clients.
+                      </p>
+                      <span>Certification ISO 9001</span>
                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="roadmap-item">
-                      <h4 className="title">2013</h4>
-                      <div className="roadmap-content">
-                        <span className="dot" />
-                        <p>
-                          Implantation de la première ligne de fabrication des
-                          murs à ossature bois au Maroc, enrichissant les
-                          solutions SEDEC proposées.
-                        </p>
-                        <span>Première ligne murs ossature bois</span>
-                      </div>
+                <SwiperSlide>
+                  <div className="roadmap-item">
+                    <h4 className="title">2013</h4>
+                    <div className="roadmap-content">
+                      <span className="dot" />
+                      <p>
+                        Implantation de la première ligne de fabrication des
+                        murs à ossature bois au Maroc, enrichissant les
+                        solutions SEDEC proposées.
+                      </p>
+                      <span>Première ligne murs ossature bois</span>
                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
 
-                  <SwiperSlide>
-                    <div className="roadmap-item">
-                      <h4 className="title">2015</h4>
-                      <div className="roadmap-content">
-                        <span className="dot" />
-                        <p>
-  Modernisation et extension de la production bois lamellé-collé,
-  lancement du modulaire métallique et création d&apos;une unité de menuiserie aluminium.
-</p>
-<span>Menuiserie aluminium</span>
-
-                      </div>
+                <SwiperSlide>
+                  <div className="roadmap-item">
+                    <h4 className="title">2015</h4>
+                    <div className="roadmap-content">
+                      <span className="dot" />
+                      <p>
+                        Modernisation et extension de la production bois
+                        lamellé-collé, lancement du modulaire métallique et
+                        création d&apos;une unité de menuiserie aluminium.
+                      </p>
+                      <span>Menuiserie aluminium</span>
                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="roadmap-item">
-                     
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="roadmap-item">
+                    <h4 className="title">2023</h4>
+                    <div className="roadmap-content">
+                      <span className="dot" />
+                      <p>
+                        Auto Nejma a procédé au rachat de SEDEC, renforçant
+                        ainsi sa présence sur le marché et consolidant ses
+                        activités à travers une nouvelle stratégie de
+                        développement.
+                      </p>
+                      <span>Rachat de SEDEC par Auto Nejma</span>
                     </div>
-                  </SwiperSlide>
+                  </div>
+                </SwiperSlide>
+                 <SwiperSlide>
+                  <div className="roadmap-item">
+                    <h4 className="title">2025</h4>
+                    <div className="roadmap-content">
+                      <span className="dot" />
+                      <p>
+                        L&apos;entreprise lance une nouvelle activité dédiée au modulaire métallique.
+                      </p>
+                      <span>Introduction de l&apos;activité de modulaire métallique</span>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="roadmap-item"></div>
+                </SwiperSlide>
               </Swiper>
-              
+
               {/* Next Slide Button */}
-             
             </div>
           </div>
         </div>
-        
       </div>
     </section>
   );
